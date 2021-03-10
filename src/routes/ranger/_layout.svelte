@@ -1,5 +1,6 @@
 <script lang="ts">
-	let list: string[] = ["Dashboard","Gorillas","Rangers","Kwitizina","Reports","Settings","Logout"];
+	import  List from '../../types/sidebar_items';
+	let list: List[] = [new List("/ranger/dashboard","Dashboard"),new List("/ranger/gorillas","Gorillas"),new List("/ranger/rangers","Rangers"),new List("/ranger/kwitizina","Kwitizina"),new List("/ranger/reports","Reports"),new List("/ranger/settings","Settings")];
 	import Sidebar from '../../components/Sidebar.svelte';
 </script>
 <style>
@@ -11,7 +12,7 @@ main {
 </style>
 
 <div class="min-h-screen flex flex-row bg-gray-100">
-<Sidebar/> 
+<Sidebar list={list}/> 
 <main>
 	<slot></slot>
 </main>

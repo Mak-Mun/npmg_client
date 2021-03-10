@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Sidebar from '../../components/Sidebar.svelte';
     import  List from '../../types/sidebar_items';
-	let list: List[] = [new List("/admin/dashboard","Dashboard"),new List("/admin/gorillas","Gorillas"),new List("/admin/rangers","Rangers"),new List("/admin/gorillas","Doctors"),new List("/admin/reports","Reports"),new List("/admin/store","Store"),new List("/admin/settings","Settings")];
+	let list: List[] = [new List("/doctor/dashboard","Dashboard"),new List("/doctor/gorillas","Gorillas"),new List("/doctor/rangers","Rangers"),new List("/doctor/gorillas","Doctors"),new List("/doctor/reports","Reports"),new List("/doctor/store","Store"),new List("/doctor/settings","Settings")];
 </script>
 <style>
 	main {
