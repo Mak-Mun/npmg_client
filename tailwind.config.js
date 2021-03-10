@@ -6,6 +6,17 @@ module.exports = {
   },
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['Nunito Sans', 'Source Code Sans','sans-serif'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'display': ['Oswald'],
+      'body': ['Open Sans'],
+     },
+     textColor: {
+      motherGreen: '#017A4C',
+     
+  },
   },
   variants: {},
   plugins: [],

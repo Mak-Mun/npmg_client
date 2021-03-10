@@ -17,7 +17,7 @@
     <ul class="flex flex-col py-4">
       {#each list as item}
       <li>
-        <a href={item.url} class="flex flex-row items-center h-12 transform  text-gray-500 hover:text-green-600">
+        <a href={item.url} class="flex flex-row items-center h-12 transform  text-gray-800 hover:text-motherGreen">
           <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-800"><i class="bx bx-home"></i></span>
           <span class="text-sm font-medium">{item.name}</span>
         </a>
