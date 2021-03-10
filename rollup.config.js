@@ -10,6 +10,7 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import { preprocess } from './svelte.config';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -27,18 +28,15 @@ export default {
 		output: config.client.output(),
 		plugins: [
 			replace({
-				preventAssignment: true,
-				values:{
-					'process.browser': true,
-					'process.env.NODE_ENV': JSON.stringify(mode)
-				},
+				'process.browser': true,
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
-				preprocess: sveltePreprocess({ sourceMap: dev }),
-				compilerOptions: {
-					dev,
-					hydratable: true
-				}
+				dev,
+				hydratable: true,
+				preprocess: sveltePreprocess(),
+				emitCss: true,
+				preprocess
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
@@ -82,20 +80,15 @@ export default {
 		output: config.server.output(),
 		plugins: [
 			replace({
-				preventAssignment: true,
-				values:{
-					'process.browser': false,
-					'process.env.NODE_ENV': JSON.stringify(mode)
-				},
+				'process.browser': false,
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
-				preprocess: sveltePreprocess({ sourceMap: dev }),
-				compilerOptions: {
-					dev,
-					generate: 'ssr',
-					hydratable: true
-				},
-				emitCss: false
+				generate: 'ssr',
+				hydratable: true,
+				preprocess: sveltePreprocess(),
+				dev,
+				preprocess
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
@@ -109,6 +102,7 @@ export default {
 			typescript({ sourceMap: dev })
 		],
 		external: Object.keys(pkg.dependencies).concat(require('module').builtinModules),
+
 		preserveEntrySignatures: 'strict',
 		onwarn,
 	},
@@ -119,16 +113,14 @@ export default {
 		plugins: [
 			resolve(),
 			replace({
-				preventAssignment: true,
-				values:{
-					'process.browser': true,
-					'process.env.NODE_ENV': JSON.stringify(mode)
-				},
+				'process.browser': true,
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			commonjs(),
 			typescript({ sourceMap: dev }),
 			!dev && terser()
 		],
+
 		preserveEntrySignatures: false,
 		onwarn,
 	}
