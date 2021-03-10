@@ -3,18 +3,15 @@
 	import Sidebar from '../../components/Sidebar.svelte';
 </script>
 <style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
+main {
+		padding: 10px;
+		margin: 5px;
 		box-sizing: border-box;
 	}
 </style>
 
 <div class="min-h-screen flex flex-row bg-gray-100">
-<Sidebar list={list}/> 
+<Sidebar/> 
 <main>
 	<slot></slot>
 </main>

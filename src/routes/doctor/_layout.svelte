@@ -1,14 +1,12 @@
 <script lang="ts">
 	import Sidebar from '../../components/Sidebar.svelte';
-	let list: string[] = ["Dashboard","Gorillas","Rangers","Doctors","Reports","Store","Settings","Logout"];
+    import  List from '../../types/sidebar_items';
+	let list: List[] = [new List("/admin/dashboard","Dashboard"),new List("/admin/gorillas","Gorillas"),new List("/admin/rangers","Rangers"),new List("/admin/gorillas","Doctors"),new List("/admin/reports","Reports"),new List("/admin/store","Store"),new List("/admin/settings","Settings")];
 </script>
 <style>
 	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
+		padding: 10px;
+		margin: 5px;
 		box-sizing: border-box;
 	}
 </style>
