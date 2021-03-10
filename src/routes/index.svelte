@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
 	import successkid from 'images/successkid.jpg';
+	import AdminSidebar from '../components/AdminSidebar.svelte';
 </script>
 
 <style>
