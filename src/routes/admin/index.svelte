@@ -34,20 +34,8 @@
 			font-size: 4em;
 		}
 	}
-	.lazy-dark-mode {
-		@apply bg-black text-white;
-	}
 </style>
 
 <svelte:head>
 	<title>Sapper project template</title>
 </svelte:head>
-
-<h1 class="bg-black text-yellow-500 text-5xl">Great success!</h1>
-
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p class="lazy-dark-mode"><strong class="p-10 py-3 text-xl">Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>

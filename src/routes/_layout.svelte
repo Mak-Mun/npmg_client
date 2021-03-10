@@ -1,7 +1,5 @@
 <script lang="ts">
-	import Nav from '../components/Nav.svelte';
-
-	export let segment: string;
+	import AdminSidebar from '../components/AdminSidebar.svelte';
 </script>
 
 <style>
@@ -15,8 +13,9 @@
 	}
 </style>
 
-<Nav {segment}/>
-
+<div class="min-h-screen flex flex-row bg-gray-100">
+<AdminSidebar/>
 <main>
 	<slot></slot>
 </main>
+</div>
