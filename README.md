@@ -1,3 +1,3 @@
-# Sapper with TailwindCSS starter
+# Npmg Client
 
-Blog post about it: http://andrasbacsai.com/straightforward-guide-to-use-tailwindcss-with-sapper
+here
