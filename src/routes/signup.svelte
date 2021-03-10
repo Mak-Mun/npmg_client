@@ -34,9 +34,6 @@
 			font-size: 4em;
 		}
 	}
-	.lazy-dark-mode {
-		@apply bg-black text-white;
-	}
 </style>
 
 <svelte:head>

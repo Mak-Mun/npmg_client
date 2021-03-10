@@ -1,5 +1,6 @@
 <script lang="ts">
-	import AdminSidebar from '../../components/AdminSidebar.svelte';
+	let list: string[] = ["Dashboard","Gorillas","Rangers","Kwitizina","Reports","Settings","Logout"];
+	import Sidebar from '../../components/Sidebar.svelte';
 </script>
 <style>
 	main {
@@ -13,7 +14,7 @@
 </style>
 
 <div class="min-h-screen flex flex-row bg-gray-100">
-<AdminSidebar/> 
+<Sidebar list={list}/> 
 <main>
 	<slot></slot>
 </main>
