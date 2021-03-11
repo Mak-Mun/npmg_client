@@ -16,7 +16,7 @@
 	<Sidebar list={list}/> 
 	<div class="flex flex-col w-screen">
 	<TopNav/>
-	<main class="float-left">
+	<main class="float-left p-3">
 		<slot></slot>
 	</main>
 	</div>
