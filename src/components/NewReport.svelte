@@ -22,7 +22,7 @@
     <h1 class="font-bold px-4 text-2xl mb-10">ADD NEW REPORT</h1>
     <form class="flex flex-col  mt-6" on:submit|preventDefault="{handleOnSubmit}">
         <div class="mx-5 sm:-mt-10 mb-5">
-            <div class="border-b-2 focus-within:border-green-500 flex w-5/12">
+            <div class="border-b-2 focus-within:border-green-500 flex md:w-5/12">
                 <label for="name" class="px-2">Name:</label>
                 <select  bind:value={report.gorilla} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
                     <option value="">--name--</option>
@@ -34,8 +34,8 @@
                 </select>
             </div>
         </div>
-        <div class="flex xs:flex-col">
-        <div class="xs:w-full sm:w-8/12 max-w-sm overflow-hidden space-y-6 mx-5">
+        <div class="md:flex">
+        <div class="max-w-sm overflow-hidden space-y-6 mx-5 md:w-5/12">
             <div class="border-b-2 focus-within:border-green-500 flex">
                 <label for="name" class="px-2">Heart:</label>
                 <select  bind:value={report.heart} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
@@ -70,7 +70,7 @@
                 </select>
             </div>
         </div>
-        <div class="w-full sm:w-8/12 max-w-sm overflow-hidden space-y-6 mx-5">
+        <div class="my-4 md:my-0 w-9/10 max-w-sm overflow-hidden space-y-6 mx-5 md:w-5/12">
             <div class="border-b-2 focus-within:border-green-500 flex">
                 <label for="name" class="px-2">Lungs:</label>
                 <select  bind:value={report.lungs} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
@@ -82,6 +82,7 @@
                     {/each}
                 </select>
             </div>
+            
             <div class="border-b-2 focus-within:border-green-500 flex">
                 <label for="name" class="px-2">Heart:</label>
                 <select bind:value={report.heart} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
@@ -107,7 +108,7 @@
 		   
         </div>
     </div>
-    <div class="mx-5 sm:mt-3 mb-5">
+    <div class="mx-5 mt-3 mb-5">
         <div class="border-b-2 focus-within:border-green-500 flex ">
             <label for="name" class="px-2">Comment:</label>
             <input type="text" name="name" bind:value={report.comment} placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
