@@ -20,8 +20,7 @@ module.exports = {
      textColor: {
       motherGreen: '#017A4C',
       secGreen: '#1FC14C',
-      successorColor:'#F0A500',
-     
+      successorColor:'#F0A500', 
   },
   },
   variants: {
