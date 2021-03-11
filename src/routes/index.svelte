@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<script>
-  import successkid from "images/successkid.jpg"
-</script>
-
-=======
 <script lang="ts">
 	import successkid from 'images/successkid.jpg';
 </script>
@@ -40,27 +34,6 @@
 			font-size: 4em;
 		}
 	}
-</style>
-
->>>>>>> 605bf2c800be90007d48ba17de9a6a1fd45eba00
-<svelte:head>
-  <title>Sapper project template</title>
-</svelte:head>
-
-<h1 class="bg-black text-yellow-500 text-5xl">Great success!</h1>
-
-<figure>
-  <img alt="Success Kid" src={successkid} />
-  <figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p class="lazy-dark-mode">
-  <strong class="p-10 py-3 text-xl"
-    >Try editing this file (src/routes/index.svelte) to test live reloading.</strong
-  >
-</p>
-
-<style>
   h1,
   figure,
   p {
@@ -95,3 +68,20 @@
     }
   }
 </style>
+
+<svelte:head>
+  <title>Sapper project template</title>
+</svelte:head>
+
+<h1 class="bg-black text-yellow-500 text-5xl">Great success!</h1>
+
+<figure>
+  <img alt="Success Kid" src={successkid} />
+  <figcaption>Have fun with Sapper!</figcaption>
+</figure>
+
+<p class="lazy-dark-mode">
+  <strong class="p-10 py-3 text-xl"
+    >Try editing this file (src/routes/index.svelte) to test live reloading.</strong
+  >
+</p>
