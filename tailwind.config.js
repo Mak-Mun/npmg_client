@@ -20,9 +20,12 @@ module.exports = {
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
-      primary: "#3490dc",
+      primaryGreen: "#00917C",
       secondary: "#ffed4a",
       danger: "#e3342f",
+      greenAccent: "#B7FFC2",
+      blueAccent: "#86C5FF",
+      redishAccent: "#86C5FF",
     }),
   },
   variants: {},
