@@ -5,11 +5,7 @@ module.exports = {
     content: ['./src/**/*.svelte', './src/**/*.html'],
   },
   theme: {
-    extend: {
-      zIndex: {
-        "-1": "-1",
-      },
-    },
+    extend: {},
     fontFamily: {
       'sans': ['Nunito Sans', 'Source Code Sans','sans-serif'],
       'serif': ['ui-serif', 'Georgia'],
@@ -23,8 +19,6 @@ module.exports = {
       successorColor:'#F0A500', 
   },
   },
-  variants: {
-    borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
-  },
+  variants: {},
   plugins: [],
 }

@@ -1,12 +1,11 @@
 <script lang="ts">
+    	let genderOptions = ['Male','Female'];
+		let fathers = ['Amahoro','Urukundo','Cyubahiro','Byiruka','Umutuzo']
+		let family=['Makuru','Gahinga','Umutungo','Heza']
+        let gender;
     let photoUrl:string = "https://th.bing.com/th/id/OIP.C8igL9Mzx3SWR6bvi_JycQHaEK?w=282&h=180&c=7&o=5&dpr=1.5&pid=1.7";
 </script>
 <style>
-input:focus-within ~ label,
-input:not(:placeholder-shown) ~ label {
-  @apply transform scale-75 -translate-y-6;
-}
-
 .text-white{
 	color: #fff;
 }
@@ -15,9 +14,6 @@ input:not(:placeholder-shown) ~ label {
 	height: 300px;
 }
 
-input:focus-within ~ label {
-  @apply text-blue-500;
-}
 
 </style>
 
@@ -37,34 +33,62 @@ input:focus-within ~ label {
 		</div>
 	</div>
 	<div class="w-full sm:w-8/12 max-w-sm overflow-hidden space-y-6 sm:-mt-10">
-		<div class="relative my-4 border-b-2 focus-within:border-green-500">
+		<div class="border-b-2 focus-within:border-green-500 flex">
+			<label for="name" class="px-2">Name:</label>
 			<input type="text" name="name" placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
-			<label for="name" class="absolute top-0 -z-1">Name</label>
-		</div>	
-		<div class="relative my-4 border-b-2 focus-within:border-green-500">
-			<input type="date" name="date" placeholder="" class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
-			<label for="name" class="absolute top-0 -z-1">Date of birth</label>
-		</div>	
-		<div class="relative my-4 border-b-2 focus-within:border-green-500">
-			<input type="text" name="text" placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
-			<label for="father" class="absolute top-0 -z-1">Father</label>
 		</div>
-		<div class="relative my-4 border-b-2 focus-within:border-green-500">
+		<div class="border-b-2 focus-within:border-green-500 flex">
+			<label for="name" class="px-2">Dob:</label>
+			<input type="date" name="name" placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
+		</div>
+		<div class="border-b-2 focus-within:border-green-500 flex">
+			<label for="name" class="px-2">Mother:</label>
+			<select value="{gender}" class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
+				<option value="">--fathers--</option>
+				{#each fathers as father}
+					<option value={father}>
+						{father}
+					</option>
+				{/each}
+			</select>
+		</div>
+		<div class="border-b-2 focus-within:border-green-500 flex">
+			<label for="name" class="px-2">Father:</label>
+			<select value="{gender}" class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
+				<option value="">--mothers--</option>
+				{#each fathers as father}
+					<option value={father}>
+						{father}
+					</option>
+				{/each}
+			</select>
+		</div>
+		<div class="border-b-2 focus-within:border-green-500 flex">
+			<label for="name" class="px-2">Family:</label>
+			<select value="{gender}" class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
+				<option value="">--genders--</option>
+				{#each family as option}
+					<option value={option}>
+						{option}
+					</option>
+				{/each}
+			</select>
+		</div>
+		<div class="border-b-2 focus-within:border-green-500 flex">
+			<label for="name" class="px-2">Gender:</label>
+			<select value="{gender}" class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
+				<option value="">--gender--</option>
+				{#each genderOptions as genderOption}
+					<option value={genderOption}>
+						{genderOption}
+					</option>
+				{/each}
+			</select>
+		</div>
+		<div class="border-b-2 focus-within:border-green-500 flex">
+			<label for="name" class="px-2">Comment:</label>
 			<input type="text" name="name" placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
-			<label for="name" class="absolute top-0 -z-1">Mother</label>
 		</div>	
-		<div class="relative my-4 border-b-2 focus-within:border-green-500">
-			<input type="date" name="date" placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
-			<label for="name" class="absolute top-0 -z-1">Family</label>
-		</div>	
-		<div class="relative my-4 border-b-2 focus-within:border-green-500">
-			<input type="text" name="text" placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
-			<label for="father" class="absolute top-0 -z-1">Gender</label>
-		</div>
-		<div class="relative my-4 border-b-2 focus-within:border-green-500">
-			<input type="text" name="text" placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
-			<label for="father" class="absolute top-0 -z-1">Speciality or comment</label>
-		</div>
 		<div class="my-4 focus-within:border-green-500 items-center justify-center">
 			<button class="bg-green-800 text-gray px-2 py-1 rounded w-full text-white  font-bold focus:outline-none" type="submit">ADD NEW</button>
 		</div>		   
