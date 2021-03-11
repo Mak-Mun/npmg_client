@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Sidebar from '../../components/Sidebar.svelte';
     import  List from '../../types/sidebar_items';
+	import TopNav from '../../components/TopNav.svelte';
 	let list: List[] = [new List("/doctor/","Dashboard"),new List("/doctor/gorillas","Gorillas"),new List("/doctor/rangers","Rangers"),new List("/doctor/gorillas","Doctors"),new List("/doctor/reports","Reports"),new List("/doctor/store","Store"),new List("/doctor/settings","Settings")];
 </script>
 <style>
@@ -12,8 +13,12 @@
 </style>
 
 <div class="min-h-screen flex flex-row bg-gray-100">
-<Sidebar list={list}/> 
-<main>
-	<slot></slot>
-</main>
-</div>
+	<Sidebar list={list}/> 
+	<div class="flex flex-col w-screen">
+	<TopNav/>
+	<main class="float-left">
+		<slot></slot>
+	</main>
+	</div>
+	</div>
+	
