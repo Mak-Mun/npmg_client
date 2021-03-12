@@ -112,8 +112,8 @@
 		   
         </div>
     </div>
-    <div class="mx-5 mt-3 mb-5">
-        <div class="border-b-2 focus-within:border-green-500 flex ">
+    <div class="ml-5 mr-2 mt-3 md:mt-7 mb-5">
+        <div class="border-b-2 focus-within:border-green-500 flex md:w-10/12">
             <label for="name" class="px-2">Comment:</label>
             <input type="text" name="name" bind:value={report.comment} placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
         </div>
