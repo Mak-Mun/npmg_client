@@ -1,5 +1,5 @@
 <script lang="ts">
-
+ let photoUrl:string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfGfFwB7RBSWwcS4M6UDhLo9QFaty7RvMYrw&usqp=CAU";
 </script>
 <style>
 .text-green-500{
@@ -58,6 +58,19 @@
                 </tr>         
             </tbody>
         </table>
+        <div class="mt-3">
+            <h4 class="font-semibold">Documents and images</h4>
+            <div class="flex flex-wrap w-full space-x-3 space-y-2">
+            <span></span>
+            <img alt="Success Kid" src="{photoUrl}"  class="h-12 w-12 rounded cursor-pointer">
+            <img alt="Success Kid" src="{photoUrl}"  class="h-12 w-12 rounded cursor-pointer">
+            <img alt="Success Kid" src="{photoUrl}"  class="h-12 w-12 rounded cursor-pointer">
+            </div>
+        </div>
+        <div class="flex -mx-3 mt-3">
+            <span class="pl-2 font-bold">Report:</span>
+            <span class="pl-2 underline cursor-pointer">Nkusi Verite</span>
+        </div>
     </div>
     <div class="w-full md:w-5/12 bg-white rounded border px-4 py-3 ml-2 h-screen">
         <h2>Other recents</h2>
