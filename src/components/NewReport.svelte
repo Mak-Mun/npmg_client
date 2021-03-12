@@ -21,6 +21,10 @@
     .text-white{
 	color: #fff;
 }
+.bg-green{
+       background-color:#00917C;
+       color: white;
+   }
 </style>
 <div class="flex flex-col justify-center bg-white p-6">
     <h1 class="font-bold px-4 md:text-2xl mb-10">ADD NEW REPORT</h1>
@@ -133,7 +137,7 @@
     </div>
     <div class="mx-5 mb-5 md:ml-40">
         <div class="my-4 mx-auto focus-within:border-green-500">
-            <button class="bg-green-800 text-gray px-2 py-1 rounded w-full md:w-5/12 text-white  font-bold focus:outline-none" type="submit">FINISH REPORT</button>
+            <button class="bg-green text-gray px-2 py-1 rounded w-full md:w-5/12 text-white  font-bold focus:outline-none" type="submit">FINISH REPORT</button>
         </div>
     </div>
     </form>
