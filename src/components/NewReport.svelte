@@ -3,11 +3,11 @@
         let gorillas = ['Amahoro','Urukundo','Cyubahiro','Byiruka','Umutuzo']
         let report = {
         gorilla:"",
-		lungs: "",
-		heart: "",
-		brain:"",
-		legs: "",
-		chest:'',
+		lungs: "SNA",
+		heart: "SNA",
+		brain:"SNA",
+		legs: "SNA",
+		chest:"SNA",
 		eyes:"",
 		comment:"",
 	}
@@ -21,6 +21,10 @@
     .text-white{
 	color: #fff;
 }
+.bg-green{
+       background-color:#00917C;
+       color: white;
+   }
 </style>
 <div class="flex flex-col justify-center bg-white p-6">
     <h1 class="font-bold px-4 md:text-2xl mb-10">ADD NEW REPORT</h1>
@@ -112,8 +116,8 @@
 		   
         </div>
     </div>
-    <div class="mx-5 mt-3 mb-5">
-        <div class="border-b-2 focus-within:border-green-500 flex ">
+    <div class="ml-5 mr-2 mt-3 md:mt-7 mb-5">
+        <div class="border-b-2 focus-within:border-green-500 flex md:w-10/12">
             <label for="name" class="px-2">Comment:</label>
             <input type="text" name="name" bind:value={report.comment} placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
         </div>
@@ -133,7 +137,7 @@
     </div>
     <div class="mx-5 mb-5 md:ml-40">
         <div class="my-4 mx-auto focus-within:border-green-500">
-            <button class="bg-green-800 text-gray px-2 py-1 rounded w-full md:w-5/12 text-white  font-bold focus:outline-none" type="submit">FINISH REPORT</button>
+            <button class="bg-green text-gray px-2 py-1 rounded w-full md:w-5/12 text-white  font-bold focus:outline-none" type="submit">FINISH REPORT</button>
         </div>
     </div>
     </form>
