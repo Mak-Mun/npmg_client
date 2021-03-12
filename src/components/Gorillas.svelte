@@ -43,7 +43,7 @@
        <div class="w-full bg-white rounded border px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 unlimited">
            <div class="w-full flex mb-4 items-center justify-between">
             <h3 class="font-semibold px-3 py-1 text-xl">Ranger listing</h3>
-            <span class="bg-green px-3 py-2 rounded cursor-pointer md:mr-10">ADD NEW</span>
+            <span class="bg-green px-3 py-2 rounded cursor-pointer md:mr-10"><a href="/admin/new_gorilla">ADD NEW</a></span>
            </div>
            <table class="text-left w-full md:px-10 border">
                <thead class="flex w-full">

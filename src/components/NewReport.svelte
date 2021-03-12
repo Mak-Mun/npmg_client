@@ -3,11 +3,11 @@
         let gorillas = ['Amahoro','Urukundo','Cyubahiro','Byiruka','Umutuzo']
         let report = {
         gorilla:"",
-		lungs: "",
-		heart: "",
-		brain:"",
-		legs: "",
-		chest:'',
+		lungs: "SNA",
+		heart: "SNA",
+		brain:"SNA",
+		legs: "SNA",
+		chest:"SNA",
 		eyes:"",
 		comment:"",
 	}
