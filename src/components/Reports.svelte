@@ -14,7 +14,7 @@
 </style>
 <div>
     <div class="px:2 m-2 md:px-5 md:m-5">
-        <h1 class="text-xl font-semibold">DAILY REPORT VIEW</h1>
+        <h1 class="text-xl font-semibold text-center md:text-left">DAILY REPORT VIEW</h1>
     </div>
 <div class="w-full md:flex">
     <div class="w-full md:w-7/12 bg-white rounded border px-4 py-4 md:px-8 md:py-8 mr-3 h-screen">
@@ -72,8 +72,8 @@
             <span class="pl-2 underline cursor-pointer">Nkusi Verite</span>
         </div>
     </div>
-    <div class="w-full md:w-5/12 bg-white rounded border px-4 py-3 ml-2 h-screen">
-        <h2>Other recents</h2>
+    <div class="w-full md:w-5/12 bg-white rounded border px-4 py-3 mt-4 md:mt-0 md:ml-2 h-screen">
+        <h2 class="text-center font-semibold">OTHER RECENTS</h2>
     </div>
 </div>
 </div>

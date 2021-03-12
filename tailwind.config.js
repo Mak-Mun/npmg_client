@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ["Nunito Sans", "Source Code Sans", "sans-serif"],
+      sans: ["Nunito", "Nunito Sans","Source Code Sans", "sans-serif"],
       serif: ["ui-serif", "Georgia"],
       mono: ["ui-monospace", "SFMono-Regular"],
       display: ["Oswald"],
