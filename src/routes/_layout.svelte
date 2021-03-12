@@ -1,8 +1,13 @@
-<script>
-  import { initClient } from "@urql/svelte"
+<svelte:options immutable />
 
-  initClient({
-    url: "https://npmg-server.herokuapp.com/graphql",
+<script lang="ts">
+  import { initClient } from "@urql/svelte"
+  import { onMount } from "svelte"
+
+  onMount(() => {
+    initClient({
+      url: "https://npmg-server.herokuapp.com/graphql",
+    })
   })
 </script>
 
