@@ -16,6 +16,7 @@
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },
   "dependencies": {
+    "@urql/svelte": "^1.2.0",
     "apollo-boost": "^0.4.9",
     "compression": "^1.7.1",
     "cross-fetch": "^3.0.6",
