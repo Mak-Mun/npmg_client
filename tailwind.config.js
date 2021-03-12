@@ -14,7 +14,7 @@ module.exports = {
       body: ["Open Sans"],
     },
     textColor: {
-      motherGreen: "#017A4C",
+      motherGreen: "#00917C",
       secGreen: "#1FC14C",
       successorColor: "#F0A500",
     },
