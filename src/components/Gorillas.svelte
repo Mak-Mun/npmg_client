@@ -35,6 +35,9 @@
      outline: 1px solid slategrey;
    }
    </style>
+   <svelte:head>
+	<title>Gorillas</title>
+</svelte:head>
    <div>
        <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1">
            <h1 class="text-xl font-semibold text-center md:text-left">LISTING</h1>

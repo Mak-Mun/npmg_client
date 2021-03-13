@@ -1,8 +1,10 @@
 <script lang="ts">
   let photoUrl: string =
-    "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
+    "https://avatars.githubusercontent.com/u/52195?s=460&u=08bcafa24337a298e1b874279fde515e2fb8f81d&v=4"
 </script>
-
+<svelte:head>
+	<title>Settings</title>
+</svelte:head>
 <div>
   <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1">
     <h1 class="text-xl font-semibold text-center md:text-left">
@@ -38,11 +40,11 @@
     </div>
     <div class="rounded shadow w-4/5 h-full md:ml-4 mt-2 flex flex-col">
       <h1 class="text-center font-semibold text-xl">Account</h1>
-      <div class="mt-6 mx-auto">
-        <img class="w-20 h-20 rounded-full" src={photoUrl} alt="" />
-        <div class="flex -ml-10 mt-1">
+      <div class="mt-6 mx-auto items-center">
+        <img class="img rounded-full" src={photoUrl} alt="" />
+        <div class="flex mt-1">
           <button
-            class="border border-green-500 text-green-500 p-1 px-2 mx-1 focus:outline-none rounded shadow"
+            class="text-green-500 p-1 px-2 mx-1 focus:outline-none rounded shadow"
             >Upload</button
           >
           <button
@@ -51,9 +53,20 @@
           >
         </div>
       </div>
-      <div class="flex flex-col items-center mx-auto">
-        <label for="name" class="-ml-3">Add Bio</label>
-        <textarea name="Bio" placeholder="This is my bio" class="h-10 w-20" />
+      <div class="mt-6 mx-auto flex flex-col w-11/12 md:w-9/12">
+        <label for="name" class="font-semibold ml-1">Add Bio</label>
+        <textarea class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full shadow border border-gray-200 rounded focus:outline-none focus:border-gray-500"
+        id="message" type="text" placeholder="Message..."></textarea>
+      </div>
+      <div class="mt-6 mx-auto flex w-11/12 md:w-9/12">
+        <div class="flex flex-col md:mx-3">
+          <label for="name" class="font-semibold ml-1">First Name</label>
+          <input type="text" class="w-full px-3 py-1 text-sm placeholder-gray-300 border border-gray-300 focus:outline-none focus:border-gray-500" />
+        </div>
+        <div class="flex flex-col md:mx-3">
+          <label for="name" class="font-semibold ml-1">First Name</label>
+          <input type="text" class="w-full px-3 py-1 text-sm placeholder-gray-300 border border-gray-300 focus:outline-none focus:border-gray-500" />
+        </div>
       </div>
     </div>
   </div>
@@ -61,13 +74,22 @@
 
 <style>
   .text-red-500 {
-    color: red;
+    color: #E74C3C;
+    border: 1.5px solid  #E74C3C;
   }
   .text-s-xl {
     font-size: 17px;
   }
+  .text-green-500{
+    color: #00917C;
+    border: 1.5px solid  #00917C;
+  }
   .longer {
     height: 90vh;
+  }
+  .img{
+    width: 120px;
+    height: 120px;
   }
   @media only screen and (max-height: 340px) {
     .longer {
