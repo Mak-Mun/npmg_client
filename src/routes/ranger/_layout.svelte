@@ -14,7 +14,7 @@
 
 <div class="min-h-screen flex flex-row bg-gray-100">
   <Sidebar {list} />
-  <div class="flex flex-col w-screen">
+  <div class="flex flex-col w-screen h-screen overflow-y-auto">
     <TopNav />
     <main class="float-left">
       <slot />
