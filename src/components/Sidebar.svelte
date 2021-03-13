@@ -4,13 +4,17 @@
 </script>
 
 <style>
-	
+	.bg-logout{
+    background-color: #F0A500;
+    color: white;
+  }
 </style>
 
 
 
 
-  <div class="flex flex-col w-56 bg-white  overflow-hidden">
+  <div class="flex flex-col w-56 bg-white  overflow-hidden h-screen justify-between">
+    <div class="">
     <div class="flex items-center justify-center h-20 shadow-md">
       <h1 class="text-3xl uppercase text-red-500">NPMG</h1>
     </div>
@@ -23,5 +27,9 @@
         </a>
       </li>
       {/each}
-	      </ul>
+	    </ul>
+    </div>
+      <div class="">
+        <h1 class="text-red-500 font-semibold bg-logout px-4 py-2 text-center bottom-0 cursor-pointer">Logout</h1>
+      </div>
   </div>
