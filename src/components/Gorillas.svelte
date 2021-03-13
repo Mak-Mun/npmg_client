@@ -12,11 +12,13 @@
    @media only screen and (max-height: 550px) {
      .unlimited {
        height: fit-content;
+       width: fit-content;
      }
    }
-   @media only screen and (max-height: 340px) {
-     .limitedTable{
+   @media only screen and (max-width: 600px) {
+     .unlimited{
          height: fit-content;
+         width: fit-content;
      }
    }
    .bg-green{
