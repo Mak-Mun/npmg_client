@@ -48,7 +48,7 @@
       </ul>
     </div>
     <div class="rounded shadow w-full md:w-4/5 h-full md:ml-4 mt-2 flex flex-col">
-      <h1 class="text-center font-semibold text-xl">Account</h1>
+      <h1 class="text-center font-semibold text-xl md:-ml-20">Account</h1>
       <div class="mt-6 mx-auto items-center">
         <img class="img rounded-full" src={photoUrl} alt="" />
         <div class="flex mt-1">
