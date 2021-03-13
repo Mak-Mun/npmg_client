@@ -53,26 +53,57 @@
           >
         </div>
       </div>
-      <div class="mt-6 mx-auto flex flex-col w-11/12 md:w-9/12">
+      <div class="mb-10">
+      <div class="mt-1 mx-auto flex flex-col w-11/12 md:w-9/12">
         <label for="name" class="font-semibold ml-1">Add Bio</label>
-        <textarea class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full shadow border border-gray-200 rounded focus:outline-none focus:border-gray-500"
+        <textarea class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full border-2 rounded focus:outline-none border-green"
         id="message" type="text" placeholder="Message..."></textarea>
       </div>
-      <div class="mt-6 mx-auto flex w-11/12 md:w-9/12">
-        <div class="flex flex-col md:mx-3">
+      <div class="mt-1 mx-auto md:flex w-11/12 md:w-9/12">
+        <div class="flex flex-col md:mx-0 md:w-6/12">
           <label for="name" class="font-semibold ml-1">First Name</label>
-          <input type="text" class="w-full px-3 py-1 text-sm placeholder-gray-300 border border-gray-300 focus:outline-none focus:border-gray-500" />
+          <input type="text" name="fname" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
         </div>
-        <div class="flex flex-col md:mx-3">
-          <label for="name" class="font-semibold ml-1">First Name</label>
-          <input type="text" class="w-full px-3 py-1 text-sm placeholder-gray-300 border border-gray-300 focus:outline-none focus:border-gray-500" />
+        <div class="flex flex-col md:ml-2 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">Last Name</label>
+          <input type="text" name="lname" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
         </div>
       </div>
+      <div class="mt-1 mx-auto md:flex w-11/12 md:w-9/12">
+        <div class="flex flex-col md:mx-0 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">Email</label>
+          <input type="email" name="email" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+        <div class="flex flex-col md:ml-2 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">Phone Number</label>
+          <input type="text" name="phone" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+      </div>
+      <div class="mt-1 mx-auto md:flex w-11/12 md:w-9/12">
+        <div class="flex flex-col md:mx-0 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">Province</label>
+          <input type="text" name="province" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+        <div class="flex flex-col md:ml-2 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">District</label>
+          <input type="text" name="district" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+      </div>
+      <div class="mt-1 mx-auto flex w-11/12 md:w-9/12 items-center mt-2">
+        <div class="flex flex-col w-full">
+          <button type="submit" class="bg-green py-1 font-semibold rounded focus:outline-none">Save Changes</button>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </div>
 
 <style>
+  .bg-green{
+    background-color: #00917C;
+    color: white;
+  }
   .text-red-500 {
     color: #E74C3C;
     border: 1.5px solid  #E74C3C;
@@ -80,12 +111,15 @@
   .text-s-xl {
     font-size: 17px;
   }
+  .border-green:focus{
+    border-color: #00917C;
+  }
   .text-green-500{
     color: #00917C;
     border: 1.5px solid  #00917C;
   }
   .longer {
-    height: 90vh;
+    height: fit-content;
   }
   .img{
     width: 120px;
