@@ -1,7 +1,55 @@
 <svelte:head>
-  <title>Register Page</title>
+  <title>Register</title>
 </svelte:head>
 
-<section>
-  <h1 class="text-red-500">Registeration Page</h1>
-</section>
+<form class="grid grid-cols-1 gap-6">
+  <label for="email" class="block">
+    <span class="text-gray-700">Fullnames</span>
+    <input
+      type="email"
+      id="text"
+      placeholder="Boston Rockstack"
+      class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+    />
+  </label>
+
+  <label for="email" class="block">
+    <span class="text-gray-700">Phone</span>
+    <input
+      type="text"
+      id="email"
+      placeholder="2507147115"
+      class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+    />
+  </label>
+
+  <label for="email" class="block">
+    <span class="text-gray-700">Email</span>
+    <input
+      type="email"
+      id="email"
+      placeholder="test@gmail.com"
+      class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+    />
+  </label>
+
+  <label for="password" class="block">
+    <span class="text-gray-700">Password</span>
+    <input
+      type="password"
+      id="password"
+      class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+    />
+  </label>
+
+  <input
+    type="submit"
+    value="Register here"
+    class="bg-primaryGreen font-sourceSans rounded-md cursor-pointer text-white px-40 py-3 "
+  />
+
+  <div class="text-center">
+    <span>Have an account</span>
+    <a href="/auth/register" class=" text-blue-500"> Login here? </a>
+  </div>
+</form>
