@@ -29,7 +29,7 @@
       {/each}
     </ul>
   </div>
-  <div>
+  <div class="">
     <h1
       class="text-red-500 font-semibold bg-logout px-4 py-2 text-center bottom-0 cursor-pointer"
     >
@@ -37,3 +37,10 @@
     </h1>
   </div>
 </div>
+
+<style>
+  .bg-logout {
+    background-color: #f0a500;
+    color: white;
+  }
+</style>
