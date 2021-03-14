@@ -2,41 +2,31 @@
   <title>Login</title>
 </svelte:head>
 
-<form>
-  <div>
-    <!-- <label for="email" class="mb-2">Email </label> -->
-    <!-- class="py-2 border rounded-md px-2 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50  focus:outline-none focus:border-green-500" -->
-    <!-- <input
-      type="email"
-      class="form-input mt-1 block w-full"
-      id="email"
-      placeholder="Email"
-    /> -->
+<form class="grid grid-cols-1 gap-6">
+  <label for="email" class="block">
+    <span class="text-gray-700">Email</span>
     <input
-      class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 "
       type="email"
-      required="true"
-      placeholder="Jane Doe"
-      aria-label="Full name"
+      id="email"
+      class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
     />
-  </div>
+  </label>
 
-  <div class="flex flex-col mb-10">
-    <!-- <label for="password">Password </label> -->
+  <label for="password" class="block">
+    <span class="text-gray-700">Password</span>
     <input
       type="password"
-      class="py-2 border rounded-md px-2 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 focus:outline-none focus:border-green-500"
       id="password"
-      placeholder="password"
+      class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
     />
-  </div>
+  </label>
 
-  <div class="flex justify-between my-4">
+  <div class="flex justify-between mt-4 mb-2">
     <div>
       <label for="remember" class="inline-flex items-center">
         <input
           type="checkbox"
-          class="border-gray-300 border-2 rounded text-green-600 focus:border-gray-300 focus:ring-black"
+          class="border-gray-300 border-2 rounded text-green-600 focus:border-gray-300 focus:ring-green-500 "
           name="remberme"
           id="remember"
         />
