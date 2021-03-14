@@ -16,7 +16,9 @@
   <div class="flex flex-col w-56 bg-white  overflow-hidden h-screen justify-between">
     <div class="">
     <div class="flex items-center justify-center h-20 shadow-md">
+      <a href="/">
       <h1 class="text-3xl uppercase text-red-500">NPMG</h1>
+    </a>
     </div>
     <ul class="flex flex-col py-4">
       {#each list as item}
