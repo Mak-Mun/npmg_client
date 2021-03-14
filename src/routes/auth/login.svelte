@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Login Page</title>
+  <title>Login</title>
 </svelte:head>
 
 <form>
