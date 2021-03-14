@@ -3,7 +3,7 @@
 </svelte:head>
 
 <form class="grid grid-cols-1 gap-6">
-  <label for="email" class="block">
+  <label for="email" class="block mb-6">
     <span class="text-gray-700">Email</span>
     <input
       type="email"
