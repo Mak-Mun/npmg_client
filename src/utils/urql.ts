@@ -8,7 +8,7 @@ import {
 
 const getToken = () => localStorage.getItem("AUTH_TOKEN")
 
-//TODO: (verite) setup ssr with sapper
+//TODO: (verite) :setup ssr with sapper
 // export const ssr = ssrExchange({
 //   isClient: typeof window !== "undefined",
 //   initialState:
@@ -22,7 +22,7 @@ export const client = createClient({
 
 export default client
 
-//TODO: (verite) handle authentication
+//TODO: (verite): handle authentication
 //   fetchOptions: () => {
 //     const token = getToken()
 //     return {
