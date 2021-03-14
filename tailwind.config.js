@@ -13,11 +13,12 @@ module.exports = {
       display: ["Oswald"],
       body: ["Open Sans"],
     },
-    textColor: {
+    textColor: (theme) => ({
+      ...theme("colors"),
       motherGreen: "#00917C",
       secGreen: "#1FC14C",
       successorColor: "#F0A500",
-    },
+    }),
     backgroundColor: (theme) => ({
       ...theme("colors"),
       primaryGreen: "#00917C",
