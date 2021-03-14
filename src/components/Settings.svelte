@@ -1,8 +1,19 @@
 <script lang="ts">
   let photoUrl: string =
-    "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
+    "https://avatars.githubusercontent.com/u/52195?s=460&u=08bcafa24337a298e1b874279fde515e2fb8f81d&v=4"
+    let user ={
+      fname: "Munezero",
+      lname: "Didier",
+      email: "didiermunezero@gmail.com",
+      phone: "078324452343",
+      province:"North",
+      district:"Musanze",
+      bio:""
+    }
 </script>
-
+<svelte:head>
+	<title>Settings</title>
+</svelte:head>
 <div>
   <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1">
     <h1 class="text-xl font-semibold text-center md:text-left">
@@ -10,7 +21,7 @@
     </h1>
   </div>
   <div
-    class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex w-5/6 longer"
+    class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-5/6 longer"
   >
     <div class="mr-10 mt-2">
       <ul>
@@ -36,13 +47,13 @@
         </li>
       </ul>
     </div>
-    <div class="rounded shadow w-4/5 h-full md:ml-4 mt-2 flex flex-col">
-      <h1 class="text-center font-semibold text-xl">Account</h1>
-      <div class="mt-6 mx-auto">
-        <img class="w-20 h-20 rounded-full" src={photoUrl} alt="" />
-        <div class="flex -ml-10 mt-1">
+    <div class="rounded shadow w-full md:w-4/5 h-full md:ml-4 mt-2 flex flex-col">
+      <h1 class="text-center font-semibold text-xl md:-ml-20">Account</h1>
+      <div class="mt-6 mx-auto items-center">
+        <img class="img rounded-full" src={photoUrl} alt="" />
+        <div class="flex mt-1">
           <button
-            class="border border-green-500 text-green-500 p-1 px-2 mx-1 focus:outline-none rounded shadow"
+            class="text-green-500 p-1 px-2 mx-1 focus:outline-none rounded shadow"
             >Upload</button
           >
           <button
@@ -51,34 +62,88 @@
           >
         </div>
       </div>
-      <div class="flex flex-col items-center mx-auto">
-        <label for="name" class="-ml-3">Add Bio</label>
-        <textarea name="Bio" placeholder="This is my bio" class="h-10 w-20" />
+      <div class="mb-10">
+      <div class="mt-1 mx-auto flex flex-col w-11/12 md:w-9/12">
+        <label for="name" class="font-semibold ml-1">Add Bio</label>
+        <textarea bind:value={user.bio} class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full border-2 rounded focus:outline-none border-green"
+        id="message" type="text" placeholder="Message..."></textarea>
       </div>
+      <div class="mt-1 mx-auto md:flex w-11/12 md:w-9/12">
+        <div class="flex flex-col md:mx-0 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">First Name</label>
+          <input bind:value={user.fname} type="text" name="fname" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+        <div class="flex flex-col md:ml-2 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">Last Name</label>
+          <input bind:value={user.lname} type="text" name="lname" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+      </div>
+      <div class="mt-1 mx-auto md:flex w-11/12 md:w-9/12">
+        <div class="flex flex-col md:mx-0 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">Email</label>
+          <input bind:value={user.email} type="email" name="email" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+        <div class="flex flex-col md:ml-2 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">Phone Number</label>
+          <input bind:value={user.phone} type="text" name="phone" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+      </div>
+      <div class="mt-1 mx-auto md:flex w-11/12 md:w-9/12">
+        <div class="flex flex-col md:mx-0 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">Province</label>
+          <input bind:value={user.province} type="text" name="province" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+        <div class="flex flex-col md:ml-2 md:w-6/12">
+          <label for="name" class="font-semibold ml-1">District</label>
+          <input bind:value={user.district} type="text" name="district" class="w-full px-3 py-1 text-sm  border-2 rounded focus:outline-none border-green" />
+        </div>
+      </div>
+      <div class="mt-1 mx-auto flex w-11/12 md:w-9/12 items-center mt-2">
+        <div class="flex flex-col w-full">
+          <button type="submit" class="bg-green py-1 font-semibold rounded focus:outline-none">Save Changes</button>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </div>
 
 <style>
+  .bg-green{
+    background-color: #00917C;
+    color: white;
+  }
   .text-red-500 {
-    color: red;
+    color: #E74C3C;
+    border: 1.5px solid  #E74C3C;
   }
   .text-s-xl {
     font-size: 17px;
   }
+  .border-green:focus{
+    border-color: #00917C;
+  }
+  .text-green-500{
+    color: #00917C;
+    border: 1.5px solid  #00917C;
+  }
   .longer {
-    height: 90vh;
+    height: fit-content;
+  }
+  .img{
+    width: 120px;
+    height: 120px;
   }
   @media only screen and (max-height: 340px) {
     .longer {
       height: fit-content;
-      width: fit-content;
+      width: 100%;
     }
   }
   @media only screen and (max-width: 700px) {
     .longer {
       height: fit-content;
-      width: fit-content;
+      width: 100%;
     }
   }
   div *::-webkit-scrollbar {

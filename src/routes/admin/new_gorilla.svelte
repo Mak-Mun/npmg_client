@@ -20,6 +20,13 @@
 	
 </script>
 <style>
+	 .bg-green{
+    background-color: #00917C;
+    color: white;
+  }
+  .border-motherGreen{
+	  border-color: #00917C;
+  }
 .text-white{
 	color: #fff;
 }
@@ -36,17 +43,17 @@
 </svelte:head>
 <div class="flex flex-col justify-center bg-white p-6">
 <h1 class="font-bold px-4 text-2xl mb-10">NEW GORILLA</h1>
-<form class="flex" on:submit|preventDefault="{handleOnSubmit}">
+<form class="md:flex" on:submit|preventDefault="{handleOnSubmit}">
 	<div>
-		<div class="w-6/12 sm:w-8/12">
+		<div class="w-full md:w-9/12">
 		    <img src="{photoUrl}" alt="..." class="shadow rounded max-w-full border-none gorilla" />
 		</div> 
-		<div class="w-6/12 sm:w-8/12 px-4 flex mt-1 justify-between">
-			<button class="text-secGreen border-2 border-green-300 px-2 py-1 rounded w-6/12 mx-0 mr-1 font-bold focus:outline-none">CHANGE</button>
-			<button class="text-successorColor border-2 border-orange-300 px-2 py-1 rounded w-6/12 mx-0 ml-1 font-bold focus:outline-none">REMOVE</button>
+		<div class="w-full md:w-9/12 px-4 flex mt-1 justify-between">
+			<button class="text-motherGreen border-2 border-motherGreen px-2 py-1 rounded w-full mx-0 mr-1 font-bold focus:outline-none">CHANGE</button>
+			<button class="text-successorColor border-2 border-orange-300 px-2 py-1 rounded w-full mx-0 ml-1 font-bold focus:outline-none">REMOVE</button>
 		</div>
 	</div>
-	<div class="w-full sm:w-8/12 max-w-sm overflow-hidden space-y-6 sm:-mt-10">
+	<div class="w-full md:w-8/12 max-w-sm overflow-hidden space-y-6 mt-3 md:-mt-10">
 		<div class="border-b-2 focus-within:border-green-500 flex">
 			<label for="name" class="px-2">Name:</label>
 			<input type="text" name="name" bind:value={gorilla.name} placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
@@ -104,7 +111,7 @@
 			<input type="text" name="comment" placeholder=" "  bind:value={gorilla.comment} class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
 		</div>	
 		<div class="my-4 focus-within:border-green-500 items-center justify-center">
-			<button class="bg-green-800 text-gray px-2 py-1 rounded w-full text-white  font-bold focus:outline-none" type="submit">ADD NEW</button>
+			<button class="bg-green text-gray px-2 py-1 rounded w-full text-white  font-bold focus:outline-none" type="submit">ADD NEW</button>
 		</div>		   
 	</div>
 </form>

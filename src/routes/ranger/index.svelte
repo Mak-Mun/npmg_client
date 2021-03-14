@@ -37,7 +37,7 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>WELCOME</title>
 </svelte:head>
 
 <h1 class="bg-black text-yellow-500 text-5xl">Great success!</h1>

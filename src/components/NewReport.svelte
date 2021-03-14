@@ -26,6 +26,9 @@
        color: white;
    }
 </style>
+<svelte:head>
+	<title>New Report</title>
+</svelte:head>
 <div class="flex flex-col justify-center bg-white p-6">
     <h1 class="font-bold px-4 md:text-2xl mb-10">ADD NEW REPORT</h1>
     <form class="flex flex-col  mt-6" on:submit|preventDefault="{handleOnSubmit}">
