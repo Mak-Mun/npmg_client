@@ -4,7 +4,7 @@
 
 <form class="grid grid-cols-1 gap-6">
   <label for="email" class="block">
-    <span class="text-gray-700">Fullnames</span>
+    <span class="text-gray-700">Full names</span>
     <input
       type="email"
       id="text"
@@ -50,6 +50,6 @@
 
   <div class="text-center">
     <span>Have an account</span>
-    <a href="/auth/register" class=" text-blue-500"> Login here? </a>
+    <a href="/auth/login" class=" text-blue-500"> Login here? </a>
   </div>
 </form>
