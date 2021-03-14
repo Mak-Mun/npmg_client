@@ -4,7 +4,7 @@ import {
   dedupExchange,
   fetchExchange,
 } from "@urql/core"
-import { ssrExchange } from "@urql/svelte"
+// import { ssrExchange } from "@urql/svelte"
 
 const getToken = () => localStorage.getItem("AUTH_TOKEN")
 
