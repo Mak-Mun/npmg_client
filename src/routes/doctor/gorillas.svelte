@@ -1,9 +1,10 @@
 <script lang="ts">
-    import Gorillas from '../../components/Gorillas.svelte';
-    </script>
-    <style>
-    
-    </style>
-    <div>
-    <Gorillas/>
-    </div>
+  import Gorillas from "../../components/Gorillas.svelte"
+</script>
+
+<div>
+  <Gorillas />
+</div>
+
+<style>
+</style>
