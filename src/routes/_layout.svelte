@@ -4,11 +4,11 @@
   import { initClient } from "@urql/svelte"
   import { onMount } from "svelte"
 
-  onMount(() => {
-    initClient({
-      url: "https://npmg-server.herokuapp.com/graphql",
-    })
+  // onMount(() => {
+  initClient({
+    url: "https://npmg-server.herokuapp.com/graphql",
   })
+  // })
 </script> -->
 
 <main>
