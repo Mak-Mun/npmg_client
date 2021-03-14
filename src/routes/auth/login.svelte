@@ -40,6 +40,11 @@
   <input
     type="submit"
     value="Login here"
-    class="bg-primaryGreen font-sourceSans cursor-pointer text-white px-40 py-3 rounded-sm"
+    class="bg-primaryGreen font-sourceSans rounded-md cursor-pointer text-white px-40 py-3 "
   />
+
+  <div class="text-center">
+    <span>Don't have an account</span>
+    <a href="/auth/register" class=" text-blue-500"> Register here? </a>
+  </div>
 </form>
