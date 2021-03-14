@@ -1,4 +1,4 @@
-<svelte:options immutable />
+<!-- <svelte:options immutable />
 
 <script lang="ts">
   import { initClient } from "@urql/svelte"
@@ -9,7 +9,7 @@
       url: "https://npmg-server.herokuapp.com/graphql",
     })
   })
-</script>
+</script> -->
 
 <main>
   <slot />
