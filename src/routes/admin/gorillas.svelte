@@ -5,6 +5,3 @@
 <div>
   <Gorillas />
 </div>
-
-<style>
-</style>
