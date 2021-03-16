@@ -9,6 +9,9 @@
   .bg-logout {
     background-color: #f0a500;
   }
+  .text-green{
+    color: #00917C;
+  }
 </style>
 <script type="ts">
   export let isOpen:boolean;
@@ -32,6 +35,7 @@
           <input type="text" placeholder="User email" class="rounded w-full border-2 border-green-new text-sm  py-2 px-3 mb-3 focus:outline-none">
           <input type="text" placeholder="User email" class="rounded w-full border-2 border-green-new text-sm  py-2 px-3 mb-3 focus:outline-none">
           <input type="text" placeholder="User email" class="rounded w-full border-2 border-green-new text-sm  py-2 px-3 mb-3 focus:outline-none">
+          <button type="button" class="text-green mx-3 underline focus:outline-none">+ Add another</button>
         </div>
       </div>
       
@@ -39,7 +43,7 @@
         <button on:click={CloseModal} type="button" class="bg-logout w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
           Cancel
         </button>
-        <button on:click={CloseModal} type="button" class="bg-green mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+        <button type="button" class="bg-green mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
           Invite
         </button>
       </div>
