@@ -33,7 +33,7 @@
     <h1
       class="text-red-500 font-semibold bg-logout px-4 py-2 text-center bottom-0 cursor-pointer"
     >
-      Logout
+      <a href="/auth/login">Logout</a>
     </h1>
   </div>
 </div>
