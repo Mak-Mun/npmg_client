@@ -42,12 +42,42 @@
                 </tr>
             </table>
             </div>
-            <div class="w-6/12"></div>
+            <div class="w-6/12 flex flex-col">
+                <div class="flex w-full">
+                    <div class="w-4/12 flex flex-col items-center mx-auto">
+                        <div class="h-16 w-16 rounded-full attended"></div>
+                        <h4 class="text-xl text-gray-600 font-semibold">2931</h4>
+                        <p class="text-sm text-gray-600">Attendeed Days</p>
+                    </div>
+                    <div class="w-4/12 flex flex-col items-center mx-auto">
+                        <div class="h-16 w-16 rounded-full missed"></div>
+                        <h4 class="text-xl text-gray-600 font-semibold">131</h4>
+                        <p class="text-sm text-gray-600">Missed Days</p>
+                    </div>
+                    <div class="w-4/12 flex flex-col items-center mx-auto">
+                        <div class="h-16 w-16 rounded-full made"></div>
+                        <h4 class="text-xl text-gray-600 font-semibold">457</h4>
+                        <p class="text-sm text-gray-600">Made Reports</p>
+                    </div>
+                </div>
+                <div>
+                    <h1>Languages mark</h1>
+                </div>
+            </div>
         </div>
     </div>
 </div>   
 
 <style>
+    .attended{
+        background-color: #C7FFD6;
+    }
+    .missed{
+        background-color: #FFECEC;
+    }
+    .made{
+        background-color: #C7F5FF;
+    }
     .longer {
     height: fit-content;
   }
