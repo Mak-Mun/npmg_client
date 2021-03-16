@@ -13,18 +13,18 @@
   </div>
   <div class="w-full md:flex">
     <div
-      class="w-full bg-white rounded border px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 unlimited"
+      class="w-full bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 unlimited"
     >
       <div class="w-full flex mb-4 items-center justify-between">
         <h3 class="font-semibold px-3 py-1 text-xl">Ranger listing</h3>
-        <span class="bg-green px-3 py-2 rounded cursor-pointer md:mr-10"
-          ><a href="/admin/new_gorilla">ADD NEW</a></span
+        <span class="bg-green px-3 py-2 font-semibold cursor-pointer -mb-4 rounded-sm"
+          ><a href="/admin/new_gorilla">Add New</a></span
         >
       </div>
-      <table class="text-left w-full md:px-10 border">
+      <table class="text-left w-full md:px-10">
         <thead class="flex w-full">
           <tr
-            class="flex w-full justify-between bg-gray-200 px-5 border-b py-2"
+            class="flex w-full justify-between bg-gray-200 px-5 py-2 rounded"
           >
             <th class="p-3 w-1/7">#</th>
             <th class="p-3 w-1/7">Name</th>
@@ -41,7 +41,7 @@
         >
           {#each integers as int}
             <tr
-              class="flex w-full mb-2 items-center justify-between px-5 border-b py-2"
+              class="flex w-full mb-2 items-center justify-between px-5 border-b py-2 cursor-pointer"
             >
               <td class="p-3 py-2 w-1/7">{int}</td>
               <td class="p-3 py-2 w-1/7"
@@ -122,6 +122,7 @@
   }
   div *::-webkit-scrollbar {
     width: 4px;
+    display: none;
   }
   div *::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
