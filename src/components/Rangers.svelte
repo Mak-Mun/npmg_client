@@ -2,7 +2,7 @@
     import Search from './Search.svelte';
     let photoUrl: string =
       "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
-    let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    let integers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   </script>
   
   <svelte:head>
@@ -22,8 +22,7 @@
         </div>
           <div class="flex justify-between md:w-6/12">
             <Search/>
-          <span class="bg-green px-3 py-2 font-semibold cursor-pointer rounded-sm"
-            ><a href="/admin/new_gorilla">Invite new</a></span
+          <span class="bg-green px-3 py-2 font-semibold cursor-pointer rounded-sm">Invite new</span
           >
         </div>
         </div>
