@@ -36,6 +36,6 @@
     <p class="text-sm font-semibold cursor-pointer mx-4 mb-0 mt-1">
       Help Guides
     </p>
-    <img alt="" src={photoUrl} class="h-6 w-6 rounded-full cursor-pointer " />
+    <img alt="" src={photoUrl} class="h-6 w-6 rounded-full cursor-pointer "/>
   </div>
 </div>

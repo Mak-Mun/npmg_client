@@ -7,7 +7,7 @@
     background-color: #00917C;
   }
   .bg-logout {
-    background-color: #f0a500;
+    background-color: #e74343;
   }
   .text-green{
     color: #00917C;
