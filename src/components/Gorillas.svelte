@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Search from './Search.svelte';
   let photoUrl: string =
     "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
   let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
@@ -9,17 +10,22 @@
 </svelte:head>
 <div>
   <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1">
-    <h1 class="text-xl font-semibold text-center md:text-left">LISTING</h1>
+    <h1 class="text-xl font-semibold text-center md:text-left">NPMG LISTING</h1>
   </div>
   <div class="w-full md:flex">
     <div
       class="w-full bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 unlimited"
     >
-      <div class="w-full flex mb-4 items-center justify-between">
+      <div class="w-full md:flex mb-4 items-center justify-between">
+        <div class="md:w-4/12">
         <h3 class="font-semibold px-3 py-1 text-xl">Ranger listing</h3>
-        <span class="bg-green px-3 py-2 font-semibold cursor-pointer -mb-4 rounded-sm"
+      </div>
+        <div class="flex justify-between md:w-6/12">
+          <Search/>
+        <span class="bg-green px-3 py-2 font-semibold cursor-pointer rounded-sm"
           ><a href="/admin/new_gorilla">Add New</a></span
         >
+      </div>
       </div>
       <table class="text-left w-full md:px-10">
         <thead class="flex w-full">
@@ -41,7 +47,7 @@
         >
           {#each integers as int}
             <tr
-              class="flex w-full mb-2 items-center justify-between px-5 border-b py-2 cursor-pointer"
+              class="flex w-full mb-2 items-center justify-between px-5 border-b py-2 cursor-pointer rounded"
             >
               <td class="p-3 py-2 w-1/7">{int}</td>
               <td class="p-3 py-2 w-1/7"
