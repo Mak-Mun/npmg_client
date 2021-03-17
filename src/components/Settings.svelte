@@ -12,7 +12,7 @@
     }
     function handleOnSubmit() {
     console.log(user)
-    alert(user.phone)
+    alert(avatar)
   }
   let  avatar, fileinput;
   const onFileSelected =(e)=>{
@@ -58,6 +58,7 @@
     <form class="rounded shadow w-full md:w-4/5 h-full md:ml-4 mt-2 flex flex-col" on:submit|preventDefault={handleOnSubmit}>
       <h1 class="text-center font-semibold text-xl md:-ml-20">Account</h1>
       <div class="mt-6 mx-auto items-center">
+        <input style="display:none" type="file" accept=".jpg, .jpeg, .png" on:change={(e)=>onFileSelected(e)} bind:this={fileinput} >
         {#if avatar}
         <img class="img rounded-full" src="{avatar}" alt="mun" />
         {:else}
@@ -70,11 +71,11 @@
         <div class="flex mt-1">
           <span
             class="text-green-500 p-1 px-2 mx-1 focus:outline-none rounded shadow cursor-pointer"
-            >Upload</span
+            on:click={()=>{fileinput.click();}}>Upload</span
           >
           <span
             class="border border-red-500 text-red-500 p-1 px-2 mx-1 shadow rounded focus:outline-none cursor-pointer"
-            >Remove</span
+            on:click={()=>avatar=null}>Remove</span
           >
         </div>
       </div>
