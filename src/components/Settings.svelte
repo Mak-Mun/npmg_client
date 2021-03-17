@@ -10,6 +10,19 @@
       district:"Musanze",
       bio:""
     }
+    function handleOnSubmit() {
+    console.log(user)
+    alert(user.phone)
+  }
+  let  avatar, fileinput;
+  const onFileSelected =(e)=>{
+  let image = e.target.files[0];
+            let reader = new FileReader();
+            reader.readAsDataURL(image);
+            reader.onload = e => {
+                 avatar = e.target.result
+            };
+}
 </script>
 <svelte:head>
 	<title>Settings</title>
@@ -42,18 +55,26 @@
         </li>
       </ul>
     </div>
-    <div class="rounded shadow w-full md:w-4/5 h-full md:ml-4 mt-2 flex flex-col">
+    <form class="rounded shadow w-full md:w-4/5 h-full md:ml-4 mt-2 flex flex-col" on:submit|preventDefault={handleOnSubmit}>
       <h1 class="text-center font-semibold text-xl md:-ml-20">Account</h1>
       <div class="mt-6 mx-auto items-center">
-        <img class="img rounded-full" src={photoUrl} alt="" />
+        {#if avatar}
+        <img class="img rounded-full" src="{avatar}" alt="mun" />
+        {:else}
+        <img
+        src={photoUrl}
+        alt="..."
+        class="img rounded-full"
+      />
+        {/if}
         <div class="flex mt-1">
-          <button
-            class="text-green-500 p-1 px-2 mx-1 focus:outline-none rounded shadow"
-            >Upload</button
+          <span
+            class="text-green-500 p-1 px-2 mx-1 focus:outline-none rounded shadow cursor-pointer"
+            >Upload</span
           >
-          <button
-            class="border border-red-500 text-red-500 p-1 px-2 mx-1 shadow rounded focus:outline-none "
-            >Remove</button
+          <span
+            class="border border-red-500 text-red-500 p-1 px-2 mx-1 shadow rounded focus:outline-none cursor-pointer"
+            >Remove</span
           >
         </div>
       </div>
@@ -99,7 +120,7 @@
         </div>
       </div>
     </div>
-    </div>
+  </form>
   </div>
 </div>
 
