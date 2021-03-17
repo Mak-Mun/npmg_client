@@ -14,9 +14,6 @@
     <title>Rangers</title>
   </svelte:head>
   <div>
-    <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1">
-      <h1 class="text-xl font-semibold text-center md:text-left">NPMG LISTING</h1>
-    </div>
     <div class="w-full md:flex">
       <div
         class="w-full bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 unlimited"
@@ -27,7 +24,7 @@
         </div>
           <div class="flex justify-between md:w-6/12">
             <Search/>
-          <span class="bg-green px-3 py-2 font-semibold cursor-pointer rounded-sm" on:click={OpenModal}>Invite new</span
+          <span class="bg-green px-3 py-1 font-semibold cursor-pointer rounded-sm" on:click={OpenModal}>Invite new</span
           >
         </div>
         </div>
@@ -36,12 +33,12 @@
             <tr
               class="flex w-full justify-between bg-gray-200 px-5 py-2 rounded"
             >
-              <th class="p-3">#</th>
-              <th class="p-3">Full name</th>
-              <th class="p-3">Date joined</th>
-              <th class="p-3">Residense</th>
-              <th class="p-3">Group</th>
-              <th class="p-3">Action</th>
+              <th class="p-3 py-1">#</th>
+              <th class="p-3 py-1">Full name</th>
+              <th class="p-3 py-1">Date joined</th>
+              <th class="p-3 py-1">Residense</th>
+              <th class="p-3 py-1">Group</th>
+              <th class="p-3 py-1">Action</th>
             </tr>
           </thead>
           <tbody
@@ -49,10 +46,10 @@
           >
             {#each integers as int}
               <tr
-                class="flex w-full mb-2 items-center justify-between px-5 border-b py-2 cursor-pointer rounded"
+                class="flex w-full mb-2 items-center justify-between px-5 border-b py-1 cursor-pointer rounded"
               >
-                <td class="p-3 py-2"><a href={`/admin/rangers/${int}`}>{int}</a></td>
-                <td class="p-3 py-2"
+                <td class="p-3 py-1"><a href={`/admin/rangers/${int}`}>{int}</a></td>
+                <td class="p-3 py-1"
                   ><div class="flex items-center">
                     <div class="flex-shrink-0 w-8 h-8">
                       <img
@@ -66,10 +63,10 @@
                     </div>
                   </div></td
                 >
-                <td class="p-3 py-2">December 2018</td>
-                <td class="p-3 py-2">Amahoro</td>
-                <td class="p-3 py-2">Kagabo</td>
-                <td class="p-3 py-2 flex">
+                <td class="p-3 py-1">December 2018</td>
+                <td class="p-3 py-1">Amahoro</td>
+                <td class="p-3 py-1">Kagabo</td>
+                <td class="p-3 py-1 flex">
                   <span class="cursor-pointer font-semibold pr-1 mx-1/2"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"

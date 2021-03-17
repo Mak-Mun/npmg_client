@@ -9,12 +9,9 @@
   <title>Gorillas</title>
 </svelte:head>
 <div>
-  <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1">
-    <h1 class="text-xl font-semibold text-center md:text-left">NPMG LISTING</h1>
-  </div>
   <div class="w-full md:flex">
     <div
-      class="w-full bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 unlimited"
+      class="w-full bg-white rounded pt-3 pb-1 md:px-8 md:py-3 mr-3 unlimited"
     >
       <div class="w-full md:flex mb-4 items-center justify-between">
         <div class="md:w-4/12">
@@ -22,7 +19,7 @@
       </div>
         <div class="flex justify-between md:w-6/12">
           <Search/>
-        <span class="bg-green px-3 py-2 font-semibold cursor-pointer rounded-sm"
+        <span class="bg-green px-3 py-1 font-semibold cursor-pointer rounded-sm"
           ><a href="/admin/new_gorilla">Add New</a></span
         >
       </div>
@@ -30,16 +27,16 @@
       <table class="text-left w-full md:px-10">
         <thead class="flex w-full">
           <tr
-            class="flex w-full justify-between bg-gray-200 px-5 py-2 rounded"
+            class="flex w-full justify-between bg-gray px-5 py-2 rounded"
           >
-            <th class="p-3 w-1/7">#</th>
-            <th class="p-3 w-1/7">Name</th>
-            <th class="p-3 w-1/7">Dob</th>
-            <th class="p-3 w-1/7">Mother</th>
-            <th class="p-3 w-1/7">Father</th>
-            <th class="p-3 w-1/7">Namer</th>
-            <th class="p-3 w-1/7">Family</th>
-            <th class="p-3 w-1/7">Action</th>
+            <th class="p-3 py-1 w-1/7">#</th>
+            <th class="p-3 py-1 w-1/7">Name</th>
+            <th class="p-3 py-1 w-1/7">Dob</th>
+            <th class="p-3 py-1 w-1/7">Mother</th>
+            <th class="p-3 py-1 w-1/7">Father</th>
+            <th class="p-3 py-1 w-1/7">Namer</th>
+            <th class="p-3 py-1 w-1/7">Family</th>
+            <th class="p-3 py-1 w-1/7">Action</th>
           </tr>
         </thead>
         <tbody
@@ -47,10 +44,10 @@
         >
           {#each integers as int}
             <tr
-              class="flex w-full mb-2 items-center justify-between px-5 border-b py-2 cursor-pointer rounded"
+              class="flex w-full mb-2 items-center justify-between px-5 border-b py-1 cursor-pointer rounded"
             >
-              <td class="p-3 py-2 w-1/7">{int}</td>
-              <td class="p-3 py-2 w-1/7"
+              <td class="p-3 py-1 w-1/7">{int}</td>
+              <td class="p-3 py-1 w-1/7"
                 ><div class="flex items-center">
                   <div class="flex-shrink-0 w-8 h-8">
                     <img
@@ -64,12 +61,12 @@
                   </div>
                 </div></td
               >
-              <td class="p-3 py-2 w-1/7">December 2018</td>
-              <td class="p-3 py-2 w-1/7">Amahoro</td>
-              <td class="p-3 py-2 w-1/7">Kagabo</td>
-              <td class="p-3 py-2 w-1/7">St Harry Kane</td>
-              <td class="p-3 py-2 w-1/7">Inzanga</td>
-              <td class="p-3 py-2 w-1/7 flex">
+              <td class="p-3 py-1 w-1/7">December 2018</td>
+              <td class="p-3 py-1 w-1/7">Amahoro</td>
+              <td class="p-3 py-1 w-1/7">Kagabo</td>
+              <td class="p-3 py-1 w-1/7">St Harry Kane</td>
+              <td class="p-3 py-1 w-1/7">Inzanga</td>
+              <td class="p-3 py-1 w-1/7 flex">
                 <span class="cursor-pointer font-semibold pr-1 mx-1/2"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -125,6 +122,9 @@
   .bg-green {
     background-color: #00917c;
     color: white;
+  }
+  .bg-gray{
+    background-color: #EDF2F7;
   }
   div *::-webkit-scrollbar {
     width: 4px;

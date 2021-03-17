@@ -15,11 +15,6 @@
 	<title>Settings</title>
 </svelte:head>
 <div>
-  <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1">
-    <h1 class="text-xl font-semibold text-center md:text-left">
-      Profile Settings
-    </h1>
-  </div>
   <div
     class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-5/6 longer"
   >
