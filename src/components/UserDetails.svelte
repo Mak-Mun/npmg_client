@@ -11,7 +11,7 @@
     <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1">
         <h1 class="text-xl font-semibold text-center md:text-left">USER DETAILS</h1>
     </div>
-    <div class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 flex flex-col md:w-5/6 longer">
+    <div class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 flex flex-col md:w-5/6 longer py-6">
         <div class="flex flex-col items-center mx-auto mb-4">
             <img class="img rounded-full" src={photoUrl} alt="" /> 
             <p class="font-semibold">Makuza Mugabo Verite</p>
