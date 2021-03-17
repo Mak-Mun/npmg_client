@@ -17,6 +17,15 @@
     console.log(gorilla)
     alert(gorilla.dob)
   }
+  let  avatar, fileinput;
+  const onFileSelected =(e)=>{
+  let image = e.target.files[0];
+            let reader = new FileReader();
+            reader.readAsDataURL(image);
+            reader.onload = e => {
+                 avatar = e.target.result
+            };
+}
 </script>
 
 <svelte:head>
@@ -24,19 +33,25 @@
 </svelte:head>
 <div class="flex flex-col justify-center bg-white p-6">
   <h1 class="font-bold px-4 text-2xl mb-10">NEW GORILLA</h1>
-  <form class="md:flex" on:submit|preventDefault={handleOnSubmit}>
+  <form class="md:flex" on:submit|preventDefault>
     <div>
       <div class="w-full md:w-9/12">
+        {#if avatar}
+        <img class="avatar shadow rounded max-w-full border-none gorilla" src="{avatar}" alt="d" />
+        {:else}
         <img
-          src={photoUrl}
-          alt="..."
-          class="shadow rounded max-w-full border-none gorilla"
-        />
+        src={photoUrl}
+        alt="..."
+        class="shadow rounded max-w-full border-none gorilla"
+      />
+        {/if}
+        
       </div>
       <div class="w-full md:w-9/12 px-4 flex mt-1 justify-between">
+        <input style="display:none" type="file" accept=".jpg, .jpeg, .png" on:change={(e)=>onFileSelected(e)} bind:this={fileinput} >
         <button
           class="text-motherGreen border-2 border-motherGreen px-2 py-1 rounded w-full mx-0 mr-1 font-bold focus:outline-none"
-          >CHANGE</button
+          on:click={()=>{fileinput.click();}}>CHANGE</button
         >
         <button
           class="text-successorColor border-2 border-orange-300 px-2 py-1 rounded w-full mx-0 ml-1 font-bold focus:outline-none"

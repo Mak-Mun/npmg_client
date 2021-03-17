@@ -14,7 +14,8 @@
     function handleOnSubmit() {
 			console.log(report);
 		alert(report.gorilla);
-	    }
+	}
+
 
 </script>
 <style>

@@ -2020,6 +2020,21 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
+filepond-plugin-image-exif-orientation@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/filepond-plugin-image-exif-orientation/-/filepond-plugin-image-exif-orientation-1.0.9.tgz#bf1220d99c117a69859f3297d0618e7469705019"
+  integrity sha512-Pyw7oNpMk5YwX0eYsa1wjNTJ2WxTQ27VUDviV0XrNbKPB7/iDSZ9r2zWSEeT9yS46OUGNE8lcdAARi5Z2v5TLA==
+
+filepond-plugin-image-preview@^4.6.5:
+  version "4.6.5"
+  resolved "https://registry.yarnpkg.com/filepond-plugin-image-preview/-/filepond-plugin-image-preview-4.6.5.tgz#18ecf011522d3d8c72438e9961eab39ad6beeec6"
+  integrity sha512-NssyAoy7zo/bGnwPpDrKHU6g64gjavf4fvxja1wIFu2zq57Sneevg0r15e1WHkAHL4hs0SwbX1YUpEEgJZ4gSg==
+
+filepond@^4.25.3:
+  version "4.25.3"
+  resolved "https://registry.yarnpkg.com/filepond/-/filepond-4.25.3.tgz#7a6a793a9ffd2539fbbd1383d4864359f23bded4"
+  integrity sha512-xuY0a94jLs1je7ef5qjJJoOBnxvKk3dUo8inLfRk0aieaVqY37Xhkzx/ZYG1Tl70kuC6Yl5Ug9AJ6D4OaYvrxg==
+
 fill-range@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
@@ -4077,6 +4092,11 @@ svelte-check@^1.0.46:
     source-map "^0.7.3"
     svelte-preprocess "^4.0.0"
     typescript "*"
+
+svelte-filepond@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/svelte-filepond/-/svelte-filepond-0.0.1.tgz#7c20379213dac746192499d3d1de649d6db51c4b"
+  integrity sha512-R5z/Gj/2VSdV70GxvW226ww4zrVyV2EFTXrsWIdn7sEB7uYWIJvvciUNQVTfYZfcAgGsa4gprGsuqWNG3auSKw==
 
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.3.0:
   version "4.6.9"

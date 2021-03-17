@@ -25,7 +25,8 @@
     "polka": "^0.5.2",
     "react": "^17.0.1",
     "sirv": "^1.0.0",
-    "svelte-apollo": "^0.4.0"
+    "svelte-apollo": "^0.4.0",
+    "svelte-filepond": "^0.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
