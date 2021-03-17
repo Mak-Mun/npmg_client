@@ -33,7 +33,7 @@
 </svelte:head>
 <div class="flex flex-col justify-center bg-white p-6">
   <h1 class="font-bold px-4 text-2xl mb-10">NEW GORILLA</h1>
-  <form class="md:flex" on:submit|preventDefault>
+  <form class="md:flex" on:submit|preventDefault={handleOnSubmit}>
     <div>
       <div class="w-full md:w-9/12">
         {#if avatar}
@@ -49,13 +49,13 @@
       </div>
       <div class="w-full md:w-9/12 px-4 flex mt-1 justify-between">
         <input style="display:none" type="file" accept=".jpg, .jpeg, .png" on:change={(e)=>onFileSelected(e)} bind:this={fileinput} >
-        <button
-          class="text-motherGreen border-2 border-motherGreen px-2 py-1 rounded w-full mx-0 mr-1 font-bold focus:outline-none"
-          on:click={()=>{fileinput.click();}}>CHANGE</button
+        <span
+          class="text-motherGreen border-2 border-motherGreen px-2 py-1 rounded w-full mx-0 mr-1 font-bold focus:outline-none text-center cursor-pointer"
+          on:click={()=>{fileinput.click();}}>CHANGE</span
         >
-        <button
-          class="text-successorColor border-2 border-orange-300 px-2 py-1 rounded w-full mx-0 ml-1 font-bold focus:outline-none"
-          >REMOVE</button
+        <span
+          class="text-successorColor border-2 border-orange-300 px-2 py-1 rounded w-full mx-0 ml-1 font-bold focus:outline-none text-center cursor-pointer"
+          on:click={()=>avatar=null}>REMOVE</span
         >
       </div>
     </div>
