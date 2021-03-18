@@ -7,13 +7,13 @@
 </script>
 
 <div>
-    <div class="rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 flex flex-col md:w-11/12 longer py-6 ">
+    <div class="rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 flex flex-col md:w-11/12 longer py-6 sm:w-full md:w-full lg:w-11/12">
 		<div class="px:2 m-2 md: bg-primaryGreen rounded-xl p-3 px-5 md:py-6">
 			<h1 class="text-white text-2xl font-semibold mb-2 ml-2 md:ml-5">Welcome Makuza Verite</h1>
 			<h3 class="text-white text-xl ml-2 md:ml-5">Have a nice day !</h3>
 		</div>
 	</div>
-	<div class="w-full md:flex  px-4 md:w-11/12">
+	<div class="w-full md:flex  px-4 sm:w-full md:w-full lg:w-11/12">
 		<div class="md:w-8/12 px-5 mt-10">
 			<div class="flex w-full justify-between mb-4">
 				<h2 class="font-semibold text-xl mx-6">Daily Report</h2>
@@ -37,7 +37,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="md:w-4/12 px-5 md:px-1 mt-6 md:mt-0">
+		<div class="sm:w-full md:w-4/12 lg:w-5/12 px-5 md:px-1 mt-6 md:mt-0">
 			<div class="bg-white flex flex-col pt-3 px-3 rounded-lg w-11/12">
 				<div class="flex justify-between mb-1">
 					<h3 class="font-semibold text-xl mx-4">Gorillas List</h3>
