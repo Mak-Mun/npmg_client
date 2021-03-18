@@ -18,9 +18,6 @@
     function handleOnSubmit() {
       user.type = "ADMIN"
       saved.addUser(user);
-      saved.USER.subscribe(value=>{
-        alert(value.type);
-      })
   }
   let  avatar, fileinput;
   const onFileSelected =(e)=>{
