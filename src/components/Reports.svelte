@@ -62,7 +62,7 @@ div::-webkit-scrollbar-thumb {
         <h1 class="text-xl font-semibold text-center md:text-left">DAILY REPORT VIEW</h1>
     </div>
 <div class="w-full md:flex">
-    <div class="w-full md:w-6/12 bg-white rounded border px-4 py-3 md:px-8 md:py-3 mr-3">
+    <div class="w-full sm:w-5/6 md:5/12 lg:w-6/12 bg-white rounded border px-4 py-3 md:px-8 md:py-3 mr-3">
         <div class="flex">
             <span class="pl-2 font-semibold">Name:</span>
             <span class="pl-2 underline cursor-pointer">CYIZERE</span>
@@ -127,7 +127,7 @@ div::-webkit-scrollbar-thumb {
             <span class="pl-2 underline cursor-pointer">Nkusi Verite</span>
         </div>
     </div>
-    <div class="w-full md:w-4/12 bg-white rounded border px-4 py-3 mt-4 md:mt-0 md:ml-2">
+    <div class="w-full sm:w-5/6 md:5/12 lg:w-4/12 bg-white rounded border px-4 py-3 mt-4 md:mt-0 md:ml-2">
         <h2 class="w-full px-8 font-bold">OTHER RECENTS</h2>
         <div class="w-full px-3 flex flex-col overflow-y-auto">
             {#each integers as int}
