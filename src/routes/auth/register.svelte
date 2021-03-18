@@ -13,7 +13,7 @@
   <title>Register</title>
 </svelte:head>
 
-<form class="grid grid-cols-1 gap-6">
+<form class="grid grid-cols-1 gap-6" on:submit|preventDefault={register}>
   <label for="email" class="block">
     <span class="text-gray-700">Full names</span>
     <input
