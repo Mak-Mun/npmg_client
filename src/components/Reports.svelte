@@ -10,24 +10,7 @@
 .load-more{
     font-size: 16px;
     color: #F0A500;
-}
-.unlimited{
-    height: 90vh;
-}
-.limitedTable{
-    height: 52vh;
-}
-@media only screen and (max-height: 550px) {
-  .unlimited {
-    height: fit-content;
-  }
-}
-@media only screen and (max-height: 340px) {
-  .limitedTable{
-      height: fit-content;
-  }
-}
-.text-green{
+}.text-green{
     color: green;
     background-color: white;
     font-weight: 800;

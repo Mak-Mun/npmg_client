@@ -1,11 +1,9 @@
 <script lang="ts">
-  import cars from "../store/user";
+  import saved from "../store/user";
   let user;
-  cars.subscribe(value=>{
+  saved.subscribe(value=>{
     user = value;
   })
-  let photoUrl: string =
-    "https://avatars.githubusercontent.com/u/52195?s=460&u=08bcafa24337a298e1b874279fde515e2fb8f81d&v=4"
 </script>
 
 <div class="flex justify-between bg-white w-full h-16 py-4 px-8 shadow-sm">
@@ -40,6 +38,6 @@
   <div class="flex">
     <p class="text-sm font-semibold cursor-pointer mx-4 mb-0 mt-1"> Help Guide
     </p>
-    <img alt="" src={photoUrl} class="h-6 w-6 rounded-full cursor-pointer "/>
+    <img alt="" src={user.photo} class="h-6 w-6 rounded-full cursor-pointer "/>
   </div>
 </div>
