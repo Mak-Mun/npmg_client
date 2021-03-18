@@ -1,7 +1,7 @@
 <script lang="ts">
   import saved from "../store/user";
   let user;
-  saved.subscribe(value=>{
+  saved.USER.subscribe(value=>{
     user = value;
   })
 </script>

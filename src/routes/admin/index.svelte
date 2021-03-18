@@ -6,8 +6,9 @@
 	  import saved from "../../store/user";
 
 export const preload = async function (this, page, session) {
-	saved.subscribe(value=>{
+	saved.USER.subscribe(value=>{
     if(!value.type || value.type != 'ADMIN'){
+		console.log(value.type);
 		return this.redirect(301, "auth/login")
 	}
   })

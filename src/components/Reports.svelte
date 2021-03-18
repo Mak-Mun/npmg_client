@@ -29,12 +29,12 @@ div *::-webkit-scrollbar{
        color:#00917C;
    }
    .border-2{
-       border-color: #e5e7e9; 
+       border-color: #e5e7e9;
    }
 div *::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 div::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
@@ -83,17 +83,17 @@ div::-webkit-scrollbar-thumb {
                     <td class="p-3 py-2 w-1/5">5</td>
                     <td class="p-3 py-2 w-2/5">Legs</td>
                     <td class="p-3 py-2 w-2/5 flex text-green"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="text-green w-5 mt-1" fill="#00917C"><path d="M21.856 10.303c.086.554.144 1.118.144 1.697 0 6.075-4.925 11-11 11s-11-4.925-11-11 4.925-11 11-11c2.347 0 4.518.741 6.304 1.993l-1.422 1.457c-1.408-.913-3.082-1.45-4.882-1.45-4.962 0-9 4.038-9 9s4.038 9 9 9c4.894 0 8.879-3.928 8.99-8.795l1.866-1.902zm-.952-8.136l-9.404 9.639-3.843-3.614-3.095 3.098 6.938 6.71 12.5-12.737-3.096-3.096z"/></svg><span class="px-2">NSA</span></td>
-                </tr> 
+                </tr>
                 <tr class="flex w-full mb-2 items-center justify-between border-2">
                     <td class="p-3 py-2 w-1/5">6</td>
                     <td class="p-3 py-2 w-2/5">Legs</td>
                     <td class="p-3 py-2 w-2/5 flex text-green"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="text-green w-5 mt-1" fill="#00917C"><path d="M21.856 10.303c.086.554.144 1.118.144 1.697 0 6.075-4.925 11-11 11s-11-4.925-11-11 4.925-11 11-11c2.347 0 4.518.741 6.304 1.993l-1.422 1.457c-1.408-.913-3.082-1.45-4.882-1.45-4.962 0-9 4.038-9 9s4.038 9 9 9c4.894 0 8.879-3.928 8.99-8.795l1.866-1.902zm-.952-8.136l-9.404 9.639-3.843-3.614-3.095 3.098 6.938 6.71 12.5-12.737-3.096-3.096z"/></svg><span class="px-2">NSA</span></td>
-                </tr> 
+                </tr>
                 <tr class="flex w-full mb-2 items-center justify-between border-2">
                     <td class="p-3 py-2 w-1/5">7</td>
                     <td class="p-3 py-2 w-2/5">Legs</td>
                     <td class="p-3 py-2 w-2/5 flex text-green"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="text-green w-5 mt-1" fill="#00917C"><path d="M21.856 10.303c.086.554.144 1.118.144 1.697 0 6.075-4.925 11-11 11s-11-4.925-11-11 4.925-11 11-11c2.347 0 4.518.741 6.304 1.993l-1.422 1.457c-1.408-.913-3.082-1.45-4.882-1.45-4.962 0-9 4.038-9 9s4.038 9 9 9c4.894 0 8.879-3.928 8.99-8.795l1.866-1.902zm-.952-8.136l-9.404 9.639-3.843-3.614-3.095 3.098 6.938 6.71 12.5-12.737-3.096-3.096z"/></svg><span class="px-2">NSA</span></td>
-                </tr>         
+                </tr>
             </tbody>
         </table>
         <div class="mt-3">

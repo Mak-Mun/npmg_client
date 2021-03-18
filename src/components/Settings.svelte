@@ -9,13 +9,18 @@
       district:"Musanze",
       photo: "",
       bio:"",
-      type:"USER"
+      year: "2021",
+      type:"ADMIN"
     }
-  saved.subscribe(value=>{
+  saved.USER.subscribe(value=>{
     Object.assign(user, value);
   })
     function handleOnSubmit() {
+      user.type = "ADMIN"
       saved.addUser(user);
+      saved.USER.subscribe(value=>{
+        alert(value.type);
+      })
   }
   let  avatar, fileinput;
   const onFileSelected =(e)=>{
