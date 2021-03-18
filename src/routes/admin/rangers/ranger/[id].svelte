@@ -6,7 +6,7 @@
 	}
 </script>
 <script lang="ts">
-    import UserDetails from "../../../components/UserDetails.svelte"
+    import UserDetails from "../../../../components/UserDetails.svelte"
     export let id:string;
   </script>
   
