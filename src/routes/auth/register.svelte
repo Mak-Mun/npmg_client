@@ -1,12 +1,28 @@
 <script lang="ts">
+  import { mutation } from "@urql/svelte"
+
+  // import { mutation } from "@urql/svelte"
+
+  // import { CREATE_USER } from "../../utils/Mutation.ts"
+  // import client from "../utils/urql.ts"
+
+  //TODO: complete here https://codesandbox.io/s/urql-svelte-crud-6yf4c?file=/List.svelte
+
   let fullnames: string
   let phone: string
   let email: string
   let password: string
+  let role: string
 
   function register() {
     console.log({ fullnames, phone, email, password })
+    // mutation({ query: CREATE_USER })
   }
+
+  // lastName: fullnames,
+  // firstName: fullnames,
+  // password: password,
+  // role,
 </script>
 
 <svelte:head>
