@@ -1,3 +1,14 @@
+<script lang="ts">
+  let fullnames: string
+  let phone: string
+  let email: string
+  let password: string
+
+  function register() {
+    console.log({ fullnames, phone, email, password })
+  }
+</script>
+
 <svelte:head>
   <title>Register</title>
 </svelte:head>
@@ -8,8 +19,10 @@
     <input
       type="email"
       id="text"
+      bind:value={fullnames}
       placeholder="Boston Rockstack"
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+      required
     />
   </label>
 
@@ -18,8 +31,10 @@
     <input
       type="text"
       id="email"
+      bind:value={phone}
       placeholder="2507147115"
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+      required
     />
   </label>
 
@@ -28,8 +43,10 @@
     <input
       type="email"
       id="email"
+      bind:value={email}
       placeholder="test@gmail.com"
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+      required
     />
   </label>
 
@@ -38,7 +55,9 @@
     <input
       type="password"
       id="password"
+      bind:value={password}
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+      required
     />
   </label>
 
