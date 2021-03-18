@@ -1,18 +1,23 @@
 <script lang="ts">
-  let photoUrl: string =
-    "https://avatars.githubusercontent.com/u/52195?s=460&u=08bcafa24337a298e1b874279fde515e2fb8f81d&v=4"
-    let user ={
+  import saved from "../store/user";
+  let user ={
       fname: "Munezero",
       lname: "Didier",
       email: "didiermunezero@gmail.com",
       phone: "078324452343",
       province:"North",
       district:"Musanze",
-      bio:""
+      photo: "",
+      bio:"",
+      year: "2021",
+      type:"ADMIN"
     }
+  saved.USER.subscribe(value=>{
+    Object.assign(user, value);
+  })
     function handleOnSubmit() {
-    console.log(user)
-    alert(avatar)
+      user.type = "ADMIN"
+      saved.addUser(user);
   }
   let  avatar, fileinput;
   const onFileSelected =(e)=>{
@@ -63,7 +68,7 @@
         <img class="img rounded-full" src="{avatar}" alt="mun" />
         {:else}
         <img
-        src={photoUrl}
+        src={user.photo}
         alt="..."
         class="img rounded-full"
       />
