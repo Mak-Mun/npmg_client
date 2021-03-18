@@ -1,10 +1,16 @@
 <script lang="ts">
-  import { mutation } from "@urql/svelte"
+  // import { mutation } from "@urql/svelte"
 
   // import { mutation } from "@urql/svelte"
 
-  // import { CREATE_USER } from "../../utils/Mutation.ts"
+  // import { mutation } from "@urql/svelte"
+
+  // import { CREATE_USER } from "../../Mutations.ts"
   // import client from "../utils/urql.ts"
+
+  // const CREATE_USER = gql`
+
+  // `
 
   //TODO: complete here https://codesandbox.io/s/urql-svelte-crud-6yf4c?file=/List.svelte
 
@@ -14,9 +20,21 @@
   let password: string
   let role: string
 
+  // const registerUser = mutation({
+  //   query: `
+  //    mutation ($createUserInput: SingUpUserInput!) {
+  //     signup(data: $createUserInput) {
+  //       id
+  //       email
+  //     }
+  //   }`,
+  // })
+
   function register() {
     console.log({ fullnames, phone, email, password })
-    // mutation({ query: CREATE_USER })
+    // mutation({ query: CREATE_USER, })
+    // mutation({ query: CREATE_USER, variables: { id: 1 } })
+    // registerUser({ fullnames, phone, email, password })
   }
 
   // lastName: fullnames,
@@ -30,11 +48,11 @@
 </svelte:head>
 
 <form class="grid grid-cols-1 gap-6" on:submit|preventDefault={register}>
-  <label for="email" class="block">
+  <label for="fullname" class="block">
     <span class="text-gray-700">Full names</span>
     <input
-      type="email"
-      id="text"
+      type="test"
+      id="fullname"
       bind:value={fullnames}
       placeholder="Boston Rockstack"
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
