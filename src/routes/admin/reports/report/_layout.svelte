@@ -42,7 +42,7 @@
                    <img alt="Success Kid" src="{newReportUrl}"  class="h-10 w-10 rounded-full cursor-pointer">
                    <div class="flex flex-col pl-2">
                        <span class="font-semibold text-sm">Amahoro</span>
-                       <span class="text-s-black text-sm">22 December 2020</span>
+                       <span class="text-s-black text-sm">22 December 2021</span>
                    </div>
                </div>
                {/each}
