@@ -107,7 +107,7 @@ div::-webkit-scrollbar-thumb {
         </div>
         <div class="flex -mx-3 mt-3">
             <span class="pl-2 font-bold">Reporter:</span>
-            <span class="pl-2 underline cursor-pointer">Nkusi Verite</span>
+            <a href="admin/rangers/ranger/3"><span class="pl-2 underline cursor-pointer">Nkusi Verite</span></a>
         </div>
     </div>
     <div class="w-full sm:w-5/6 md:5/12 lg:w-4/12 bg-white rounded border px-4 py-3 mt-4 md:mt-0 md:ml-2">
