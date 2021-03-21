@@ -1,6 +1,8 @@
 <script lang="ts">
   // import { mutation } from "@urql/svelte"
 
+  import { select_option } from "svelte/internal"
+
   // import { mutation } from "@urql/svelte"
 
   // import { mutation } from "@urql/svelte"
@@ -93,6 +95,20 @@
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
       required
     />
+  </label>
+
+  <label htmlfor="role" class="block">
+    <span>Role</span>
+    <select
+      id="role"
+      bind:value={role}
+      class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+    >
+      <option value={role}>USER</option>
+      <option value={role}>RANGER</option>
+      <option value={role}>DOCTOR</option>
+      <option value={role}>ADMIN</option>
+    </select>
   </label>
 
   <input
