@@ -5,7 +5,7 @@
 	<title>Reports</title>
 </svelte:head>
 <style>
-.load-more{
+/* .load-more{
     font-size: 16px;
     color: #F0A500;
 }.text-green{
@@ -24,7 +24,7 @@
    }
    .border-2{
        border-color: #e5e7e9;
-   }
+   } */
 div *::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
@@ -51,7 +51,7 @@ div::-webkit-scrollbar-thumb {
                 </tr>
             </thead>
             <tbody class="flex flex-col items-center justify-between overflow-y-auto w-full -mt-3">
-               
+
             </tbody>
         </table>
         <div class="mt-3">
@@ -77,7 +77,7 @@ div::-webkit-scrollbar-thumb {
                 <p class="text-xs text-center">Didier on Amahoro report</p>
                 <p class="text-xs text-center">3 hours ago</p>
             </div>
-            
+
             </div>
             <div class="w-full flex flex-col mx-auto items-center border rounded mb-2">
                 <div class="flex flex-col md:w-5/6 cursor-pointer py-2">
@@ -85,7 +85,7 @@ div::-webkit-scrollbar-thumb {
                 <p class="text-xs text-center">Didier on Amahoro report</p>
                 <p class="text-xs text-center">3 hours ago</p>
             </div>
-            
+
             </div>
             <div class="w-full flex flex-col mx-auto items-center border rounded mb-2">
                 <div class="flex flex-col md:w-5/6 cursor-pointer py-2">
@@ -93,7 +93,7 @@ div::-webkit-scrollbar-thumb {
                 <p class="text-xs text-center">Didier on Amahoro report</p>
                 <p class="text-xs text-center">3 hours ago</p>
             </div>
-            
+
             </div>
             <div class="w-full flex flex-col mx-auto items-center border rounded mb-2">
                 <div class="flex flex-col md:w-5/6 cursor-pointer py-2">
@@ -101,11 +101,11 @@ div::-webkit-scrollbar-thumb {
                 <p class="text-xs text-center">Didier on Amahoro report</p>
                 <p class="text-xs text-center">3 hours ago</p>
             </div>
-            
+
             </div>
-            
+
         </div>
-       
+
         <span class="load-more font-semibold text-sm text-center mx-2 px-10 cursor-pointer">Load more</span>
     </div>
 </div>
