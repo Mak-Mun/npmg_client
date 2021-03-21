@@ -33,7 +33,7 @@
   // })
 
   function register() {
-    console.log({ fullnames, phone, email, password })
+    console.log({ fullnames, phone, email, password, role })
     // mutation({ query: CREATE_USER, })
     // mutation({ query: CREATE_USER, variables: { id: 1 } })
     // registerUser({ fullnames, phone, email, password })
@@ -62,11 +62,11 @@
     />
   </label>
 
-  <label for="email" class="block">
+  <label for="phone" class="block">
     <span class="text-gray-700">Phone</span>
     <input
       type="text"
-      id="email"
+      id="phone"
       bind:value={phone}
       placeholder="2507147115"
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
@@ -103,11 +103,12 @@
       id="role"
       bind:value={role}
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+      required
     >
-      <option value={role}>USER</option>
-      <option value={role}>RANGER</option>
-      <option value={role}>DOCTOR</option>
-      <option value={role}>ADMIN</option>
+      <option value="USER">USER</option>
+      <option value="RANGER">RANGER</option>
+      <option value="DOCTOR">DOCTOR</option>
+      <option value="ADMIN">ADMIN</option>
     </select>
   </label>
 
