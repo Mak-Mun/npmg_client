@@ -2,7 +2,9 @@
   let email: string
   let password: string
 
-  function login() {}
+  function login() {
+    console.log({ email, password })
+  }
 </script>
 
 <svelte:head>
@@ -15,6 +17,7 @@
     <input
       type="email"
       id="email"
+      required
       bind:value={email}
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
     />
