@@ -61,7 +61,7 @@
                   </div>
                 </div></td
               >
-              <td class="p-3 py-1 w-1/7">December 2018</td>
+              <td class="p-3 py-1 w-1/7"> 12/2018</td>
               <td class="p-3 py-1 w-1/7">Amahoro</td>
               <td class="p-3 py-1 w-1/7">Kagabo</td>
               <td class="p-3 py-1 w-1/7">St Harry Kane</td>
