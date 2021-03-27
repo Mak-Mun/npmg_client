@@ -1,13 +1,15 @@
-<script lang="ts" context="module">
-  import { CREATE_USER } from "../../utils/Mutations"
-
-  import client from "../../utils/urql"
-
+<script context="module" lang="ts">
   let fullnames: string
   let phone: string
   let email: string
   let password: string
   let role: string
+</script>
+
+<script lang="ts">
+  import { CREATE_USER } from "../../utils/Mutations"
+
+  import client from "../../utils/urql"
 
   async function register() {
     await client
@@ -18,8 +20,8 @@
       .then((r: any) => {
         console.log(r)
       })
-      .catch(() => {
-        console.log("error")
+      .catch((err) => {
+        console.error({ err })
       })
   }
 </script>
