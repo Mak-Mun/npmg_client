@@ -37,8 +37,8 @@ export const NEW_REPORT = gql`
 `
 
 export const NEW_NAMER = gql`
-  mutation addNewNamer($reportInput: NewNamer!) {
-    addNewNamer(data: $reportInput) {
+  mutation addNewNamer($namerInput: NewNamer!) {
+    addNewNamer(data: $namerInput) {
       id
       fullname
     }
