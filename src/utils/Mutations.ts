@@ -19,8 +19,8 @@ export const NEW_NPMG = gql`
 `
 
 export const NEW_FAMILY = gql`
-  mutation addNewFamily($newNpmgInput: NewFamily!) {
-    addNewFamily(data: $newNpmgInput) {
+  mutation addNewFamily($familyInput: NewFamily!) {
+    addNewFamily(data: $familyInput) {
       id
       family_name
     }
@@ -28,10 +28,19 @@ export const NEW_FAMILY = gql`
 `
 
 export const NEW_REPORT = gql`
-  mutation addNewFamily($newNpmgInput: NewReport!) {
-    NewReport(data: $newNpmgInput) {
+  mutation NewReport($reportInput: NewReport!) {
+    NewReport(data: $reportInput) {
       id
       gorilla
+    }
+  }
+`
+
+export const NEW_NAMER = gql`
+  mutation addNewNamer($reportInput: NewNamer!) {
+    addNewNamer(data: $reportInput) {
+      id
+      fullname
     }
   }
 `
