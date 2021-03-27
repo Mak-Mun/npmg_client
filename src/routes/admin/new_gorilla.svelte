@@ -1,4 +1,19 @@
 <script lang="ts">
+   import { NEW_NPMG } from "../../utils/Mutations"
+   import client from "../../utils/urql"
+   async function handleOnSubmit() {
+    await client
+      .mutation(NEW_NPMG, {
+        newNpmgInput: { ...gorilla },
+      })
+      .toPromise()
+      .then((r: any) => {
+        console.log(r)
+      })
+      .catch((err) => {
+        console.error({ err })
+      })
+  }
   let gorilla = {
     name: "",
     gender: "",
@@ -13,10 +28,6 @@
   let family = ["Makuru", "Gahinga", "Umutungo", "Heza"]
   let photoUrl: string =
     "https://th.bing.com/th/id/OIP.C8igL9Mzx3SWR6bvi_JycQHaEK?w=282&h=180&c=7&o=5&dpr=1.5&pid=1.7"
-  function handleOnSubmit() {
-    console.log(gorilla)
-    alert(gorilla.dob)
-  }
   let  avatar, fileinput;
   const onFileSelected =(e)=>{
   let image = e.target.files[0];
