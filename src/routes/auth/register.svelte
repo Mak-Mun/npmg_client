@@ -1,20 +1,7 @@
-<script lang="ts">
-  // import { mutation } from "@urql/svelte"
+<script lang="ts" context="module">
+  import { CREATE_USER } from "../../utils/Mutations"
 
-  import { select_option } from "svelte/internal"
-
-  // import { mutation } from "@urql/svelte"
-
-  // import { mutation } from "@urql/svelte"
-
-  // import { CREATE_USER } from "../../Mutations.ts"
-  // import client from "../utils/urql.ts"
-
-  // const CREATE_USER = gql`
-
-  // `
-
-  //TODO: complete here https://codesandbox.io/s/urql-svelte-crud-6yf4c?file=/List.svelte
+  import client from "../../utils/urql"
 
   let fullnames: string
   let phone: string
@@ -22,27 +9,19 @@
   let password: string
   let role: string
 
-  // const registerUser = mutation({
-  //   query: `
-  //    mutation ($createUserInput: SingUpUserInput!) {
-  //     signup(data: $createUserInput) {
-  //       id
-  //       email
-  //     }
-  //   }`,
-  // })
-
-  function register() {
-    console.log({ fullnames, phone, email, password, role })
-    // mutation({ query: CREATE_USER, })
-    // mutation({ query: CREATE_USER, variables: { id: 1 } })
-    // registerUser({ fullnames, phone, email, password })
+  async function register() {
+    await client
+      .mutation(CREATE_USER, {
+        createUserInput: { fullnames, phone, email, password, role },
+      })
+      .toPromise()
+      .then((r: any) => {
+        console.log(r)
+      })
+      .catch(() => {
+        console.log("error")
+      })
   }
-
-  // lastName: fullnames,
-  // firstName: fullnames,
-  // password: password,
-  // role,
 </script>
 
 <svelte:head>
