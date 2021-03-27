@@ -1,7 +1,7 @@
 <div class="w-full flex flex-col">
         <ul class="w-full flex items-center mx-auto md:mb-4">
-            <li class="w-1/2 text-center font-semibold cursor-pointer text-green-600">Ceremonies</li>
-            <li class="w-1/2 text-center font-semibold cursor-pointer">Namers</li>
+            <li class="w-1/2 text-center font-semibold cursor-pointer">Ceremonies</li>
+            <li class="w-1/2 text-center font-semibold cursor-pointer text-green-600">Namers</li>
         </ul>
         <div
         class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-11/12 longer"
