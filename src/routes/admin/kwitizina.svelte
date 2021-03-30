@@ -73,8 +73,18 @@
         color: green;
         font-weight: 800;
     }
+
+    :global(.svelte-tabs li.svelte-tabs__selected:focus){
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+    }
+    :global(.svelte-tabs li.svelte-tabs__selected:active){
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+    }
+
     :global(.svelte-tabs__tab-list){
-        width: 100%;
+        width: 95% !important;
         border-bottom: 0px solid #423 !important;
         align-items: center !important;
         display: flex;
