@@ -1,3 +1,20 @@
+<script>
+    import { Tabs, Tab, TabList, TabPanel } from 'svelte-tabs';
+  </script> 
+  <Tabs>
+    <TabList>
+      <Tab>One</Tab>
+      <Tab>Two</Tab>
+    </TabList>
+   
+    <TabPanel>
+      <h2>Panel One</h2>
+    </TabPanel>
+   
+    <TabPanel>
+      <h2>Panel Two</h2>
+    </TabPanel>
+  </Tabs>
 <div class="w-full flex flex-col">
         <ul class="w-full flex items-center mx-auto md:mb-4">
             <li class="w-1/2 text-center font-semibold cursor-pointer">Ceremonies</li>
@@ -56,3 +73,17 @@
       </table>
     </div>
 </div>
+
+<style>
+    :global(.svelte-tabs li.svelte-tabs__selected){
+        border-bottom: 4px solid green;
+        color: green;
+        font-weight: 800;
+    }
+    :global(.svelte-tabs li){
+        border-bottom: 2px solid teal;
+        padding-left: 10px;
+        padding-right: 20px;
+        font-weight: 800;
+    }
+</style>
