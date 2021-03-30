@@ -33,9 +33,8 @@ div::-webkit-scrollbar-thumb {
             </thead>
             <tbody class="flex flex-col items-center justify-between overflow-y-auto w-full mt-3">
                 {#each integers as int}
-                <a></a>
                 <tr class="flex w-full mb-2 items-center justify-between cursor-pointer shadow hover:text-motherGreen">
-                    <td class="text-center w-1/5 py-3">1</td>
+                    <td class="text-center w-1/5 py-3"> <a href="/admin/reports/report/{int}">{int}</a></td>
                     <td class="text-center w-2/5">Kwitonda</td>
                     <td class="text-center w-2/5">Mucyo Erneste</td>
                     <td class="text-center w-2/5">3 hours ago</td>
@@ -47,7 +46,7 @@ div::-webkit-scrollbar-thumb {
     </div>
     <div class="w-full sm:w-5/6 md:5/12 lg:w-5/12 bg-white rounded border px-4 py-3 mt-4 md:mt-0 md:ml-2">
         <div class="flex flex-col">
-            <h3 class="text-center text-xl cursor-pointer font-semibold font-sourceSans">Comments and Photos</h3>
+            <h3 class="text-center text-xl cursor-pointer font-semibold font-sourceSans text-greenAccent">Comments and Photos</h3>
             <div class="w-full flex flex-col mx-auto items-center border rounded mb-2">
                 <div class="flex flex-col md:w-5/6 cursor-pointer py-2">
                 <p class="w-full text-center font-semibold text-sm">"It doesnt look health in the way it stands it looks like its leg was broken"</p>
