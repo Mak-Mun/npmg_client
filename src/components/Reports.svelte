@@ -40,6 +40,7 @@ div::-webkit-scrollbar-thumb {
                     <td class="text-center w-2/5">3 hours ago</td>
                 </tr>
                 {/each}
+                <p class="cursor-pointer text-successorColor font-semibold">Load More</p>
             </tbody>
         </table>
     </div>
