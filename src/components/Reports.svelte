@@ -33,6 +33,7 @@ div::-webkit-scrollbar-thumb {
             </thead>
             <tbody class="flex flex-col items-center justify-between overflow-y-auto w-full mt-3">
                 {#each integers as int}
+                <a></a>
                 <tr class="flex w-full mb-2 items-center justify-between cursor-pointer shadow hover:text-motherGreen">
                     <td class="text-center w-1/5 py-3">1</td>
                     <td class="text-center w-2/5">Kwitonda</td>

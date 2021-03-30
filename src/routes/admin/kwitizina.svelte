@@ -91,5 +91,6 @@
     }
     :global(.svelte-tabs__tab-list li){
         width: 50%;
+        align-items: center !important;
     }
 </style>
