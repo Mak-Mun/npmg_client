@@ -1,4 +1,5 @@
 <script lang="ts">
+    let integers: number[] = [1, 2, 3, 4, 5, 6, 7, 8]
  let photoUrl:string = "https://wallup.net/wp-content/uploads/2017/11/10/74767-mountain-ridges-Dolomites_mountains.jpg";
 </script>
 <svelte:head>
@@ -31,24 +32,14 @@ div::-webkit-scrollbar-thumb {
                 </tr>
             </thead>
             <tbody class="flex flex-col items-center justify-between overflow-y-auto w-full mt-3">
+                {#each integers as int}
                 <tr class="flex w-full mb-2 items-center justify-between cursor-pointer shadow hover:text-motherGreen">
                     <td class="text-center w-1/5 py-3">1</td>
                     <td class="text-center w-2/5">Kwitonda</td>
                     <td class="text-center w-2/5">Mucyo Erneste</td>
                     <td class="text-center w-2/5">3 hours ago</td>
                 </tr>
-                <tr class="flex w-full mb-2 items-center justify-between cursor-pointer shadow hover:text-motherGreen">
-                    <td class="text-center w-1/5 py-3">1</td>
-                    <td class="text-center w-2/5">Kwitonda</td>
-                    <td class="text-center w-2/5">Mucyo Erneste</td>
-                    <td class="text-center w-2/5">3 hours ago</td>
-                </tr>
-                <tr class="flex w-full mb-2 items-center justify-between cursor-pointer shadow hover:text-motherGreen">
-                    <td class="text-center w-1/5 py-3">1</td>
-                    <td class="text-center w-2/5">Kwitonda</td>
-                    <td class="text-center w-2/5">Mucyo Erneste</td>
-                    <td class="text-center w-2/5">3 hours ago</td>
-                </tr>
+                {/each}
             </tbody>
         </table>
     </div>
