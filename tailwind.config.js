@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ["Nunito", "Nunito Sans", "sans-serif"],
+      sans: ["Noto Sans JP", "Nunito", "Nunito Sans", "sans-serif"],
       sourceSans: ["Source Sans Pro", "sans-serif"],
       serif: ["ui-serif", "Georgia"],
       mono: ["ui-monospace", "SFMono-Regular"],
@@ -18,6 +18,7 @@ module.exports = {
       ...theme("colors"),
       motherGreen: "#00917C",
       secGreen: "#1FC14C",
+      greenAccent: "#00917C",
       successorColor: "#F0A500",
     }),
     backgroundColor: (theme) => ({

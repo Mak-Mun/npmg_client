@@ -9,7 +9,7 @@
   <div class="">
     <div class="flex items-center justify-center h-20 shadow-md">
       <a href="/">
-        <h1 class="text-3xl uppercase text-red-500">NPMG</h1>
+        <h1 class="text-3xl uppercase text-red-500 font-sourceSans">NPMG</h1>
       </a>
     </div>
     <ul class="flex flex-col py-4">
@@ -23,7 +23,7 @@
               class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-800"
               ><i class="bx bx-home" /></span
             >
-            <span class="text-sm font-medium">{item.name}</span>
+            <span class="text-sm font-medium font-sourceSans">{item.name}</span>
           </a>
         </li>
       {/each}
@@ -31,7 +31,7 @@
   </div>
   <div class="">
     <h1
-      class="text-red-500 font-semibold bg-logout px-4 py-2 text-center bottom-0 cursor-pointer"
+      class="text-red-500 font-semibold bg-logout px-4 py-2 text-center bottom-0 cursor-pointer font-sourceSans"
     >
       <a href="/auth/login">Logout</a>
     </h1>
