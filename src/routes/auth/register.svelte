@@ -9,8 +9,9 @@
 
 <script lang="ts">
   import { CREATE_USER } from "../../utils/Mutations"
-
   import client from "../../utils/urql"
+  import { goto } from "@sapper/app"
+  import { NotificationDisplay, notifier } from "@beyonk/svelte-notifications"
 
   async function register() {
     await client
@@ -19,12 +20,12 @@
       })
       .toPromise()
       .then((r: any) => {
-        console.log("User created")
-        console.log(r)
+        notifier.success("Registered succesfully!")
+        // goto("/auth/login")
       })
       .catch((err) => {
-        console.log("Something went wrong!")
         console.error({ err })
+        notifier.danger("Registration failed!")
       })
   }
 </script>
@@ -32,6 +33,8 @@
 <svelte:head>
   <title>Register</title>
 </svelte:head>
+
+<NotificationDisplay />
 
 <form class="grid grid-cols-1 gap-6" on:submit|preventDefault={register}>
   <label for="First name" class="block">
