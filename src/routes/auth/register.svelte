@@ -19,7 +19,6 @@
       })
       .toPromise()
       .then((r: any) => {
-        console.log("User created")
         console.log(r)
       })
       .catch((err) => {
