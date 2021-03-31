@@ -15,7 +15,7 @@
   async function register() {
     await client
       .mutation(CREATE_USER, {
-        $createUserInput: { firstName, lastName, phone, email, password, role },
+        data: { firstName, lastName, email, password, role },
       })
       .toPromise()
       .then((r: any) => {
