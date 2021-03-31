@@ -1,10 +1,9 @@
 import { gql } from "@urql/svelte"
 
 export const CREATE_USER = gql`
-  mutation CreateUser($createUserInput: SingUpUserInput!) {
-    signup(data: $createUserInput) {
+  mutation createUser($data: SingUpUserInput!) {
+    signup(data: $data) {
       id
-      email
     }
   }
 `
