@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
-  let fullnames: string
+  let firstName: string
+  let lastName: string
   let phone: string
   let email: string
   let password: string
@@ -14,13 +15,15 @@
   async function register() {
     await client
       .mutation(CREATE_USER, {
-        createUserInput: { fullnames, phone, email, password, role },
+        $createUserInput: { firstName, lastName, phone, email, password, role },
       })
       .toPromise()
       .then((r: any) => {
+        console.log("User created")
         console.log(r)
       })
       .catch((err) => {
+        console.log("Something went wrong!")
         console.error({ err })
       })
   }
@@ -31,12 +34,24 @@
 </svelte:head>
 
 <form class="grid grid-cols-1 gap-6" on:submit|preventDefault={register}>
-  <label for="fullname" class="block">
-    <span class="text-gray-700">Full names</span>
+  <label for="First name" class="block">
+    <span class="text-gray-700">Full name</span>
     <input
-      type="test"
-      id="fullname"
-      bind:value={fullnames}
+      type="text"
+      id="First name"
+      bind:value={firstName}
+      placeholder="Boston Rockstack"
+      class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+      required
+    />
+  </label>
+
+  <label for="LastName" class="block">
+    <span class="text-gray-700">Last name</span>
+    <input
+      type="text"
+      id="LastName"
+      bind:value={lastName}
       placeholder="Boston Rockstack"
       class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
       required
