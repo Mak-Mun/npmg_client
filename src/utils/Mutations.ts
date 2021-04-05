@@ -27,8 +27,8 @@ export const NEW_FAMILY = gql`
 `
 
 export const NEW_REPORT = gql`
-  mutation NewReport($reportInput: NewReport!) {
-    NewReport(data: $reportInput) {
+  mutation NewReport($data: NewReport!) {
+    NewReport(data: $data) {
       id
       gorilla
     }

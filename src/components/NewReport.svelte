@@ -8,11 +8,11 @@
         gorilla:"",
 		lungs: "SNA",
 		heart: "SNA",
-		brain:"SNA",
+		head:"SNA",
 		legs: "SNA",
-		chest:"SNA",
 		eyes:"",
-		comment:"",
+		stomach:"",
+        date: Date.now(),
 	}
     async function handleOnSubmit() {
 		await client
@@ -123,7 +123,7 @@
             </div>
             <div class="border-b-2 focus-within:border-green-500 flex">
                 <label for="name" class="px-2">Chest:</label>
-                <select bind:value={report.chest} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
+                <select  class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
                     <option value="">--chest--</option>
                     {#each statusOptions as father}
                         <option value={father}>
@@ -138,7 +138,7 @@
     <div class="ml-5 mr-2 mt-3 md:mt-7 mb-5">
         <div class="border-b-2 focus-within:border-green-500 flex md:w-10/12">
             <label for="name" class="px-2">Comment:</label>
-            <input type="text" name="name" bind:value={report.comment} placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
+            <input type="text" name="name" placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
         </div>
     </div>
     <div class="mx-5 mb-5 md:ml-40">
