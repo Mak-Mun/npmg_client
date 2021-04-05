@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from "@sapper/app"
   import type List from "../types/sidebar_items"
   export let list: List[]
 </script>
@@ -30,7 +31,7 @@
     </ul>
   </div>
   <div class="">
-    <h1
+    <h1 on:click={()=>{goto('/')}}
       class="text-red-500 font-semibold bg-logout px-4 py-2 text-center bottom-0 cursor-pointer font-sourceSans"
     >
       <a href="/auth/login">Logout</a>
