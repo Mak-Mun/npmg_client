@@ -20,7 +20,7 @@ div::-webkit-scrollbar-thumb {
         <h1 class="text-xl font-semibold text-center md:text-left">REPORT VIEWS</h1>
     </div>
 <div class="w-full md:flex">
-    <div class="w-full sm:w-5/6 md:5/12 lg:w-6/12 bg-white rounded border px-4 py-3 md:px-8 md:py-3 mr-3">
+    <div class="w-full sm:w-full md:5/12 lg:w-6/12 bg-white rounded border px-4 py-3 md:px-8 md:py-3 mr-3">
             <h1 class="text-center font-semibold font-sourceSans mb-6 text-greenAccent">RECENT REPORTS</h1>
         <table class="text-left w-full md:px-10">
             <thead class="flex w-full">
@@ -44,7 +44,7 @@ div::-webkit-scrollbar-thumb {
             </tbody>
         </table>
     </div>
-    <div class="w-full sm:w-5/6 md:5/12 lg:w-5/12 bg-white rounded border px-4 py-3 mt-4 md:mt-0 md:ml-2">
+    <div class="w-full sm:w-full md:5/12 lg:w-5/12 bg-white rounded border px-4 py-3 mt-4 md:mt-0 md:ml-2">
         <div class="flex flex-col">
             <h3 class="text-center text-xl cursor-pointer font-semibold font-sourceSans text-greenAccent">Comments and Photos</h3>
             <div class="w-full flex flex-col mx-auto items-center border rounded mb-2">
