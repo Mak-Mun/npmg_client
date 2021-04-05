@@ -22,7 +22,7 @@
       .then((r: any) => {
         console.log(r);
         notifier.success("Registered succesfully!")
-        // goto("/auth/login")
+        goto("/auth/login")
       })
       .catch((err) => {
         console.error({ err })
