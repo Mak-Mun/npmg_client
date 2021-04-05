@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { NEW_NPMG } from "../utils/Mutations"
+    import { NEW_REPORT } from "../utils/Mutations"
         import client from "../utils/urql"
         import { NotificationDisplay, notifier } from "@beyonk/svelte-notifications"
     	let statusOptions = ['NSA','SNA','NAS'];
@@ -16,7 +16,7 @@
 	}
     async function handleOnSubmit() {
 		await client
-      .mutation(NEW_NPMG, {
+      .mutation(NEW_REPORT, {
         data: { ...report },
       })
       .toPromise()
