@@ -9,8 +9,8 @@ export const CREATE_USER = gql`
 `
 
 export const NEW_NPMG = gql`
-  mutation newNpmg($newNpmgInput: NewNpmg!) {
-    newNpmg(data: $newNpmgInput) {
+  mutation newNpmg($data: NewNpmg!) {
+    newNpmg(data: $data) {
       id
       name
     }
