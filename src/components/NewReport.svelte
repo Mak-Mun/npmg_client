@@ -12,8 +12,19 @@
 		comment:"",
 	}
     function handleOnSubmit() {
-			console.log(report);
-		alert(report.gorilla);
+		await client
+      .mutation(NEW_NPMG, {
+        data: { ...gorilla },
+      })
+      .toPromise()
+      .then((r: any) => {
+        console.log(r);
+        notifier.success("Report added successfully!")
+      })
+      .catch((err) => {
+        console.error({ err })
+        notifier.danger("New report failed!")
+      })
 	}
 
 
