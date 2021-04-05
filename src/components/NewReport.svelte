@@ -17,7 +17,7 @@
     async function handleOnSubmit() {
 		await client
       .mutation(NEW_NPMG, {
-        data: { ...gorilla },
+        data: { ...report },
       })
       .toPromise()
       .then((r: any) => {
