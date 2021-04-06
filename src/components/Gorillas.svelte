@@ -29,14 +29,13 @@
           <tr
             class="justify-between"
           >
-            <th class="p-3 py-1 w-1/7">#</th>
-            <th class="p-3 py-1 w-1/7">Name</th>
-            <th class="p-3 py-1 w-1/7">Dob</th>
-            <th class="p-3 py-1 w-1/7">Mother</th>
-            <th class="p-3 py-1 w-1/7">Father</th>
-            <th class="p-3 py-1 w-1/7">Namer</th>
-            <th class="p-3 py-1 w-1/7">Family</th>
-            <th class="p-3 py-1 w-1/7">Action</th>
+            <th class="p-4 w-1/6">#</th>
+            <th class="p-4 w-1/6">Name</th>
+            <th class="p-4 w-1/6">Dob</th>
+            <th class="p-4 w-1/6">Mother</th>
+            <th class="p-4 w-1/6">Father</th>
+            <th class="p-4 w-1/6">Namer</th>
+            <th class="p-4 w-1/6">Family</th>
           </tr>
         </thead>
         <tbody
@@ -46,8 +45,8 @@
             <tr
               class="mt-3 justify-between bg-white border-b-2 cursor-pointer"
             >
-              <td class="text-center p-4 py-8 w-1/7">{int}</td>
-              <td class="p-3 py-1 w-1/7"
+              <td class="text-center p-4 py-8 w-1/6">{int}</td>
+              <td class="p-4 w-1/6"
                 ><div class="flex items-center">
                   <div class="flex-shrink-0 w-8 h-8">
                     <img
@@ -61,12 +60,12 @@
                   </div>
                 </div></td
               >
-              <td class="p-3 py-1 w-1/7"> 12/2018</td>
-              <td class="p-3 py-1 w-1/7">Amahoro</td>
-              <td class="p-3 py-1 w-1/7">Kagabo</td>
-              <td class="p-3 py-1 w-1/7">St Harry Kane</td>
-              <td class="p-3 py-1 w-1/7">Inzanga</td>
-              <td class="p-3 py-1 w-1/7 flex">
+              <td class="p-4 w-1/6"> 12/2018</td>
+              <td class="p-4 w-1/6">Amahoro</td>
+              <td class="p-4 w-1/6">Kagabo</td>
+              <td class="p-4 w-1/6">St Harry Kane</td>
+              <td class="p-4 w-1/6">Inzanga</td>
+              <!-- <td class="p-4 w-1/6 flex">
                 <span class="cursor-pointer font-semibold pr-1 mx-1/2"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +90,7 @@
                     /></svg
                   ></span
                 >
-              </td>
+              </td> -->
             </tr>
           {/each}
         </tbody>
