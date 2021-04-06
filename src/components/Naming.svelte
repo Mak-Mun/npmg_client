@@ -1,6 +1,6 @@
 <script>
     import { Tabs, Tab, TabList, TabPanel } from 'svelte-tabs';
-    let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    let integers = [1, 2, 3, 4, 5, 6, 7]
     import Ceremonies from './Ceremonies.svelte'
   </script> 
   <svelte:head>
@@ -63,7 +63,7 @@
     }
 
     :global(.svelte-tabs__tab-list){
-        width: 95% !important;
+        width: 100% !important;
         border-bottom: 0px solid #423 !important;
         align-items: center !important;
         display: flex;
