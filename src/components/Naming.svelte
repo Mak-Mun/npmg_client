@@ -18,7 +18,7 @@
    
     <TabPanel>
         <div
-        class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-11/12 longer"
+        class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-full longer"
       >
         <table class="w-full">
             <thead class="w-full">
