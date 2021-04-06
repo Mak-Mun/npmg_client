@@ -44,9 +44,9 @@
         >
           {#each integers as int}
             <tr
-              class="flex w-full mb-2 items-center justify-between px-5 border-b py-1 cursor-pointer rounded"
+              class="mt-3 justify-between bg-white border-b-2 cursor-pointer"
             >
-              <td class="p-3 py-1 w-1/7">{int}</td>
+              <td class="text-center p-4 py-8 w-1/7">{int}</td>
               <td class="p-3 py-1 w-1/7"
                 ><div class="flex items-center">
                   <div class="flex-shrink-0 w-8 h-8">
