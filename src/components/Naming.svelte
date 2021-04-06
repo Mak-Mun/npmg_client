@@ -1,5 +1,6 @@
 <script>
     import { Tabs, Tab, TabList, TabPanel } from 'svelte-tabs';
+    import Ceremonies from './Ceremonies.svelte'
   </script> 
   <Tabs>
     <TabList>
@@ -8,7 +9,7 @@
     </TabList>
    
     <TabPanel>
-      <h2 class="text-center text-3xl">CEREMONIES</h2>
+     <Ceremonies/>
     </TabPanel>
    
     <TabPanel>
