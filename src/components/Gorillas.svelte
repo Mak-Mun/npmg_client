@@ -15,7 +15,7 @@
     >
       <div class="w-full md:flex mb-4 items-center justify-between">
         <div class="md:w-4/12">
-        <h3 class="font-semibold px-3 py-1 text-xl">Ranger listing</h3>
+        <h3 class="font-semibold px-3 py-1 text-xl">Gorillas listing</h3>
       </div>
         <div class="flex justify-between md:w-6/12">
           <Search/>
