@@ -2,7 +2,7 @@
   import Search from './Search.svelte';
   let photoUrl: string =
     "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
-  let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 </script>
 
 <svelte:head>
@@ -29,7 +29,7 @@
           <tr
             class="justify-between"
           >
-            <th class="p-4 w-1/6">#</th>
+            <th class="p-4 w-1/6"></th>
             <th class="p-4 w-1/6">Name</th>
             <th class="p-4 w-1/6">Dob</th>
             <th class="p-4 w-1/6">Mother</th>
@@ -39,7 +39,7 @@
           </tr>
         </thead>
         <tbody
-          class="overflow-y-auto w-full limitedTable"
+          class="limitedTable overflow-y-auto"
         >
           {#each integers as int}
             <tr
@@ -56,15 +56,15 @@
                     />
                   </div>
                   <div class="ml-3">
-                    <p class="text-gray-900 whitespace-no-wrap">Mak Mun</p>
+                    <p class="text-gray-900 whitespace-no-wrap">Byishimo</p>
                   </div>
                 </div></td
               >
               <td class="p-4 w-1/6"> 12/2018</td>
               <td class="p-4 w-1/6">Amahoro</td>
               <td class="p-4 w-1/6">Kagabo</td>
-              <td class="p-4 w-1/6">St Harry Kane</td>
-              <td class="p-4 w-1/6">Inzanga</td>
+              <td class="p-4 w-1/6">Kwizigira</td>
+              <td class="p-4 w-1/6">Gahinga</td>
               <!-- <td class="p-4 w-1/6 flex">
                 <span class="cursor-pointer font-semibold pr-1 mx-1/2"
                   ><svg
@@ -100,11 +100,12 @@
 </div>
 
 <style>
-  .unlimited {
-    height: 100vh;
+  .limitedTable{
+    height: 60vh;
   }
-  .limitedTable {
-    height: 75vh;
+  .unlimited {
+    height: 90vh;
+    overflow-y: auto;
   }
   @media only screen and (max-height: 550px) {
     .unlimited {
@@ -114,7 +115,6 @@
   }
   @media only screen and (max-width: 600px) {
     .unlimited {
-      height: fit-content;
       width: fit-content;
     }
   }
