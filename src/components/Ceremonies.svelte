@@ -23,6 +23,30 @@
                     <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
                     <td class=" text-center p-4 w-1/6">Kinigi</td>
                 </tr>
+                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
+                    <td class="text-center p-4 py-8 w-1/6">2019</td>
+                    <td class="text-center p-4 w-1/6">18</td>
+                    <td class="text-center p-4 w-1/6 text-sm">27</td>
+                    <td class="text-center w-1/6 text-sm">27</td>
+                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
+                    <td class=" text-center p-4 w-1/6">Kinigi</td>
+                </tr>
+                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
+                    <td class="text-center p-4 py-8 w-1/6">2018</td>
+                    <td class="text-center p-4 w-1/6">18</td>
+                    <td class="text-center p-4 w-1/6 text-sm">27</td>
+                    <td class="text-center w-1/6 text-sm">27</td>
+                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
+                    <td class=" text-center p-4 w-1/6">Kinigi</td>
+                </tr>
+                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
+                    <td class="text-center p-4 py-8 w-1/6">2017</td>
+                    <td class="text-center p-4 w-1/6">18</td>
+                    <td class="text-center p-4 w-1/6 text-sm">27</td>
+                    <td class="text-center w-1/6 text-sm">27</td>
+                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
+                    <td class=" text-center p-4 w-1/6">Kinigi</td>
+                </tr>
                 
                 </tbody>	
         </table>
