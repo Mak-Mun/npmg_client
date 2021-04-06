@@ -1,5 +1,7 @@
-<script lang="ts"></script>
-<svelte:head>
-    <title>Tasks</title>
-  </svelte:head>
-<div class=""></div>
+<script lang="ts">
+  import Doctors from "../../components/Doctors.svelte"
+</script>
+
+<div>
+  <Doctors />
+</div>
