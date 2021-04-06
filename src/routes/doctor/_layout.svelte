@@ -7,6 +7,7 @@
     new List("/doctor/gorillas", "Gorillas"),
     new List("/doctor/rangers", "Rangers"),
     new List("/doctor/doctors", "Doctors"),
+    new List("/doctor/kwitizina", "Kwitizina"),
     new List("/doctor/reports", "Reports"),
     new List("/doctor/store", "Store"),
     new List("/doctor/settings", "Settings"),
