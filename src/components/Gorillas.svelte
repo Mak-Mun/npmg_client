@@ -2,7 +2,7 @@
   import Search from './Search.svelte';
   let photoUrl: string =
     "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
-  let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
     >
       <div class="w-full md:flex mb-4 items-center justify-between">
         <div class="md:w-4/12">
-        <h3 class="font-semibold px-3 py-1 text-xl">Ranger listing</h3>
+        <h3 class="font-semibold px-3 py-1 text-xl">Gorillas listing</h3>
       </div>
         <div class="flex justify-between md:w-6/12">
           <Search/>
@@ -24,30 +24,29 @@
         >
       </div>
       </div>
-      <table class="text-left w-full md:px-10">
-        <thead class="flex w-full">
+      <table class="w-full justify-between mt-0">
+        <thead class="w-full">
           <tr
-            class="flex w-full justify-between bg-gray px-5 py-2 rounded"
+            class="justify-between"
           >
-            <th class="p-3 py-1 w-1/7">#</th>
-            <th class="p-3 py-1 w-1/7">Name</th>
-            <th class="p-3 py-1 w-1/7">Dob</th>
-            <th class="p-3 py-1 w-1/7">Mother</th>
-            <th class="p-3 py-1 w-1/7">Father</th>
-            <th class="p-3 py-1 w-1/7">Namer</th>
-            <th class="p-3 py-1 w-1/7">Family</th>
-            <th class="p-3 py-1 w-1/7">Action</th>
+            <th class="p-4 text-center w-1/7"></th>
+            <th class="p-4 text-center w-1/7">Name</th>
+            <th class="p-4 text-center w-1/7">Dob</th>
+            <th class="p-4 text-center w-1/7">Mother</th>
+            <th class="p-4 text-center w-1/7">Father</th>
+            <th class="p-4 text-center w-1/7">Namer</th>
+            <th class="p-4 text-center w-1/7">Family</th>
           </tr>
         </thead>
         <tbody
-          class="flex flex-col items-center justify-between overflow-y-auto w-full limitedTable"
+          class="limitedTable overflow-y-auto"
         >
           {#each integers as int}
             <tr
-              class="flex w-full mb-2 items-center justify-between px-5 border-b py-1 cursor-pointer rounded"
+              class="mt-3 justify-between bg-white border-b-2 cursor-pointer"
             >
-              <td class="p-3 py-1 w-1/7">{int}</td>
-              <td class="p-3 py-1 w-1/7"
+              <td class="text-center p-4 py-8 w-1/7">{int}</td>
+              <td class="text-center p-4 w-1/7"
                 ><div class="flex items-center">
                   <div class="flex-shrink-0 w-8 h-8">
                     <img
@@ -57,16 +56,16 @@
                     />
                   </div>
                   <div class="ml-3">
-                    <p class="text-gray-900 whitespace-no-wrap">Mak Mun</p>
+                    <p class="text-gray-900 whitespace-no-wrap">Byishimo</p>
                   </div>
                 </div></td
               >
-              <td class="p-3 py-1 w-1/7"> 12/2018</td>
-              <td class="p-3 py-1 w-1/7">Amahoro</td>
-              <td class="p-3 py-1 w-1/7">Kagabo</td>
-              <td class="p-3 py-1 w-1/7">St Harry Kane</td>
-              <td class="p-3 py-1 w-1/7">Inzanga</td>
-              <td class="p-3 py-1 w-1/7 flex">
+              <td class="text-center p-4 w-1/7"> 12/2018</td>
+              <td class="text-center p-4 w-1/7">Amahoro</td>
+              <td class="text-center p-4 w-1/7">Kagabo</td>
+              <td class="text-center p-4 w-1/7">Kwizigira</td>
+              <td class="text-center p-4 w-1/7">Gahinga</td>
+              <!-- <td class="p-4 w-1/7 flex">
                 <span class="cursor-pointer font-semibold pr-1 mx-1/2"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +90,7 @@
                     /></svg
                   ></span
                 >
-              </td>
+              </td> -->
             </tr>
           {/each}
         </tbody>
@@ -101,11 +100,12 @@
 </div>
 
 <style>
-  .unlimited {
-    height: 100vh;
+  .limitedTable{
+    height: 60vh;
   }
-  .limitedTable {
-    height: 75vh;
+  .unlimited {
+    height: 90vh;
+    overflow-y: auto;
   }
   @media only screen and (max-height: 550px) {
     .unlimited {
@@ -115,16 +115,12 @@
   }
   @media only screen and (max-width: 600px) {
     .unlimited {
-      height: fit-content;
       width: fit-content;
     }
   }
   .bg-green {
     background-color: #00917c;
     color: white;
-  }
-  .bg-gray{
-    background-color: #EDF2F7;
   }
   div *::-webkit-scrollbar {
     width: 4px;

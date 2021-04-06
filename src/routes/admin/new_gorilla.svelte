@@ -1,17 +1,20 @@
 <script lang="ts">
    import { NEW_NPMG } from "../../utils/Mutations"
    import client from "../../utils/urql"
+   import { NotificationDisplay, notifier } from "@beyonk/svelte-notifications"
    async function handleOnSubmit() {
     await client
       .mutation(NEW_NPMG, {
-        newNpmgInput: { ...gorilla },
+        data: { ...gorilla },
       })
       .toPromise()
       .then((r: any) => {
-        console.log(r)
+        console.log(r);
+        notifier.success("New gorilla added successfully!")
       })
       .catch((err) => {
         console.error({ err })
+        notifier.danger("New gorilla addittion failed!")
       })
   }
   let gorilla = {
@@ -21,7 +24,7 @@
     mother: "",
     dob: "",
     family: "",
-    comment: "",
+    ceremonyId:"54325"
   }
   let genderOptions = ["Male", "Female"]
   let fathers = ["Amahoro", "Urukundo", "Cyubahiro", "Byiruka", "Umutuzo"]
@@ -42,6 +45,7 @@
 <svelte:head>
   <title>NEW GORILLA</title>
 </svelte:head>
+<NotificationDisplay />
 <div class="flex flex-col justify-center bg-white p-6">
   <h1 class="font-bold px-4 text-2xl mb-10">NEW GORILLA</h1>
   <form class="md:flex" on:submit|preventDefault={handleOnSubmit}>
@@ -154,7 +158,6 @@
           type="text"
           name="comment"
           placeholder=" "
-          bind:value={gorilla.comment}
           class="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         />
       </div>

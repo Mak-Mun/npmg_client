@@ -1,19 +1,33 @@
 <script lang="ts">
+    import { NEW_REPORT } from "../utils/Mutations"
+        import client from "../utils/urql"
+        import { NotificationDisplay, notifier } from "@beyonk/svelte-notifications"
     	let statusOptions = ['NSA','SNA','NAS'];
         let gorillas = ['Amahoro','Urukundo','Cyubahiro','Byiruka','Umutuzo']
         let report = {
         gorilla:"",
 		lungs: "SNA",
 		heart: "SNA",
-		brain:"SNA",
+		head:"SNA",
 		legs: "SNA",
-		chest:"SNA",
 		eyes:"",
-		comment:"",
+		stomach:"",
+        date: Date.now(),
 	}
-    function handleOnSubmit() {
-			console.log(report);
-		alert(report.gorilla);
+    async function handleOnSubmit() {
+		await client
+      .mutation(NEW_REPORT, {
+        data: { ...report },
+      })
+      .toPromise()
+      .then((r: any) => {
+        console.log(r);
+        notifier.success("Report added successfully!")
+      })
+      .catch((err) => {
+        console.error({ err })
+        notifier.danger("New report failed!")
+      })
 	}
 
 
@@ -30,6 +44,7 @@
 <svelte:head>
 	<title>New Report</title>
 </svelte:head>
+<NotificationDisplay/>
 <div class="flex flex-col justify-center bg-white p-6">
     <h1 class="font-bold px-4 md:text-2xl mb-10">ADD NEW REPORT</h1>
     <form class="flex flex-col  mt-6" on:submit|preventDefault="{handleOnSubmit}">
@@ -108,7 +123,7 @@
             </div>
             <div class="border-b-2 focus-within:border-green-500 flex">
                 <label for="name" class="px-2">Chest:</label>
-                <select bind:value={report.chest} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
+                <select  class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
                     <option value="">--chest--</option>
                     {#each statusOptions as father}
                         <option value={father}>
@@ -123,7 +138,7 @@
     <div class="ml-5 mr-2 mt-3 md:mt-7 mb-5">
         <div class="border-b-2 focus-within:border-green-500 flex md:w-10/12">
             <label for="name" class="px-2">Comment:</label>
-            <input type="text" name="name" bind:value={report.comment} placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
+            <input type="text" name="name" placeholder=" " class="px-4 block w-full appearance-none focus:outline-none bg-transparent" />
         </div>
     </div>
     <div class="mx-5 mb-5 md:ml-40">

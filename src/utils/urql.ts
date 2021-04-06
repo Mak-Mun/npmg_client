@@ -16,7 +16,9 @@ const getToken = () => localStorage.getItem("AUTH_TOKEN")
 // })
 
 export const client = createClient({
-  url: "https://npmg-server.herokuapp.com/graphql",
+  //http://localhost:8800/graphql
+  //https://npmg-server.herokuapp.com/graphql
+  url: "http://localhost:8800/graphql",
   exchanges: [dedupExchange, cacheExchange, fetchExchange],
 })
 

@@ -3,8 +3,10 @@
   import TopNav from "../../components/TopNav.svelte"
   let list: List[] = [
     new List("/ranger/", "Dashboard"),
+    new List("/ranger/tasks","Tasks"),
     new List("/ranger/gorillas", "Gorillas"),
     new List("/ranger/rangers", "Rangers"),
+    new List("/ranger/doctors", "Doctors"),
     new List("/ranger/kwitizina", "Kwitizina"),
     new List("/ranger/reports", "Reports"),
     new List("/ranger/settings", "Settings"),

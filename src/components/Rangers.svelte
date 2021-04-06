@@ -29,72 +29,73 @@
         </div>
         </div>
         <table class="text-left w-full md:px-10">
-          <thead class="flex w-full">
+          <thead class="w-full">
             <tr
-              class="flex w-full justify-between bg-gray-200 px-5 py-2 rounded"
+              class="justify-between"
             >
-              <th class="p-3 py-1">#</th>
-              <th class="p-3 py-1">Full name</th>
-              <th class="p-3 py-1">Date joined</th>
-              <th class="p-3 py-1">Residense</th>
-              <th class="p-3 py-1">Group</th>
-              <th class="p-3 py-1">Action</th>
+              <th class="p-4 w-1/10"></th>
+              <th class="p-4 w-1/6">Full name</th>
+              <th class="p-4 w-1/6">Date joined</th>
+              <th class="p-4 w-1/6">Residense</th>
+              <th class="p-4 w-1/6">Group</th>
+              <th class="p-4 w-1/6">Others</th>
             </tr>
           </thead>
           <tbody
-            class="flex flex-col items-center justify-between overflow-y-auto w-full limitedTable"
-          >
-            {#each integers as int}
-              <tr
-                class="flex w-full mb-2 items-center justify-between px-5 border-b py-1 cursor-pointer rounded"
+          class="limitedTable overflow-y-auto"
+        >
+          {#each integers as int}
+            <tr
+              class="mt-3 justify-between bg-white border-b-2 cursor-pointer"
+            >
+              <td class="text-center p-4 py-8 w-1/10">{int}</td>
+              <td class="p-4 w-1/6"
+                ><div class="flex items-center">
+                  <div class="flex-shrink-0 w-8 h-8">
+                    <img
+                      class="w-full h-full rounded-full"
+                      src={photoUrl}
+                      alt=""
+                    />
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-gray-900 whitespace-no-wrap">Mukera Aime</p>
+                  </div>
+                </div></td
               >
-                <td class="p-3 py-1"><a href={`/admin/rangers/${int}`}>{int}</a></td>
-                <td class="p-3 py-1"
-                  ><div class="flex items-center">
-                    <div class="flex-shrink-0 w-8 h-8">
-                      <img
-                        class="w-full h-full rounded-full"
-                        src={photoUrl}
-                        alt=""
-                      />
-                    </div>
-                    <div class="ml-3">
-                      <p class="text-gray-900 whitespace-no-wrap">Joseph Peter</p>
-                    </div>
-                  </div></td
+              <td class="p-4 w-1/6">December 2017</td>
+              <td class="p-4 w-1/6">Amahoro</td>
+              <td class="p-4 w-1/6">Nkindira</td>
+              <td class="p-4 w-1/6">Kwizigira</td>
+              <!-- <td class="p-4 w-1/6 flex">
+                <span class="cursor-pointer font-semibold pr-1 mx-1/2"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="#00917C"
+                    ><path
+                      d="M9 19h-4v-2h4v2zm2.946-4.036l3.107 3.105-4.112.931 1.005-4.036zm12.054-5.839l-7.898 7.996-3.202-3.202 7.898-7.995 3.202 3.201zm-6 8.92v3.955h-16v-20h7.362c4.156 0 2.638 6 2.638 6s2.313-.635 4.067-.133l1.952-1.976c-2.214-2.807-5.762-5.891-7.83-5.891h-10.189v24h20v-7.98l-2 2.025z"
+                    /></svg
+                  ></span
                 >
-                <td class="p-3 py-1">December 2018</td>
-                <td class="p-3 py-1">Amahoro</td>
-                <td class="p-3 py-1">Kagabo</td>
-                <td class="p-3 py-1 flex">
-                  <span class="cursor-pointer font-semibold pr-1 mx-1/2"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="#00917C"
-                      ><path
-                        d="M9 19h-4v-2h4v2zm2.946-4.036l3.107 3.105-4.112.931 1.005-4.036zm12.054-5.839l-7.898 7.996-3.202-3.202 7.898-7.995 3.202 3.201zm-6 8.92v3.955h-16v-20h7.362c4.156 0 2.638 6 2.638 6s2.313-.635 4.067-.133l1.952-1.976c-2.214-2.807-5.762-5.891-7.83-5.891h-10.189v24h20v-7.98l-2 2.025z"
-                      /></svg
-                    ></span
-                  >
-                  <span class="cursor-pointer font-semibold pl-1 mx-1/2"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="#E74C3C"
-                      ><path
-                        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
-                      /></svg
-                    ></span
-                  >
-                </td>
-              </tr>
-            {/each}
-          </tbody>
+                <span class="cursor-pointer font-semibold pl-1 mx-1/2"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="#E74C3C"
+                    ><path
+                      d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
+                    /></svg
+                  ></span
+                >
+              </td> -->
+            </tr>
+          {/each}
+        </tbody>
         </table>
       </div>
       {#if isOpen}
