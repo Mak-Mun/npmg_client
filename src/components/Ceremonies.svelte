@@ -6,22 +6,22 @@
         <table class="w-full justify-between mt-0">
             <thead class="w-full">
                 <tr class="justify-between">
-                    <th class="p-4 w-1/6">Title</th>
-                    <th class="p-4 w-1/6">Type</th>
-                    <th class="p-4 w-1/6">Start at</th>
-                    <th class="p-4 w-1/6">Ends at</th>
-                    <th class="p-4 w-1/6">Attendants</th>
+                    <th class="p-4 w-1/6">Year</th>
+                    <th class="p-4 w-1/6">Special Guests</th>
+                    <th class="p-4 w-1/6">Gorillas named</th>
+                    <th class="p-4 w-1/6">Namers</th>
+                    <th class="p-4 w-1/6">Full Date</th>
                     <th class="p-4 w-1/6">Location</th>
                 </tr>
             </thead>
             <tbody class="w-full">
                 <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
-                    <td class="text-center p-4 py-8 w-1/6">Data</td>
-                    <td class="text-center p-4 w-1/6">Remote</td>
-                    <td class="text-center p-4 w-1/6 text-sm"><span class="bg-lightRed px-2 py-2 ">Data</span></td>
-                    <td class="text-center w-1/6 text-sm"><span class="bg-lightGreen px-2 py-2 ">Data</span></td>
-                    <td class="text-center p-4 w-1/6">Data</td>
-                    <td class=" text-center p-4 w-1/6">KibagabagaYY</td>
+                    <td class="text-center p-4 py-8 w-1/6">2020</td>
+                    <td class="text-center p-4 w-1/6">18</td>
+                    <td class="text-center p-4 w-1/6 text-sm">27</td>
+                    <td class="text-center w-1/6 text-sm">27</td>
+                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
+                    <td class=" text-center p-4 w-1/6">Kinigi</td>
                 </tr>
                 
                 </tbody>	
