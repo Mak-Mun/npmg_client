@@ -2,6 +2,9 @@
     import { Tabs, Tab, TabList, TabPanel } from 'svelte-tabs';
     import Ceremonies from './Ceremonies.svelte'
   </script> 
+  <svelte:head>
+    <title>Kwitizina</title>
+  </svelte:head>
   <Tabs>
     <TabList>
       <Tab>Ceremonies</Tab>
