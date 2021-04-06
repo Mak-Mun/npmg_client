@@ -20,52 +20,50 @@
         class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-11/12 longer"
       >
         <table class="w-full">
-            <thead>
-                <tr>
-                    <td></td>
-                    <td class="font-semibold text-gray-700">Namer</td>
-                    <td class="font-semibold text-gray-700">Contact</td>
-                    <td class="font-semibold text-gray-700">Gorilla named</td>
-                    <td class="font-semibold text-gray-700">More</td>
+            <thead class="w-full">
+                <tr class="justify-between">
+                    <th class="p-4 w-1/5"></th>
+                    <th class="p-4 w-1/5">Namer</th>
+                    <th class="p-4 w-1/5">Contacts</th>
+                    <th class="p-4 w-1/5">Gorillas named</th>
+                    <th class="p-4 w-1/5">More</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr class="border-b-4">
-                    <td class="py-4">1</td>
-                    <td class="py-4">Didier Munezero</td>
-                    <td class="py-4">0782915222</td>
-                    <td class="py-4">Umucyo</td>
-                    <td class="py-4">Former Pr Uganda</td>
+            <tbody class="w-full">
+                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
+                    <td class="text-center p-4 py-8 w-1/6">2020</td>
+                    <td class="text-center p-4 w-1/6">18</td>
+                    <td class="text-center p-4 w-1/6 text-sm">27</td>
+                    <td class="text-center w-1/6 text-sm">27</td>
+                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
+                    <td class=" text-center p-4 w-1/6">Kinigi</td>
                 </tr>
-                <tr class="border-b-4">
-                  <td class="py-4">1</td>
-                  <td class="py-4">Didier Munezero</td>
-                  <td class="py-4">0782915222</td>
-                  <td class="py-4">Umucyo</td>
-                  <td class="py-4">Former Pr Uganda</td>
-              </tr>
-              <tr class="border-b-4">
-                  <td class="py-4">1</td>
-                  <td class="py-4">Didier Munezero</td>
-                  <td class="py-4">0782915222</td>
-                  <td class="py-4">Umucyo</td>
-                  <td class="py-4">Former Pr Uganda</td>
-              </tr>
-              <tr class="border-b-4">
-                  <td class="py-4">1</td>
-                  <td class="py-4">Didier Munezero</td>
-                  <td class="py-4">0782915222</td>
-                  <td class="py-4">Umucyo</td>
-                  <td class="py-4">Former Pr Uganda</td>
-              </tr>
-              <tr class="border-b-4">
-                  <td class="py-4">1</td>
-                  <td class="py-4">Didier Munezero</td>
-                  <td class="py-4">0782915222</td>
-                  <td class="py-4">Umucyo</td>
-                  <td class="py-4">Former Pr Uganda</td>
-              </tr>
-            </tbody>
+                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
+                    <td class="text-center p-4 py-8 w-1/6">2019</td>
+                    <td class="text-center p-4 w-1/6">18</td>
+                    <td class="text-center p-4 w-1/6 text-sm">27</td>
+                    <td class="text-center w-1/6 text-sm">27</td>
+                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
+                    <td class=" text-center p-4 w-1/6">Kinigi</td>
+                </tr>
+                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
+                    <td class="text-center p-4 py-8 w-1/6">2018</td>
+                    <td class="text-center p-4 w-1/6">18</td>
+                    <td class="text-center p-4 w-1/6 text-sm">27</td>
+                    <td class="text-center w-1/6 text-sm">27</td>
+                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
+                    <td class=" text-center p-4 w-1/6">Kinigi</td>
+                </tr>
+                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
+                    <td class="text-center p-4 py-8 w-1/6">2017</td>
+                    <td class="text-center p-4 w-1/6">18</td>
+                    <td class="text-center p-4 w-1/6 text-sm">27</td>
+                    <td class="text-center w-1/6 text-sm">27</td>
+                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
+                    <td class=" text-center p-4 w-1/6">Kinigi</td>
+                </tr>
+                
+                </tbody>
         </table>
     </div>
     </TabPanel>
