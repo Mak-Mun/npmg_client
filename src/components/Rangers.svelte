@@ -38,7 +38,7 @@
               <th class="p-4 w-1/6">Date joined</th>
               <th class="p-4 w-1/6">Residense</th>
               <th class="p-4 w-1/6">Group</th>
-              <th class="p-4 w-1/6">Action</th>
+              <th class="p-4 w-1/6">Others</th>
             </tr>
           </thead>
           <tbody
@@ -65,7 +65,7 @@
               >
               <td class="p-4 w-1/6">December 2017</td>
               <td class="p-4 w-1/6">Amahoro</td>
-              <td class="p-4 w-1/6">Kagabo</td>
+              <td class="p-4 w-1/6">Nkindira</td>
               <td class="p-4 w-1/6">Kwizigira</td>
               <!-- <td class="p-4 w-1/6 flex">
                 <span class="cursor-pointer font-semibold pr-1 mx-1/2"
