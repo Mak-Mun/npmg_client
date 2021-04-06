@@ -24,10 +24,10 @@
         >
       </div>
       </div>
-      <table class="text-left w-full md:px-10">
-        <thead class="flex w-full">
+      <table class="w-full justify-between mt-0">
+        <thead class="w-full">
           <tr
-            class="flex w-full justify-between bg-gray px-5 py-2 rounded"
+            class="justify-between"
           >
             <th class="p-3 py-1 w-1/7">#</th>
             <th class="p-3 py-1 w-1/7">Name</th>
@@ -40,7 +40,7 @@
           </tr>
         </thead>
         <tbody
-          class="flex flex-col items-center justify-between overflow-y-auto w-full limitedTable"
+          class="overflow-y-auto w-full limitedTable"
         >
           {#each integers as int}
             <tr
@@ -122,9 +122,6 @@
   .bg-green {
     background-color: #00917c;
     color: white;
-  }
-  .bg-gray{
-    background-color: #EDF2F7;
   }
   div *::-webkit-scrollbar {
     width: 4px;
