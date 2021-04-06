@@ -1,8 +1,8 @@
 <script lang="ts">
-    import Doctors from "../../components/Doctors.svelte"
+    import Tasks from "../../components/Tasks.svelte"
   </script>
   
   <div>
-    <Doctors />
+    <Tasks />
   </div>
   
