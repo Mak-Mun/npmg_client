@@ -1,5 +1,6 @@
 <script>
     import { Tabs, Tab, TabList, TabPanel } from 'svelte-tabs';
+    let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     import Ceremonies from './Ceremonies.svelte'
   </script> 
   <svelte:head>
@@ -30,39 +31,15 @@
                 </tr>
             </thead>
             <tbody class="w-full">
+                {#each integers as int}
                 <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
-                    <td class="text-center p-4 py-8 w-1/6">2020</td>
-                    <td class="text-center p-4 w-1/6">18</td>
-                    <td class="text-center p-4 w-1/6 text-sm">27</td>
-                    <td class="text-center w-1/6 text-sm">27</td>
-                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
-                    <td class=" text-center p-4 w-1/6">Kinigi</td>
+                    <td class="text-center p-4 py-8 w-1/5">{int}</td>
+                    <td class="text-center p-4 w-1/5">Osita Iheme</td>
+                    <td class="text-center p-4 w-1/5 text-sm">didiermunezero@gmail.com 078324452343</td>
+                    <td class="text-center w-1/5 text-sm">Cyizere</td>
+                    <td class="text-center p-4 w-1/5">This is special to this one</td>
                 </tr>
-                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
-                    <td class="text-center p-4 py-8 w-1/6">2019</td>
-                    <td class="text-center p-4 w-1/6">18</td>
-                    <td class="text-center p-4 w-1/6 text-sm">27</td>
-                    <td class="text-center w-1/6 text-sm">27</td>
-                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
-                    <td class=" text-center p-4 w-1/6">Kinigi</td>
-                </tr>
-                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
-                    <td class="text-center p-4 py-8 w-1/6">2018</td>
-                    <td class="text-center p-4 w-1/6">18</td>
-                    <td class="text-center p-4 w-1/6 text-sm">27</td>
-                    <td class="text-center w-1/6 text-sm">27</td>
-                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
-                    <td class=" text-center p-4 w-1/6">Kinigi</td>
-                </tr>
-                <tr class="mt-3 justify-between bg-white border-b-2 cursor-pointer ">
-                    <td class="text-center p-4 py-8 w-1/6">2017</td>
-                    <td class="text-center p-4 w-1/6">18</td>
-                    <td class="text-center p-4 w-1/6 text-sm">27</td>
-                    <td class="text-center w-1/6 text-sm">27</td>
-                    <td class="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
-                    <td class=" text-center p-4 w-1/6">Kinigi</td>
-                </tr>
-                
+                {/each}
                 </tbody>
         </table>
     </div>
