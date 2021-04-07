@@ -1,4 +1,4 @@
-<div class="flex flex-col w-full">
+<div class="flex flex-col w-full unlimited">
     <div class="w-full">
         <div class="bg-green-600 rounded p-2 cursor-pointer"><h3 class="text-white">New Ceremony</h3></div>
     </div>
@@ -54,4 +54,33 @@
 </div>
 <script type="ts">
 </script>
-<style></style>
+<style>
+     .unlimited {
+      height: 75vh;
+      overflow-y: auto;
+    }
+    div *::-webkit-scrollbar {
+      width: 4px;
+      display: none;
+    }
+    div *::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(197, 119, 119, 0.3);
+    }
+  
+    div::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
+    @media only screen and (max-height: 550px) {
+      .unlimited {
+        height: fit-content;
+        width: fit-content;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .unlimited {
+        height: fit-content;
+        width: fit-content;
+      }
+    }
+</style>

@@ -51,6 +51,18 @@
       height: 75vh;
       overflow-y: auto;
     }
+    div *::-webkit-scrollbar {
+      width: 4px;
+      display: none;
+    }
+    div *::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(197, 119, 119, 0.3);
+    }
+  
+    div::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
     @media only screen and (max-height: 550px) {
       .unlimited {
         height: fit-content;
