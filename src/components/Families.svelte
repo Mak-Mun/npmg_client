@@ -1,7 +1,10 @@
 <script lang="ts">
   import Search from './Search.svelte';
-  let photoUrl: string =
-    "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
+  import NewFamily from './NewFamily.svelte';
+  let isOpen:boolean = false;
+  function OpenModal(){
+      isOpen = true;
+    }
   let integers = [1, 2, 3, 4, 5, 6, 7, 8]
   </script>
   
@@ -22,9 +25,7 @@
           <span class="px-3 py-1 font-semibold text-successorColor underline"
             ><a href="/admin/gorillas">View all gorillas</a></span
           >
-          <span class="bg-green px-3 py-1 font-semibold cursor-pointer rounded-sm"
-            ><a href="/admin/new_gorilla">Add New</a></span
-          >
+          <div class="bg-green-600 rounded p-2 cursor-pointer"><h3 class="text-white">New Ceremony</h3></div>
         </div>
         </div>
         <table class="w-full justify-between mt-0">
@@ -52,7 +53,7 @@
                 >
                 <td class="text-center p-4 w-1/7"> {Math.round((int*int/(int+1))+5*int)}</td>
                 <td class="text-center p-4 w-1/7">Amahoro</td>
-                <td class="text-center p-4 w-1/7">Kagabo</td>
+                <td class="text-center p-4 w-1/7">December 2017</td>
                 <!-- <td class="p-4 w-1/7 flex">
                   <span class="cursor-pointer font-semibold pr-1 mx-1/2"
                     ><svg
@@ -85,6 +86,9 @@
         </table>
       </div>
     </div>
+    {#if isOpen}
+      <NewFamily bind:isOpen={isOpen}/>
+      {/if}
   </div>
   
   <style>
