@@ -50,7 +50,7 @@
                 <td class="text-center p-4 w-1/7"
                   >Gahinga</td
                 >
-                <td class="text-center p-4 w-1/7"> 12/2018</td>
+                <td class="text-center p-4 w-1/7"> {Math.round((int*int/(int+1))+5*int)}</td>
                 <td class="text-center p-4 w-1/7">Amahoro</td>
                 <td class="text-center p-4 w-1/7">Kagabo</td>
                 <!-- <td class="p-4 w-1/7 flex">
