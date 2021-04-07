@@ -18,9 +18,9 @@
    
     <TabPanel>
         <div
-        class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-full longer"
+        class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-full unlimited"
       >
-        <table class="w-full unlimited">
+        <table class="w-full">
             <thead class="w-full">
                 <tr class="justify-between">
                     <th class="p-4 w-1/5"></th>
