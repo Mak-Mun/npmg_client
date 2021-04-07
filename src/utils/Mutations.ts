@@ -18,8 +18,8 @@ export const NEW_NPMG = gql`
 `
 
 export const NEW_FAMILY = gql`
-  mutation addNewFamily($familyInput: NewFamily!) {
-    addNewFamily(data: $familyInput) {
+  mutation addNewFamily($data: NewFamily!) {
+    addNewFamily(data: $data) {
       id
       family_name
     }
