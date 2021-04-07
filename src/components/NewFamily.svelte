@@ -13,11 +13,11 @@
         <div class="m-3 flex flex-col">
             <div class="flex flex-col">
                 <label for="familyname" class="font-semibold mx-2">Family Name</label>
-                <input type="text" class="border-b-2 border-black focus:border-green-600 focus:outline-none rounded-md w-10/12 mx-2 py-1 px-4 text-md">
+                <input type="text" bind:value={family.familyname} class="border-b-2 border-black focus:border-green-600 focus:outline-none rounded-md w-10/12 mx-2 py-1 px-4 text-md">
             </div>
             <div class="flex flex-col mt-4">
                 <label for="familyname" class="font-semibold mx-2">Family Leader</label>
-                <input type="text" class="border-b-2 border-black focus:border-green-600 focus:outline-none rounded-md w-10/12 mx-2 py-1 px-4 text-md">
+                <input type="text" bind:value={family.leader} class="border-b-2 border-black focus:border-green-600 focus:outline-none rounded-md w-10/12 mx-2 py-1 px-4 text-md">
             </div>
             <div class="flex flex-col mt-4">
                 <label for="familyname" class="font-semibold mx-2">Members</label>
@@ -36,9 +36,28 @@
     </div>
   </div>
 <script type="ts">
+    let family={
+        familyname:"",
+        leader:""
+    }
     export let isOpen:boolean;
   function CloseModal(){
       isOpen = false;
+    }
+    async function CreateFamily(){
+        await client
+      .mutation(NEW_REPORT, {
+        data: { ...report },
+      })
+      .toPromise()
+      .then((r: any) => {
+        console.log(r);
+        notifier.success("Report added successfully!")
+      })
+      .catch((err) => {
+        console.error({ err })
+        notifier.danger("New report failed!")
+      })
     }
 </script>
 <style>
