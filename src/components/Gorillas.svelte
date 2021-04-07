@@ -19,6 +19,9 @@
       </div>
         <div class="flex justify-between md:w-6/12">
           <Search/>
+        <span class="px-3 py-1 font-semibold text-successorColor underline"
+          ><a href="/admin/families">View all families</a></span
+        >
         <span class="bg-green px-3 py-1 font-semibold cursor-pointer rounded-sm"
           ><a href="/admin/new_gorilla">Add New</a></span
         >
