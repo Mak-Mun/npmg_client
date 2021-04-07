@@ -35,3 +35,17 @@
       isOpen = false;
     }
 </script>
+<style>
+    .border-green-new{
+      border-color: #00917C;
+    }
+    .bg-green{
+      background-color: #00917C;
+    }
+    .bg-logout {
+      background-color: #e74343;
+    }
+    .text-green{
+      color: #00917C;
+    }
+  </style>
