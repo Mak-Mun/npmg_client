@@ -12,8 +12,16 @@
         </div>
         <div class="m-3 flex flex-col">
             <div class="flex flex-col">
-                <label class="font-semibold mx-2">Family Name</label>
-                <input type="text" class="border-b-2 border-black focus:outline-none rounded-md w-10/12 mx-2 py-1 px-4 text-md">
+                <label for="familyname" class="font-semibold mx-2">Family Name</label>
+                <input type="text" class="border-b-2 border-black focus:border-green-600 focus:outline-none rounded-md w-10/12 mx-2 py-1 px-4 text-md">
+            </div>
+            <div class="flex flex-col mt-4">
+                <label for="familyname" class="font-semibold mx-2">Family Leader</label>
+                <input type="text" class="border-b-2 border-black focus:border-green-600 focus:outline-none rounded-md w-10/12 mx-2 py-1 px-4 text-md">
+            </div>
+            <div class="flex flex-col mt-4">
+                <label for="familyname" class="font-semibold mx-2">Members</label>
+                <input type="text" class="border-b-2 border-black focus:border-green-600 focus:outline-none rounded-md w-10/12 mx-2 py-1 px-4 text-md">
             </div>
         </div>
         <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
