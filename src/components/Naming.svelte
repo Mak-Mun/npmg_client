@@ -48,7 +48,7 @@
 
 <style>
     .unlimited {
-      height: 90vh;
+      height: 75vh;
       overflow-y: auto;
     }
     @media only screen and (max-height: 550px) {
