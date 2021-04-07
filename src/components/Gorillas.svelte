@@ -17,7 +17,7 @@
         <div class="md:w-4/12">
         <h3 class="font-semibold px-3 py-1 text-xl">Gorillas listing</h3>
       </div>
-        <div class="flex justify-between md:w-6/12">
+        <div class="flex justify-between md:w-7/12">
           <Search/>
         <span class="px-3 py-1 font-semibold text-successorColor underline"
           ><a href="/admin/families">View all families</a></span
