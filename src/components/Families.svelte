@@ -53,8 +53,6 @@
                 <td class="text-center p-4 w-1/7"> 12/2018</td>
                 <td class="text-center p-4 w-1/7">Amahoro</td>
                 <td class="text-center p-4 w-1/7">Kagabo</td>
-                <td class="text-center p-4 w-1/7">Kwizigira</td>
-                <td class="text-center p-4 w-1/7">Gahinga</td>
                 <!-- <td class="p-4 w-1/7 flex">
                   <span class="cursor-pointer font-semibold pr-1 mx-1/2"
                     ><svg
