@@ -30,7 +30,7 @@
     "svelte-tabs": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.13.14",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
@@ -57,7 +57,7 @@
     "rollup-plugin-svelte": "^6.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "sapper": "^0.28.0",
-    "svelte": "^3.17.3",
+    "svelte": "^3.37.0",
     "svelte-check": "^1.0.46",
     "svelte-preprocess": "^4.3.0",
     "tailwindcss": "^1.9.5",
