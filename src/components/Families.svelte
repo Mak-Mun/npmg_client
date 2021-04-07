@@ -25,7 +25,7 @@
           <span class="px-3 py-1 font-semibold text-successorColor underline"
             ><a href="/admin/gorillas">View all gorillas</a></span
           >
-          <div class="bg-green-600 rounded p-2 cursor-pointer" on:click={OpenModal}><h3 class="text-white">New Ceremony</h3></div>
+          <div class="bg-green-600 rounded p-2 cursor-pointer" on:click={OpenModal}><h3 class="text-white">New Family</h3></div>
         </div>
         </div>
         <table class="w-full justify-between mt-0">
