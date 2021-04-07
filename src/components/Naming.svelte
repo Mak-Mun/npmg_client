@@ -20,7 +20,7 @@
         <div
         class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-full longer"
       >
-        <table class="w-full">
+        <table class="w-full unlimited">
             <thead class="w-full">
                 <tr class="justify-between">
                     <th class="p-4 w-1/5"></th>
@@ -47,6 +47,22 @@
   </Tabs>
 
 <style>
+    .unlimited {
+      height: 90vh;
+      overflow-y: auto;
+    }
+    @media only screen and (max-height: 550px) {
+      .unlimited {
+        height: fit-content;
+        width: fit-content;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .unlimited {
+        height: fit-content;
+        width: fit-content;
+      }
+    }
     :global(.svelte-tabs li.svelte-tabs__selected){
         border-bottom: 4px solid green;
         color: green;
