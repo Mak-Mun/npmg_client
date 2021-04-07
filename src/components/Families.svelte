@@ -2,7 +2,7 @@
   import Search from './Search.svelte';
   let photoUrl: string =
     "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
-  let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  let integers = [1, 2, 3, 4, 5, 6, 7, 8]
   </script>
   
   <svelte:head>
@@ -15,12 +15,12 @@
       >
         <div class="w-full md:flex mb-4 items-center justify-between">
           <div class="md:w-4/12">
-          <h3 class="font-semibold px-3 py-1 text-xl">Gorillas listing</h3>
+          <h3 class="font-semibold px-3 py-1 text-xl">Families listing</h3>
         </div>
           <div class="flex justify-between md:w-7/12">
             <Search/>
           <span class="px-3 py-1 font-semibold text-successorColor underline"
-            ><a href="/admin/families">View all families</a></span
+            ><a href="/admin/gorillas">View all gorillas</a></span
           >
           <span class="bg-green px-3 py-1 font-semibold cursor-pointer rounded-sm"
             ><a href="/admin/new_gorilla">Add New</a></span
@@ -33,12 +33,10 @@
               class="justify-between"
             >
               <th class="p-4 text-center w-1/7"></th>
-              <th class="p-4 text-center w-1/7">Name</th>
-              <th class="p-4 text-center w-1/7">Dob</th>
-              <th class="p-4 text-center w-1/7">Mother</th>
-              <th class="p-4 text-center w-1/7">Father</th>
-              <th class="p-4 text-center w-1/7">Namer</th>
-              <th class="p-4 text-center w-1/7">Family</th>
+              <th class="p-4 text-center w-1/7">Family name</th>
+              <th class="p-4 text-center w-1/7">Number of members</th>
+              <th class="p-4 text-center w-1/7">Head father</th>
+              <th class="p-4 text-center w-1/7">Date founded</th>
             </tr>
           </thead>
           <tbody
@@ -50,18 +48,7 @@
               >
                 <td class="text-center p-4 py-8 w-1/7">{int}</td>
                 <td class="text-center p-4 w-1/7"
-                  ><div class="flex items-center">
-                    <div class="flex-shrink-0 w-8 h-8">
-                      <img
-                        class="w-full h-full rounded-full"
-                        src={photoUrl}
-                        alt=""
-                      />
-                    </div>
-                    <div class="ml-3">
-                      <p class="text-gray-900 whitespace-no-wrap">Byishimo</p>
-                    </div>
-                  </div></td
+                  >Gahinga</td
                 >
                 <td class="text-center p-4 w-1/7"> 12/2018</td>
                 <td class="text-center p-4 w-1/7">Amahoro</td>
