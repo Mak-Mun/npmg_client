@@ -10,7 +10,12 @@
         <div class="m-3 mt-5">
           <h1 class="text-xl font-bold md:mb-5 uppercase">New Family</h1>
         </div>
-        
+        <div class="m-3 flex flex-col">
+            <div class="flex flex-col">
+                <label class="font-semibold mx-2">Family Name</label>
+                <input type="text" class="border-b-2 border-black focus:outline-none rounded-md w-10/12 mx-2 py-1 px-4 text-md">
+            </div>
+        </div>
         <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
           <button on:click={CloseModal} type="button" class="bg-logout w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
             Close
