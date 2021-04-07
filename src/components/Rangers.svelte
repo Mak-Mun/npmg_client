@@ -106,10 +106,11 @@
   
   <style>
     .unlimited {
-      height: 100vh;
+      height: 90vh;
+      overflow-y: auto;
     }
     .limitedTable {
-      height: 75vh;
+      height: 60vh;
     }
     @media only screen and (max-height: 550px) {
       .unlimited {
