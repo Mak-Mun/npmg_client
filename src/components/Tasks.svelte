@@ -32,9 +32,9 @@
     </tbody>
   </table>
   <div class="w-full flex">
-    <div class="w-11/12"></div>
-    <div class="w-1/12">
-      <p>+</p>
+    <div class="w-10/12"></div>
+    <div class="w-2/12">
+      <button class="text-white p-4 m-2 bg-green-600 rounded items-center cursor-pointer focus:outline-none">+ Add</button>
     </div>
   </div>
 </div>
