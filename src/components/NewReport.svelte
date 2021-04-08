@@ -59,8 +59,8 @@
                     {/each}
                 </select>
             </div>
-            <div class="flex flex-col">
-                <div class="ml-1 md:ml-4 flex md:w-5/12 mt-4">
+            <div class="flex flex-wrap">
+                <div class="sm:w-full ml-1 md:ml-4 flex md:w-5/12 mt-4">
                     <label for="name" class="px-2">Head:</label>
                     <select  bind:value={report.head} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                         {#each statusOptions as father}
@@ -70,7 +70,7 @@
                         {/each}
                     </select>
                 </div> 
-            <div class=" md:w-5/12 mt-4 flex md:ml-4">
+            <div class=" sm:w-full md:w-5/12 mt-4 flex md:ml-4">
                 <label for="name" class="px-2">Lungs:</label>
                 <select  bind:value={report.lungs} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     {#each statusOptions as father}
@@ -80,7 +80,7 @@
                     {/each}
                 </select>
             </div>
-            <div class=" md:w-5/12 flex mt-4">
+            <div class=" sm:w-full md:w-5/12 flex mt-4 md:ml-4">
                 <label for="name" class="px-2">Heart:</label>
                 <select  bind:value={report.heart} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     {#each statusOptions as father}
@@ -90,7 +90,7 @@
                     {/each}
                 </select>
             </div>
-            <div class=" md:w-5/12 mt-4 flex md:ml-4">
+            <div class=" sm:w-full md:w-5/12 mt-4 flex md:ml-4">
                 <label for="name" class="px-2">Legs:</label>
                 <select  bind:value={report.legs} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     {#each statusOptions as father}
@@ -100,7 +100,7 @@
                     {/each}
                 </select>
             </div>
-            <div class=" md:w-5/12 flex mt-4">
+            <div class=" sm:w-full md:w-5/12 flex mt-4 md:ml-4">
                 <label for="name" class="px-2">Eyes:</label>
                 <select  bind:value={report.eyes} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     {#each statusOptions as father}
@@ -110,7 +110,7 @@
                     {/each}
                 </select>
             </div>
-            <div class=" md:w-5/12 mt-4 flex md:ml-4">
+            <div class=" sm:w-full md:w-5/12 mt-4 flex md:ml-4">
                 <label for="name" class="px-2">Stomach:</label>
                 <select  bind:value={report.stomach} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     {#each statusOptions as father}
