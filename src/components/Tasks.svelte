@@ -10,7 +10,7 @@
   <div class="w-10/12 flex flex-col sm:mx-4 md:mx-10 mt-4">
     <div class="w-full flex flex-col">
       <label for="date">Task Date</label>
-      <input type="date" class="px-4 border-b-2 border-black focus:border-green-500 sm:w-5/6 md:w-4/12" name="task_date">
+      <input type="date" class="px-4 border-b-2 border-black focus:border-green-500 focus:outline-none sm:w-5/6 md:w-4/12" name="task_date">
     </div>
   <table class="w-full justify-between mt-4">
     <thead class="w-full">
@@ -25,6 +25,15 @@
     <tbody
       class="limitedTable overflow-y-auto"
     >
+        <tr
+          class="mt-3 justify-between bg-white border-b-2 cursor-pointer"
+        >
+          <td class="text-center p-2 w-1/7"
+            >1</td
+          >
+          <td class="text-center p-2 w-1/7">Horrible</td>
+          <td class="text-center p-2 w-1/7">Kwitonda</td>
+        </tr>
         <tr
           class="mt-3 justify-between bg-white border-b-2 cursor-pointer"
         >
