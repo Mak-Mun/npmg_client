@@ -62,65 +62,8 @@
             </div>
         </div>
         <div class="md:flex">
-        <div class="max-w-sm overflow-hidden space-y-6 mx-5 md:w-5/12">
-            <div class="border-b-2 focus-within:border-green-500 flex">
-                <label for="name" class="px-2">Heart:</label>
-                <select  bind:value={report.heart} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
-                    <option value="">--heart--</option>
-                    {#each statusOptions as father}
-                        <option value={father}>
-                            {father}
-                        </option>
-                    {/each}
-                </select>
-            </div>
-            <div class="border-b-2 focus-within:border-green-500 flex">
-                <label for="name" class="px-2">Lungs:</label>
-                <select  bind:value={report.lungs} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
-                    <option value="">--lungs--</option>
-                    {#each statusOptions as father}
-                        <option value={father}>
-                            {father}
-                        </option>
-                    {/each}
-                </select>
-            </div>
-            <div class="border-b-2 focus-within:border-green-500 flex">
-                <label for="name" class="px-2">Eyes:</label>
-                <select  bind:value={report.eyes} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
-                    <option value="">--eyes--</option>
-                    {#each statusOptions as father}
-                        <option value={father}>
-                            {father}
-                        </option>
-                    {/each}
-                </select>
-            </div>
-        </div>
         <div class="my-4 md:my-0 w-9/10 max-w-sm overflow-hidden space-y-6 mx-5 md:w-5/12">
-            <div class="border-b-2 focus-within:border-green-500 flex">
-                <label for="name" class="px-2">Lungs:</label>
-                <select  bind:value={report.lungs} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
-                    <option value="">--lungs--</option>
-                    {#each statusOptions as father}
-                        <option value={father}>
-                            {father}
-                        </option>
-                    {/each}
-                </select>
-            </div>
             
-            <div class="border-b-2 focus-within:border-green-500 flex">
-                <label for="name" class="px-2">Heart:</label>
-                <select bind:value={report.heart} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
-                    <option value="">--heart--</option>
-                    {#each statusOptions as father}
-                        <option value={father}>
-                            {father}
-                        </option>
-                    {/each}
-                </select>
-            </div>
             <div class="border-b-2 focus-within:border-green-500 flex">
                 <label for="name" class="px-2">Chest:</label>
                 <select  class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
