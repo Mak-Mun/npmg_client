@@ -48,8 +48,8 @@
 <div class="flex flex-col justify-center bg-white p-6">
     <h1 class="font-bold px-4 md:text-2xl mb-10">ADD NEW REPORT</h1>
     <form class="flex flex-col  mt-6" on:submit|preventDefault="{handleOnSubmit}">
-        <div class="mx-5 sm:-mt-10 mb-5">
-            <div class="flex md:w-6/12">
+        <div class="mx-5 mb-5 flex">
+            <div class="ml-4 flex md:w-6/12">
                 <label for="name" class="px-2">Gorilla:</label>
                 <select  bind:value={report.gorilla} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     {#each gorillas as father}
@@ -58,6 +58,21 @@
                         </option>
                     {/each}
                 </select>
+            </div>
+            <div class="flex flex-col mt-4">
+                <!-- <h1 class="font-bold underline">Data Inputs</h1> -->
+            <div class="ml-4 flex w-full">
+                <div class="sm:w-full md:w-1/2 md:flex">
+                <label for="name" class="px-2">Head:</label>
+                <select  bind:value={report.head} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                    {#each gorillas as father}
+                        <option value={father}>
+                            {father}
+                        </option>
+                    {/each}
+                </select>
+            </div>
+        </div>
             </div>
         </div>
         <div class="md:flex">
