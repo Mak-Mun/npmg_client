@@ -7,6 +7,7 @@
 </svelte:head>
 <div class="flex flex-col justify-center bg-white p-6">
   <h1 class="font-bold w-full text-xl">Daily task assignment</h1>
+  <div class="w-full flex flex-col">
   <table class="w-full justify-between mt-0">
     <thead class="w-full">
       <tr
@@ -38,6 +39,7 @@
       <button class="text-white p-4 py-2 m-2 bg-green-600 rounded items-center cursor-pointer focus:outline-none">Save Tasks</button>
     </div>
   </div>
+</div>
 </div>
 
 <style>
