@@ -49,10 +49,9 @@
     <h1 class="font-bold px-4 md:text-2xl mb-10">ADD NEW REPORT</h1>
     <form class="flex flex-col  mt-6" on:submit|preventDefault="{handleOnSubmit}">
         <div class="mx-5 sm:-mt-10 mb-5">
-            <div class="border-b-2 focus-within:border-green-500 flex md:w-5/12">
-                <label for="name" class="px-2">Name:</label>
-                <select  bind:value={report.gorilla} class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
-                    <option value="">--name--</option>
+            <div class="flex md:w-6/12">
+                <label for="name" class="px-2">Gorilla:</label>
+                <select  bind:value={report.gorilla} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     {#each gorillas as father}
                         <option value={father}>
                             {father}
@@ -62,21 +61,6 @@
             </div>
         </div>
         <div class="md:flex">
-        <div class="my-4 md:my-0 w-9/10 max-w-sm overflow-hidden space-y-6 mx-5 md:w-5/12">
-            
-            <div class="border-b-2 focus-within:border-green-500 flex">
-                <label for="name" class="px-2">Chest:</label>
-                <select  class="px-4 block w-full appearance-none focus:outline-none bg-transparent">
-                    <option value="">--chest--</option>
-                    {#each statusOptions as father}
-                        <option value={father}>
-                            {father}
-                        </option>
-                    {/each}
-                </select>
-            </div>
-		   
-        </div>
     </div>
     <div class="ml-5 mr-2 mt-3 md:mt-7 mb-5">
         <div class="border-b-2 focus-within:border-green-500 flex md:w-10/12">
@@ -99,7 +83,7 @@
     </div>
     <div class="mx-5 mb-5 md:ml-40">
         <div class="my-4 mx-auto focus-within:border-green-500">
-            <button class="bg-green text-gray px-2 py-1 rounded w-full md:w-5/12 text-white  font-bold focus:outline-none" type="submit">FINISH REPORT</button>
+            <button class="bg-green text-gray px-2 py-1 rounded w-full md:w-5/12 text-white  font-bold focus:outline-none" type="submit">Save report</button>
         </div>
     </div>
     </form>
