@@ -7,8 +7,12 @@
 </svelte:head>
 <div class="flex flex-col justify-center bg-white p-6">
   <h1 class="font-bold w-full text-xl">Daily task assignment</h1>
-  <div class="w-full flex flex-col">
-  <table class="w-full justify-between mt-0">
+  <div class="w-10/12 flex flex-col sm:mx-4 md:mx-10 ">
+    <div class="w-full flex flex-col">
+      <label for="date">Task Date</label>
+      <input type="date" class="px-4 border-b-2 border-black focus:border-green-500 sm:w-5/6 md:w-4/12" name="task_date">
+    </div>
+  <table class="w-full justify-between mt-4">
     <thead class="w-full">
       <tr
         class="justify-between"
