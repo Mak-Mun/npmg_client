@@ -61,7 +61,7 @@
             </div>
             <div class="flex flex-col mt-4">
                 <!-- <h1 class="font-bold underline">Data Inputs</h1> -->
-            <div class="ml-4 flex w-full">
+            <div class="ml-4 flex w-full flex-wrap">
                 <div class="sm:w-full md:w-1/2 md:flex">
                 <label for="name" class="px-2">Head:</label>
                 <select  bind:value={report.head} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
