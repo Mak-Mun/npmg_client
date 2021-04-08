@@ -46,10 +46,10 @@
 </svelte:head>
 <NotificationDisplay/>
 <div class="flex flex-col justify-center bg-white p-6">
-    <h1 class="font-bold px-4 md:text-2xl mb-10">ADD NEW REPORT</h1>
-    <form class="flex flex-col  mt-6" on:submit|preventDefault="{handleOnSubmit}">
-        <div class="mx-5 mb-5">
-            <div class="ml-4 flex md:w-6/12">
+    <h1 class="font-bold px-4 md:text-2xl mb-6">NEW REPORT</h1>
+    <form class="flex flex-col mt-4" on:submit|preventDefault="{handleOnSubmit}">
+        <div class="mx-5 mb-2">
+            <div class="ml-4 flex md:w-5/12">
                 <label for="name" class="px-2">Gorilla:</label>
                 <select  bind:value={report.gorilla} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     {#each gorillas as father}
@@ -59,9 +59,9 @@
                     {/each}
                 </select>
             </div>
-            <div class="flex flex-col mt-4">
+            <div class="flex flex-col">
             <div class="ml-4 flex w-full flex-wrap">
-                <div class="sm:w-full md:w-1/2 md:flex">
+                <div class="sm:w-full md:w-5/12 flex mt-4">
                 <label for="name" class="px-2">Head:</label>
                 <select  bind:value={report.head} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     {#each gorillas as father}
@@ -71,6 +71,58 @@
                     {/each}
                 </select>
             </div>
+            <div class="sm:w-full md:w-5/12 mt-4 flex md:ml-4">
+                <label for="name" class="px-2">Lungs:</label>
+                <select  bind:value={report.lungs} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                    {#each gorillas as father}
+                        <option value={father}>
+                            {father}
+                        </option>
+                    {/each}
+                </select>
+            </div>
+            <div class="sm:w-full md:w-5/12 flex mt-4">
+                <label for="name" class="px-2">Heart:</label>
+                <select  bind:value={report.heart} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                    {#each gorillas as father}
+                        <option value={father}>
+                            {father}
+                        </option>
+                    {/each}
+                </select>
+            </div>
+            <div class="sm:w-full md:w-5/12 mt-4 flex md:ml-4">
+                <label for="name" class="px-2">Legs:</label>
+                <select  bind:value={report.legs} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                    {#each gorillas as father}
+                        <option value={father}>
+                            {father}
+                        </option>
+                    {/each}
+                </select>
+            </div>
+            <div class="sm:w-full md:w-5/12 flex mt-4">
+                <label for="name" class="px-2">Eyes:</label>
+                <select  bind:value={report.eyes} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                    {#each gorillas as father}
+                        <option value={father}>
+                            {father}
+                        </option>
+                    {/each}
+                </select>
+            </div>
+            <div class="sm:w-full md:w-5/12 mt-4 flex md:ml-4">
+                <label for="name" class="px-2">Stomach:</label>
+                <select  bind:value={report.stomach} class="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                    {#each gorillas as father}
+                        <option value={father}>
+                            {father}
+                        </option>
+                    {/each}
+                </select>
+            </div>
+            
+            
             
         </div>
             </div>
