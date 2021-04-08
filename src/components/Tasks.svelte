@@ -12,11 +12,9 @@
       <tr
         class="justify-between"
       >
-        <th class="p-4 text-center w-1/7"></th>
-        <th class="p-4 text-center w-1/7">Family name</th>
-        <th class="p-4 text-center w-1/7">Number of members</th>
-        <th class="p-4 text-center w-1/7">Head father</th>
-        <th class="p-4 text-center w-1/7">Date founded</th>
+        <th class="p-4 text-center w-1/7">Numbering</th>
+        <th class="p-4 text-center w-1/7">Group name</th>
+        <th class="p-4 text-center w-1/7">Families and Gorillas</th>
       </tr>
     </thead>
     <tbody
@@ -25,16 +23,20 @@
         <tr
           class="mt-3 justify-between bg-white border-b-2 cursor-pointer"
         >
-          <td class="text-center p-4 py-8 w-1/7">{int}</td>
           <td class="text-center p-4 w-1/7"
-            >Gahinga</td
+            >1</td
           >
-          <td class="text-center p-4 w-1/7"> {Math.round((int*int/(int+1))+5*int)}</td>
-          <td class="text-center p-4 w-1/7">Amahoro</td>
-          <td class="text-center p-4 w-1/7">December 2017</td>
+          <td class="text-center p-4 w-1/7">Horrible</td>
+          <td class="text-center p-4 w-1/7">Kwitonda</td>
         </tr>
     </tbody>
   </table>
+  <div class="w-full flex">
+    <div class="w-11/12"></div>
+    <div class="w-1/12">
+      <p>+</p>
+    </div>
+  </div>
 </div>
 
 <style>
