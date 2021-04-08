@@ -32,9 +32,10 @@
     </tbody>
   </table>
   <div class="w-full flex">
-    <div class="w-10/12"></div>
-    <div class="w-2/12">
-      <button class="text-white p-4 m-2 bg-green-600 rounded items-center cursor-pointer focus:outline-none">+ Add</button>
+    <div class="w-8/12"></div>
+    <div class="w-4/12 flex">
+      <button class="text-white p-4 py-2 m-2 bg-green-600 rounded items-center cursor-pointer focus:outline-none">+ Add</button>
+      <button class="text-white p-4 py-2 m-2 bg-green-600 rounded items-center cursor-pointer focus:outline-none">Save Tasks</button>
     </div>
   </div>
 </div>
