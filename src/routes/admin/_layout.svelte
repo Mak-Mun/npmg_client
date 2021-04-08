@@ -5,6 +5,7 @@
 	import  List from '../../types/sidebar_items';
 	let list: List[] = [new List("/admin","Dashboard"),new List("/admin/tasks","Tasks"),new List("/admin/gorillas","Gorillas"),new List("/admin/rangers","Rangers"),new List("/admin/doctors","Doctors"),new List("/admin/kwitizina","Kwitizina"),new List("/admin/reports","Reports"),new List("/admin/settings","Settings")];
 </script>
+//0788574971 vet national park
 <style>
 main {
 		padding: 10px;
