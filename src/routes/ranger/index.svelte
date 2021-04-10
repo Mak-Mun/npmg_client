@@ -2,17 +2,6 @@
 	<title>WELCOME</title>
 </svelte:head>
 <script context="module" lang="ts">
-	  import type { Preload } from "@sapper/common"
-	  import saved from "../../store/user";
-
-export const preload = async function (this, page, session) {
-	saved.USER.subscribe(value=>{
-    if(!value.type || value.type != 'RANGER'){
-		console.log(value.type);
-		return this.redirect(301, "auth/login")
-	}
-  })
-}
 </script>
 <script type="ts">
 	let integers = [1, 2, 3, 4,5,6]
