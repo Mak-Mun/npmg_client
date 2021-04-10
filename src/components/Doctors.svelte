@@ -1,7 +1,17 @@
 <svelte:head>
     <title>Doctors</title>
   </svelte:head>
-
+  <script lang="ts">
+    import Search from './Search.svelte';
+    import InvitationModal from './InvitationModal.svelte';
+    let photoUrl: string =
+      "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
+    let integers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    let isOpen:boolean = false;
+    function OpenModal(){
+      isOpen = true;
+    }
+  </script>
   <div>
     <div class="w-full md:flex">
       <div
