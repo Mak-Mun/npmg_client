@@ -32,7 +32,7 @@ export const preload = async function (this, page, session) {
 				<h2 class="font-semibold text-xl mx-6">Daily Report</h2>
 				<a href="/admin/reports"><h3 class="font-semibold full md:mr-10">View full</h3></a>
 			</div>
-			<div class="w-full flex flex-wrap">
+			<div class="w-full flex flex-wrap justify-between">
 				<div class="mt-4 md:mt-0 w-3/10 flex flex-col items-center bg-white py-2 md:pb-6 md:pt-3 px-4 rounded-xl mx-2 cursor-pointer">
 					<div class="h-32 w-24 rounded-xl made"></div>
 					<p class="text-xs text-gray-600 mt-2">Gorillas pregnant</p>
