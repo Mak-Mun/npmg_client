@@ -34,7 +34,7 @@
 </svelte:head>
 <div>
   <div
-    class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 md:flex md:w-5/6 longer"
+    class="bg-white w-full rounded px-4 pt-3 pb-1 md:px-8 md:py-3 md:mr-3 md:flex md:w-5/6 longer"
   >
     <div class="mr-10 mt-2">
       <ul>

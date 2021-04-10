@@ -69,7 +69,7 @@
            </div>
         </div>
         <div class="md:w-5/12 flex flex-col items-center mx-auto px-4 shadow rounded sm:mt-6 md:mt-0 sm:pb-4 md:pb-0">
-            <h2 class="font-semibold my-2 border-b-2 border-green-600 text-green-600">Kwitonda Members</h2>
+            <h2 class="font-semibold my-2 border-b-2 border-green-600 text-green-600 cursor-pointer">Kwitonda Members</h2>
             <table class="w-full justify-between mt-4 mx-2">
                 <thead class="w-full">
                   <tr
