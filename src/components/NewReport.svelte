@@ -97,7 +97,7 @@
                         <option value={father}>
                             {father}
                         </option>
-                    {/each}
+                    {/each} 
                 </select>
             </div>
             <div class=" sm:w-full md:w-5/12 flex mt-4 md:ml-4">
