@@ -19,7 +19,7 @@ div::-webkit-scrollbar-thumb {
 <div>
     <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1 flex justify-between">
         <h1 class="text-xl font-semibold text-center md:text-left">REPORT VIEWS</h1>
-        <p class="bg-primaryGreen px-4 rounded text-white text-xl font-bold cursor-pointer">+</p>
+        <p class="bg-primaryGreen px-4 rounded text-white text-xl font-bold cursor-pointer" on:click={()=>{goto('ranger/new_report')}}>+</p>
     </div>
 <div class="w-full md:flex">
     <div class="w-full sm:w-full md:5/12 lg:w-6/12 bg-white rounded border px-4 py-3 md:px-8 md:py-3 mr-3">
