@@ -7,7 +7,7 @@
 
 export const preload = async function (this, page, session) {
 	saved.USER.subscribe(value=>{
-    if(!value.type || value.type != 'ADMIN'){
+    if(!value.type || value.type != 'RANGER'){
 		console.log(value.type);
 		return this.redirect(301, "auth/login")
 	}
