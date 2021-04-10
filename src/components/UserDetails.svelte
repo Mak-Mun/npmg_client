@@ -9,11 +9,8 @@
 </svelte:head>
 
 <div>
-  <div class="px:2 m-2 md:px-5 md:m-5 md:mt-1">
-    <h1 class="text-xl font-semibold text-center md:text-left">USER DETAILS</h1>
-  </div>
   <div
-    class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 flex flex-col md:w-5/6 longer py-6"
+    class="bg-white rounded px-4 pt-3 pb-1 md:px-8 md:py-3 mr-3 flex flex-col md:w-11/12 longer py-6"
   >
     <div class="flex flex-col items-center mx-auto mb-4">
       <img class="img rounded-full" src={photoUrl} alt="" />
@@ -114,17 +111,17 @@
             </h3>
           </div>
           <div class="flex w-full">
-            <div class="w-4/12 flex flex-col items-center mx-auto">
+            <div class="w-4/12 flex flex-col items-center mx-auto py-4 shadow">
               <div class="h-16 w-16 rounded attended" />
               <h4 class="text-xl text-gray-600 font-semibold">2931</h4>
               <p class="text-sm text-gray-600">Attendeed Days</p>
             </div>
-            <div class="w-4/12 flex flex-col items-center mx-auto">
+            <div class="w-4/12 flex flex-col items-center mx-auto py-4 shadow">
               <div class="h-16 w-16 rounded missed" />
               <h4 class="text-xl text-gray-600 font-semibold">131</h4>
               <p class="text-sm text-gray-600">Missed Days</p>
             </div>
-            <div class="w-4/12 flex flex-col items-center mx-auto">
+            <div class="w-4/12 flex flex-col items-center mx-auto py-4 shadow">
               <div class="h-16 w-16 rounded made" />
               <h4 class="text-xl text-gray-600 font-semibold">457</h4>
               <p class="text-sm text-gray-600">Made Reports</p>
