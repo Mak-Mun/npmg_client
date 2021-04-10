@@ -116,7 +116,7 @@
               <h4 class="text-xl text-gray-600 font-semibold">2931</h4>
               <p class="text-sm text-gray-600">Attendeed Days</p>
             </div>
-            <div class="w-4/12 flex flex-col items-center mx-2 py-4 shadow-xs rounded cursor-pointer">
+            <div class="w-4/12 flex flex-col items-center mx-2 py-4  rounded cursor-pointer">
               <div class="h-16 w-16 rounded missed" />
               <h4 class="text-xl text-gray-600 font-semibold">131</h4>
               <p class="text-sm text-gray-600">Missed Days</p>
@@ -145,15 +145,15 @@
 </div>
 
 <style>
-  .attended {
-    background-color: #c7ffd6;
-  }
-  .missed {
-    background-color: #ffecec;
-  }
-  .made {
-    background-color: #c7f5ff;
-  }
+  .attended{
+        background-color: #B7FFC2;
+    }
+    .missed{
+        background-color: #FC7474;
+    }
+    .made{
+        background-color: #86C5FF;
+    }
   .longer {
     height: fit-content;
   }
