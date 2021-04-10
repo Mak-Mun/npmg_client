@@ -66,3 +66,42 @@
       {/if}
     </div>
   </div>
+
+  <style>
+    .unlimited {
+      height: 90vh;
+      overflow-y: auto;
+    }
+    .limitedTable {
+      height: 60vh;
+    }
+    @media only screen and (max-height: 550px) {
+      .unlimited {
+        height: fit-content;
+        width: fit-content;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .unlimited {
+        height: fit-content;
+        width: fit-content;
+      }
+    }
+    .bg-green {
+      background-color: #00917c;
+      color: white;
+    }
+    div *::-webkit-scrollbar {
+      width: 4px;
+      display: none;
+    }
+    div *::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+  
+    div::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
+  </style>
+  
