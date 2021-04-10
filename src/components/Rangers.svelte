@@ -1,5 +1,6 @@
 <script lang="ts">
     import Search from './Search.svelte';
+    import { goto } from "@sapper/app"
     import InvitationModal from './InvitationModal.svelte';
     let photoUrl: string =
       "https://avatars.githubusercontent.com/u/784056?s=64&v=4"
@@ -46,6 +47,7 @@
         >
           {#each integers as int}
             <tr
+            on:click={()=>{goto(`/admin/rangers/ranger/${int}`)}}
               class="mt-3 justify-between bg-white border-b-2 cursor-pointer"
             >
               <td class="text-center p-4 py-8 w-1/10">{int}</td>
