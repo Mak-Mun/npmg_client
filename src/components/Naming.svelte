@@ -76,8 +76,8 @@
       }
     }
     :global(.svelte-tabs li.svelte-tabs__selected){
-        border-bottom: 4px solid green;
-        color: green;
+        border-bottom: 4px solid #00917C;
+        color: #00917C;
         font-weight: 800;
     }
 
