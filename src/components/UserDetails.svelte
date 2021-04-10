@@ -111,20 +111,20 @@
             </h3>
           </div>
           <div class="flex w-full">
-            <div class="w-4/12 flex flex-col items-center  py-4 shadow-xs rounded cursor-pointer mx-2">
+            <div class="w-4/12 flex flex-col items-center  py-4 hover:shadow-lg rounded cursor-pointer mx-2">
               <div class="h-16 w-16 rounded attended" />
-              <h4 class="text-xl text-gray-600 font-semibold">2931</h4>
-              <p class="text-sm text-gray-600">Attendeed Days</p>
+              <p class="text-xs text-gray-600 mt-1">Attendeed Days</p>
+              <h4 class="text-xl font-semibold mt-2">2931</h4>
             </div>
-            <div class="w-4/12 flex flex-col items-center mx-2 py-4  rounded cursor-pointer">
+            <div class="w-4/12 flex flex-col items-center mx-2 py-4 hover:shadow-lg rounded cursor-pointer">
               <div class="h-16 w-16 rounded missed" />
-              <h4 class="text-xl text-gray-600 font-semibold">131</h4>
-              <p class="text-sm text-gray-600">Missed Days</p>
+              <p class="text-xs text-gray-600 mt-1">Missed Days</p>
+              <h4 class="text-xl font-semibold mt-2">131</h4>
             </div>
-            <div class="w-4/12 flex flex-col items-center mx-2 py-4 shadow-xs rounded cursor-pointer">
+            <div class="w-4/12 flex flex-col items-center mx-2 py-4 hover:shadow-lg rounded cursor-pointer">
               <div class="h-16 w-16 rounded made" />
-              <h4 class="text-xl text-gray-600 font-semibold">457</h4>
-              <p class="text-sm text-gray-600">Made Reports</p>
+              <p class="text-xs text-gray-600 mt-1">Made Reports</p>
+              <h4 class="text-xl font-semibold mt-2">457</h4>
             </div>
           </div>
         </div>
