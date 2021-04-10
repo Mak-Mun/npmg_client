@@ -56,7 +56,7 @@
                 /></svg
               ></td
             >
-            <td class="mx-3 text-gray-600 px-2">+2507147115</td>
+            <td class="mx-3 text-gray-600 px-2">+25078147115</td>
           </tr>
           <tr class="mb-3">
             <td
@@ -115,17 +115,17 @@
           </div>
           <div class="flex w-full">
             <div class="w-4/12 flex flex-col items-center mx-auto">
-              <div class="h-16 w-16 rounded-full attended" />
+              <div class="h-16 w-16 rounded attended" />
               <h4 class="text-xl text-gray-600 font-semibold">2931</h4>
               <p class="text-sm text-gray-600">Attendeed Days</p>
             </div>
             <div class="w-4/12 flex flex-col items-center mx-auto">
-              <div class="h-16 w-16 rounded-full missed" />
+              <div class="h-16 w-16 rounded missed" />
               <h4 class="text-xl text-gray-600 font-semibold">131</h4>
               <p class="text-sm text-gray-600">Missed Days</p>
             </div>
             <div class="w-4/12 flex flex-col items-center mx-auto">
-              <div class="h-16 w-16 rounded-full made" />
+              <div class="h-16 w-16 rounded made" />
               <h4 class="text-xl text-gray-600 font-semibold">457</h4>
               <p class="text-sm text-gray-600">Made Reports</p>
             </div>
