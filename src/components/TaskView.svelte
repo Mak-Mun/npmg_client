@@ -7,8 +7,8 @@
 </svelte:head>
 <div class="flex flex-col justify-center bg-white p-6">
     <h1 class="font-bold text-xl">Daily Task Assignment View</h1>
-    <div class="flex w-full mt-2">
-        <div class="w-7/12 flex flex-col items-center mx-auto px-4">
+    <div class="md:flex w-full mt-2">
+        <div class="md:w-7/12 flex flex-col items-center mx-auto px-4">
         <div class="w-full flex mt-4 bg-primaryGreen text-white rounded-md py-6">
         <p class="font-semibold mx-4 text-xl">Family:</p>
         <p class="font-semibold mx-2 cursor-pointer text-xl">Kwitonda</p>
@@ -68,7 +68,7 @@
               </table>
            </div>
         </div>
-        <div class="w-5/12 flex flex-col items-center mx-auto px-4 shadow rounded">
+        <div class="md:w-5/12 flex flex-col items-center mx-auto px-4 shadow rounded sm:mt-6 md:mt-0 sm:pb-4 md:pb-0">
             <h2 class="font-semibold my-2 border-b-2 border-green-600 text-green-600">Kwitonda Members</h2>
             <table class="w-full justify-between mt-4 mx-2">
                 <thead class="w-full">
