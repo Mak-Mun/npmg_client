@@ -8,7 +8,7 @@
       province:"North",
       district:"Musanze",
       photo: "",
-      bio:"",
+      bio:"Conservation is life",
       year: "2021",
       type:"ADMIN"
     }
