@@ -8,7 +8,7 @@
 	let list: List[] = [new List("/admin","Dashboard"),new List("/admin/tasks","Tasks"),new List("/admin/gorillas","Gorillas"),new List("/admin/rangers","Rangers"),new List("/admin/doctors","Doctors"),new List("/admin/kwitizina","Kwitizina"),new List("/admin/reports","Reports"),new List("/admin/settings","Settings")];
 	export const preload = async function (this, page, session) {
 	saved.USER.subscribe(value=>{
-    if(!value.type || value.type != 'RANGER'){
+    if(!value.type || value.type != 'ADMIN'){
 		console.log(value.type);
 		return this.redirect(301, "auth/login")
 	}

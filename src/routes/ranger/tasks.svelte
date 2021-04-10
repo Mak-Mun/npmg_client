@@ -1,8 +1,8 @@
 <script lang="ts">
-    import Tasks from "../../components/Tasks.svelte"
+    import TaskView from "../../components/TaskView.svelte"
   </script>
   
   <div>
-    <Tasks />
+    <TaskView />
   </div>
   
