@@ -20,7 +20,7 @@
     <div class="md:flex">
       <div class="w-full md:w-6/12 flex flex-col items-center mx-auto">
         <div class="flex flex-col items-center mx-auto">
-          <h3 class="font-semibold text-xl text-gray-600 mb-3">
+          <h3 class="font-bold text-xl text-greenAccent mb-3 border-b-2 border-green-700 cursor-pointer">
             Verite Address
           </h3>
         </div>
@@ -106,22 +106,22 @@
       <div class="w-full md:w-6/12 flex flex-col">
         <div class="w-full">
           <div class="flex flex-col items-center mx-auto">
-            <h3 class="text-xl font-semibold text-gray-600 mb-4">
+            <h3 class="text-xl font-bold text-greenAccent mb-4 border-b-2 border-green-700 cursor-pointer">
               Verite Stats
             </h3>
           </div>
           <div class="flex w-full">
-            <div class="w-4/12 flex flex-col items-center mx-auto py-4 shadow">
+            <div class="w-4/12 flex flex-col items-center  py-4 shadow-xs rounded cursor-pointer mx-2">
               <div class="h-16 w-16 rounded attended" />
               <h4 class="text-xl text-gray-600 font-semibold">2931</h4>
               <p class="text-sm text-gray-600">Attendeed Days</p>
             </div>
-            <div class="w-4/12 flex flex-col items-center mx-auto py-4 shadow">
+            <div class="w-4/12 flex flex-col items-center mx-2 py-4 shadow-xs rounded cursor-pointer">
               <div class="h-16 w-16 rounded missed" />
               <h4 class="text-xl text-gray-600 font-semibold">131</h4>
               <p class="text-sm text-gray-600">Missed Days</p>
             </div>
-            <div class="w-4/12 flex flex-col items-center mx-auto py-4 shadow">
+            <div class="w-4/12 flex flex-col items-center mx-2 py-4 shadow-xs rounded cursor-pointer">
               <div class="h-16 w-16 rounded made" />
               <h4 class="text-xl text-gray-600 font-semibold">457</h4>
               <p class="text-sm text-gray-600">Made Reports</p>
