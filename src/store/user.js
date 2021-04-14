@@ -9,11 +9,11 @@ const USER = writable({
     "https://avatars.githubusercontent.com/u/52195?s=460&u=08bcafa24337a298e1b874279fde515e2fb8f81d&v=4",
 })
 
-const addUser = (user) => {
+const updateUser = (user) => {
   USER.set(user)
 }
 
 export default {
   USER,
-  addUser,
+  updateUser,
 }
