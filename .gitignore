@@ -7,3 +7,4 @@ global.css
 /.vscode/
 
 .vercel
+.svelte
