@@ -25,6 +25,9 @@ module.exports = {
 		target: '#svelte',
 
 		vite: {
+			optimizeDeps: {
+				exclude: ['@urql/svelte']
+			},
 			ssr: {
 				noExternal: Object.keys(pkg.dependencies || {})
 			}
