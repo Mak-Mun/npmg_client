@@ -6,7 +6,7 @@
     "dev": "svelte-kit dev --host --open",
     "build": "svelte-kit build",
     "start": "svelte-kit start",
-    "lint": "prettier --check . && eslint --ignore-path .gitignore .",
+    "lint": "prettier --check . && eslint --ignore-path .gitignore . --fix",
     "format": "prettier --write . --loglevel=error",
     "prepare": "husky install"
   },
