@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Search from './Search.svelte';
 
-	let isOpen: boolean = false;
+	let isOpen = false;
 	function OpenModal() {
 		isOpen = true;
 	}

@@ -2,9 +2,9 @@
 	import InvitationModal from './InvitationModal.svelte';
 	import Search from './Search.svelte';
 
-	let photoUrl: string = 'https://avatars.githubusercontent.com/u/784056?s=64&v=4';
+	let photoUrl = 'https://avatars.githubusercontent.com/u/784056?s=64&v=4';
 	let integers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-	let isOpen: boolean = false;
+	let isOpen = false;
 	function OpenModal() {
 		isOpen = true;
 	}
