@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Tasks from "$lib/Tasks.svelte"
+	import Tasks from '$lib/Tasks.svelte';
 </script>
 
 <div>
-  <Tasks />
+	<Tasks />
 </div>

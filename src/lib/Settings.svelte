@@ -1,5 +1,5 @@
 <script lang="ts">
-	import saved from '../store/user';
+	import saved from '../../store/user';
 	let user = {
 		fname: 'Munezero',
 		lname: 'Didier',
