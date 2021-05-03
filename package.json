@@ -37,6 +37,7 @@
 	},
 	"dependencies": {
 		"@urql/svelte": "^1.2.1",
-		"graphql": "^15.5.0"
+		"graphql": "^15.5.0",
+		"svelte-tabs": "^1.1.0"
 	}
 }
