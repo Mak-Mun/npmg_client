@@ -1,0 +1,42 @@
+.unlimited.svelte-3r1hdq.svelte-3r1hdq {
+	height: 90vh;
+	overflow-y: auto;
+}
+.limitedTable.svelte-3r1hdq.svelte-3r1hdq {
+	height: 60vh;
+}
+@media only screen and (max-height: 550px) {
+	.unlimited.svelte-3r1hdq.svelte-3r1hdq {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.unlimited.svelte-3r1hdq.svelte-3r1hdq {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+	}
+}
+.bg-green.svelte-3r1hdq.svelte-3r1hdq {
+	background-color: #00917c;
+	color: #fff;
+}
+div.svelte-3r1hdq .svelte-3r1hdq::-webkit-scrollbar {
+	display: none;
+	width: 4px;
+}
+div.svelte-3r1hdq .svelte-3r1hdq::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+div.svelte-3r1hdq.svelte-3r1hdq::-webkit-scrollbar-thumb {
+	background-color: #a9a9a9;
+	outline: 1px solid #708090;
+}

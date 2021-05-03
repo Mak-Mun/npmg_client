@@ -1,0 +1,43 @@
+.attended.svelte-1h36ws9.svelte-1h36ws9 {
+	background-color: #b7ffc2;
+}
+.missed.svelte-1h36ws9.svelte-1h36ws9 {
+	background-color: #fc7474;
+}
+.made.svelte-1h36ws9.svelte-1h36ws9 {
+	background-color: #86c5ff;
+}
+.longer.svelte-1h36ws9.svelte-1h36ws9 {
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+}
+.full.svelte-1h36ws9.svelte-1h36ws9 {
+	color: #f0a500;
+}
+@media only screen and (max-height: 340px) {
+	.longer.svelte-1h36ws9.svelte-1h36ws9 {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.longer.svelte-1h36ws9.svelte-1h36ws9 {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		width: 100%;
+	}
+}
+div.svelte-1h36ws9 .svelte-1h36ws9::-webkit-scrollbar {
+	width: 4px;
+}
+div.svelte-1h36ws9 .svelte-1h36ws9::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+div.svelte-1h36ws9.svelte-1h36ws9::-webkit-scrollbar-thumb {
+	background-color: #a9a9a9;
+	outline: 1px solid #708090;
+}
