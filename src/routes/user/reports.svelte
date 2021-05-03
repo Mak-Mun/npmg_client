@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Reports from '../../components/Reports.svelte';
+	import Reports from '$lib/Reports.svelte';
 </script>
 
 <div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Naming from '../../components/Naming.svelte';
+	import Naming from '$lib/Naming.svelte';
 </script>
 
 <div>

@@ -29,6 +29,10 @@
 	</div>
 	<div class="flex">
 		<p class="text-sm font-semibold cursor-pointer mx-4 mb-0 mt-1">Help Guide</p>
-		<img alt="" src={"https://6.viki.io/image/d7dcd68efa8d4abc93a7355b3f5089e9.jpeg?s=900x600&e=t"} class="h-6 w-6 rounded-full cursor-pointer " />
+		<img
+			alt=""
+			src={'https://6.viki.io/image/d7dcd68efa8d4abc93a7355b3f5089e9.jpeg?s=900x600&e=t'}
+			class="h-6 w-6 rounded-full cursor-pointer "
+		/>
 	</div>
 </div>

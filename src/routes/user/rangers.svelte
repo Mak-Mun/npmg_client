@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Rangers from '../../components/Rangers.svelte';
+	import Rangers from '$lib/Rangers.svelte';
 </script>
 
 <div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Gorillas from '../../components/Gorillas.svelte';
+	import Gorillas from '$lib/Gorillas.svelte';
 </script>
 
 <div>

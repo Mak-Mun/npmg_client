@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Doctors from '../../components/Doctors.svelte';
+	import Doctors from '$lib/Doctors.svelte';
 </script>
 
 <div>
