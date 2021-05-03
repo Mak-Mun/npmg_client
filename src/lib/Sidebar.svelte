@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { goto } from '@sapper/app';
-	import type List from '../types/sidebar_items';
+	import { goto, prefetch } from '$app/navigation';
+	import type List from '$lib/types/sidebar_items';
 	export let list: List[];
 </script>
 

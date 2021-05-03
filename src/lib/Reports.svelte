@@ -1,6 +1,6 @@
 <script lang="ts">
 	let integers: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
-	import { goto } from '@sapper/app';
+	import { goto, prefetch } from '$app/navigation';
 	let photoUrl =
 		'https://wallup.net/wp-content/uploads/2017/11/10/74767-mountain-ridges-Dolomites_mountains.jpg';
 </script>

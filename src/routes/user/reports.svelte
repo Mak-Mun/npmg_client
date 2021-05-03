@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Reports from "../../components/Reports.svelte"
+	import Reports from '../../components/Reports.svelte';
 </script>
 
 <div>
-  <Reports />
+	<Reports />
 </div>
 
 <style>

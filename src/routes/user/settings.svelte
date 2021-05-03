@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Settings from "../../components/Settings.svelte"
+	import Settings from '../../components/Settings.svelte';
 </script>
 
 <div>
-  <Settings />
+	<Settings />
 </div>
 
 <style>
