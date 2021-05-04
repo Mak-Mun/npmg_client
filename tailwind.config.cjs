@@ -31,7 +31,8 @@ module.exports = {
 			greenAccent: '#B7FFC2',
 			blueAccent: '#86C5FF',
 			redishAccent: '#86C5FF',
-			primaryWhite: '#FCFDFF'
+			primaryWhite: '#FCFDFF',
+			deemWhite:"#fcfddf"
 		})
 	},
 	plugins: []
