@@ -2,7 +2,11 @@ module.exports = {
 	mode: 'jit',
 	purge: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {},
+		extend: {
+			backgroundImage: theme => ({
+				'landing': "url('landing.jpg')"
+			})
+		},
 		fontFamily: {
 			sans: ['Nunito', 'Nunito Sans', 'sans-serif'],
 			sourceSans: ['Lato', 'Source Sans Pro', 'sans-serif'],
@@ -18,6 +22,7 @@ module.exports = {
 			greenAccent: '#00917C',
 			successorColor: '#F0A500'
 		}),
+
 		backgroundColor: (theme) => ({
 			...theme('colors'),
 			primaryGreen: '#00917C',
