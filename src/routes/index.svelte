@@ -12,7 +12,7 @@
 						it.
 					</h1>
 				</div>
-				<a href="/auth/login" class="bg-primaryGreen px-8 py-3 text-white rounded">Join here</a>
+				<a href="/auth/signin" class="bg-primaryGreen px-8 py-3 text-white rounded">Join here</a>
 			</div>
 		</div>
 		<footer class="w-full text-base fixed bottom-2 font-bold text-white text-center">

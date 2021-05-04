@@ -18,7 +18,7 @@
 			id="email"
 			required
 			bind:value={email}
-			class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+			class="block bg-transparent  focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
 		/>
 	</label>
 
@@ -28,7 +28,7 @@
 			type="password"
 			id="password"
 			bind:value={password}
-			class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+			class="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
 			required
 		/>
 	</label>
@@ -46,7 +46,7 @@
 			Remember me?
 		</div>
 
-		<a href="/auth/forgotpassword" class=" text-blue-500"> Forgot password? </a>
+		<a href="/auth/reset-password" class=" text-blue-500"> Forgot password? </a>
 	</div>
 
 	<input
@@ -57,6 +57,6 @@
 
 	<div class="text-center">
 		<span>Don't have an account</span>
-		<a href="/auth/register" class=" text-blue-500"> Register here? </a>
+		<a href="/auth/signup" class=" text-blue-500"> Register here? </a>
 	</div>
 </form>

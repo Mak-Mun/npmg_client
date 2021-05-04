@@ -48,7 +48,7 @@
 			id="First name"
 			bind:value={firstName}
 			placeholder="Boston Rockstack"
-			class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+			class="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
 			required
 		/>
 	</label>
@@ -60,7 +60,7 @@
 			id="LastName"
 			bind:value={lastName}
 			placeholder="Boston Rockstack"
-			class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+			class="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
 			required
 		/>
 	</label>
@@ -72,7 +72,7 @@
 			id="phone"
 			bind:value={phone}
 			placeholder="2507147115"
-			class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+			class="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
 			required
 		/>
 	</label>
@@ -84,7 +84,7 @@
 			id="email"
 			bind:value={email}
 			placeholder="test@gmail.com"
-			class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+			class="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
 			required
 		/>
 	</label>
@@ -95,7 +95,7 @@
 			type="password"
 			id="password"
 			bind:value={password}
-			class="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
+			class="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
 			required
 		/>
 	</label>
@@ -123,6 +123,6 @@
 
 	<div class="text-center">
 		<span>Have an account</span>
-		<a href="/auth/login" class=" text-blue-500"> Login here? </a>
+		<a href="/auth/signin" class=" text-blue-500"> Login here? </a>
 	</div>
 </form>
