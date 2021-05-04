@@ -1,12 +1,9 @@
 <script lang="ts">
 	let path_name;
+
 	interface List {
 		name: string;
 		url: string;
-	}
-
-	if (typeof window !== 'undefined') {
-		path_name = window.location.pathname;
 	}
 
 	export let list: List[];
@@ -17,8 +14,14 @@
 
 	<ul class="flex flex-col py-4">
 		{#each list as item}
-			<!--TODO:(verite) Fix gettting the current path (bg-gray-200 border-r-4 border-green-600)-->
-			<li class="mb-4 ">
+			<!--TODO:(verite) Fix gettting the current path ()-->
+			<li
+				class="mb-4 {$page.path.split('/')[$page.path.split('/').length - 1] === item.name
+					? 'bg-gray-200 border-r-4 border-green-600'
+					: $page.path.split('/')[$page.path.split('/').length - 1] === 'doctor'
+					? 'bg-gray-200 border-r-4 border-green-600'
+					: ''}"
+			>
 				<a
 					href={item.url}
 					class="px-4 flex flex-row items-center h-12 transform  text-gray-800 hover:text-motherGreen"

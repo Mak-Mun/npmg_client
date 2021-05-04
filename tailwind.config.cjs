@@ -6,8 +6,8 @@ module.exports = {
 			backgroundImage: (theme) => ({
 				landing: "url('landing.jpg')"
 			}),
-			gridTemplateColumns:{
-				'layout':"15% 85%"
+			gridTemplateColumns: {
+				layout: '15% 85%'
 			}
 		},
 		fontFamily: {

@@ -7,7 +7,7 @@
 			url: '/doctor'
 		},
 		{
-			name: 'drugs',
+			name: 'drug',
 			url: '/doctor/drug'
 		},
 		{
