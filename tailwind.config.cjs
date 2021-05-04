@@ -5,7 +5,10 @@ module.exports = {
 		extend: {
 			backgroundImage: (theme) => ({
 				landing: "url('landing.jpg')"
-			})
+			}),
+			gridTemplateColumns:{
+				'layout':"15% 85%"
+			}
 		},
 		fontFamily: {
 			sans: ['Nunito', 'Nunito Sans', 'sans-serif'],
@@ -32,7 +35,7 @@ module.exports = {
 			blueAccent: '#86C5FF',
 			redishAccent: '#86C5FF',
 			primaryWhite: '#FCFDFF',
-			deemWhite:"#fcfddf"
+			deemWhite: '#fcfddf'
 		})
 	},
 	plugins: []

@@ -7,17 +7,25 @@
 			url: '/doctor'
 		},
 		{
-			name: 'Durgs',
-			url: '/doctor/drugs'
+			name: 'drugs',
+			url: '/doctor/drug'
+		},
+		{
+			name: 'ranger',
+			url: '/doctor/ranger'
+		},
+		{
+			name: 'gorilla',
+			url: '/doctor/gorilla'
 		}
 	];
 </script>
 
 <svelte:head>
-	<title>Docker | npmg</title>
+	<title>Doctor | npmg</title>
 </svelte:head>
 
-<main class="bg-deemWhite">
+<main class="bg-deemWhite grid grid-cols-layout">
 	<Sidebar {list} />
 	<slot />
 </main>
