@@ -5,21 +5,25 @@
 </script>
 
 <svelte:head>
-	<title>{status}</title>
+	<title>{status ?? 'Not found'} | npmg</title>
 </svelte:head>
 
 {#if error}
-<h1>{status}</h1>
+	<h1>{status}</h1>
 
-<p>{error?.message}</p>
+	<p>{error?.message}</p>
 
-{#if dev && error.stack}
-	<pre>{error.stack}</pre>
-{/if}
+	{#if dev && error.stack}
+		<pre>{error.stack}</pre>
+	{/if}
 {:else}
-<div class="w-full flex flex flex-col items-center mx-auto md:mt-20">
-<h1 class="text-center font-bold text-5xl hover:text-green-500 cursor-pointer">404</h1>
-<p class="text-center hover:underline mt-2">Not found</p>
-</div>
-{/if}
+	<div class="w-screen h-screen flex flex-col   justify-center items-center mx-auto">
+		<p class="text-center font-bold text-5xl hover:text-green-500 cursor-pointer">
+			404 | Not found
+		</p>
 
+		<div class="mt-4 text-blue-700 font-bold">
+			<a href="/">Back to home</a>
+		</div>
+	</div>
+{/if}
