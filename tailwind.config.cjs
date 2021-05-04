@@ -3,8 +3,8 @@ module.exports = {
 	purge: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
-			backgroundImage: theme => ({
-				'landing': "url('landing.jpg')"
+			backgroundImage: (theme) => ({
+				landing: "url('landing.jpg')"
 			})
 		},
 		fontFamily: {
