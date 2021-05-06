@@ -15,12 +15,15 @@
 	<ul class="flex flex-col py-4">
 		{#each list as item}
 			<!--TODO:(verite) Fix gettting the current path ()-->
-			<li
+			<!-- <li
 				class="mb-4 {$page.path.split('/')[$page.path.split('/').length - 1] === item.name
 					? 'bg-gray-200 border-r-4 border-green-600'
 					: $page.path.split('/')[$page.path.split('/').length - 1] === 'doctor'
 					? 'bg-gray-200 border-r-4 border-green-600'
 					: ''}"
+			> -->
+			<li
+				
 			>
 				<a
 					href={item.url}
