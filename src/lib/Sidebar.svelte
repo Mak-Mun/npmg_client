@@ -22,9 +22,7 @@
 					? 'bg-gray-200 border-r-4 border-green-600'
 					: ''}"
 			> -->
-			<li
-				
-			>
+			<li>
 				<a
 					href={item.url}
 					class="px-4 flex flex-row items-center h-12 transform  text-gray-800 hover:text-motherGreen"
