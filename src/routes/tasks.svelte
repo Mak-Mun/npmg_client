@@ -2,8 +2,9 @@
 	import Tasks from '$lib/Tasks.svelte';
 	import Layout from '$lib/Layout.svelte';
 </script>
+
 <Layout>
-<div>
-	<Tasks />
-</div>
+	<div>
+		<Tasks />
+	</div>
 </Layout>

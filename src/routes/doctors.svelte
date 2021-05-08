@@ -4,8 +4,7 @@
 </script>
 
 <Layout>
-<div>
-	
-	<Doctors />
-</div>
+	<div>
+		<Doctors />
+	</div>
 </Layout>

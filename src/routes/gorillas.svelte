@@ -4,9 +4,9 @@
 </script>
 
 <Layout>
-<div>
-	<Gorillas />
-</div>
+	<div>
+		<Gorillas />
+	</div>
 </Layout>
 
 <style>

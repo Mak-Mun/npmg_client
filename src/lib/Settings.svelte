@@ -16,8 +16,7 @@
 		Object.assign(user, value);
 	});
 	function handleOnSubmit() {
-		user.type = 'ADMIN';
-		saved.addUser(user);
+		console.log("onSubmit")
 	}
 	let avatar, fileinput;
 	const onFileSelected = (e) => {

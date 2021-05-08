@@ -4,9 +4,9 @@
 </script>
 
 <Layout>
-<div>
-	<Reports />
-</div>
+	<div>
+		<Reports />
+	</div>
 </Layout>
 
 <style>

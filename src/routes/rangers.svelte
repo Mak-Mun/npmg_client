@@ -4,9 +4,9 @@
 </script>
 
 <Layout>
-<div>
-	<Rangers />
-</div>
+	<div>
+		<Rangers />
+	</div>
 </Layout>
 
 <style>

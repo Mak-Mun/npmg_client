@@ -4,9 +4,9 @@
 </script>
 
 <Layout>
-<div>
-	<Settings />
-</div>
+	<div>
+		<Settings />
+	</div>
 </Layout>
 
 <style>
