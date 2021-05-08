@@ -3,14 +3,14 @@
 	import TopNav from '$lib/TopNav.svelte';
 	import List from '$lib/types/sidebar_items';
 	let list: List[] = [
-		new List('/user', 'Dashboard'),
-		new List('/user/tasks', 'Tasks'),
-		new List('/user/gorillas', 'Gorillas'),
-		new List('/user/rangers', 'Rangers'),
-		new List('/user/doctors', 'Doctors'),
-		new List('/user/kwitizina', 'Kwitizina'),
-		new List('/user/reports', 'Reports'),
-		new List('/user/settings', 'Settings')
+		new List('/', 'Dashboard'),
+		new List('/tasks', 'Tasks'),
+		new List('/gorillas', 'Gorillas'),
+		new List('/rangers', 'Rangers'),
+		new List('/doctors', 'Doctors'),
+		new List('/kwitizina', 'Kwitizina'),
+		new List('/reports', 'Reports'),
+		new List('/settings', 'Settings')
 	];
 </script>
 
