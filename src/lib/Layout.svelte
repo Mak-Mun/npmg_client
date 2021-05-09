@@ -1,34 +1,50 @@
 <script lang="ts">
+	import Nav from '$lib/Nav.svelte';
 	import Sidebar from '$lib/Sidebar.svelte';
-	import TopNav from '$lib/TopNav.svelte';
-	import List from '$lib/types/sidebar_items';
+	import type { List } from '$lib/types/sidebar_items';
+
 	let list: List[] = [
-		new List('/', 'Dashboard'),
-		new List('/tasks', 'Tasks'),
-		new List('/gorillas', 'Gorillas'),
-		new List('/rangers', 'Rangers'),
-		new List('/doctors', 'Doctors'),
-		new List('/kwitizina', 'Kwitizina'),
-		new List('/reports', 'Reports'),
-		new List('/settings', 'Settings')
+		{
+			name: 'Dashboard',
+			url: '/dashboard'
+		},
+		{
+			name: 'Tasks',
+			url: '/tasks'
+		},
+		{
+			name: 'Gorillas',
+			url: '/gorillas'
+		},
+		{
+			name: 'Rangers',
+			url: '/rangers'
+		},
+		{
+			name: 'Doctors',
+			url: '/doctors'
+		},
+		{
+			name: 'Kwitizina',
+			url: '/kwitizina'
+		},
+		{
+			name: 'Reports',
+			url: '/reports'
+		},
+		{
+			name: 'Settings',
+			url: '/settings'
+		}
 	];
 </script>
 
-<div class="min-h-screen flex flex-row bg-gray-100">
-	<Sidebar bind:list />
-	<!-- 0788574971 vet national park -->
-	<div class="flex flex-col w-screen h-screen overflow-y-auto">
-		<TopNav />
-		<main class="float-left">
-			<slot />
-		</main>
+<div class="min-h-screen grid grid-cols-layout  bg-gray-100">
+	<aside>
+		<Sidebar bind:list />
+	</aside>
+	<div class="flex flex-col w-screen h-screen px-4">
+		<Nav />
+		<slot />
 	</div>
 </div>
-
-<style>
-	main {
-		padding: 10px;
-		margin: 5px;
-		box-sizing: border-box;
-	}
-</style>

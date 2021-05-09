@@ -2,7 +2,7 @@
 	export let segment: string;
 </script>
 
-<nav>
+<nav class="w-full">
 	<ul>
 		<li><a aria-current={segment === undefined ? 'page' : undefined} href=".">home</a></li>
 		<li><a aria-current={segment === 'about' ? 'page' : undefined} href="about">about</a></li>
@@ -23,7 +23,6 @@
 		margin: 0;
 		padding: 0;
 	}
-	/* clearfix */
 	ul::after {
 		content: '';
 		display: block;

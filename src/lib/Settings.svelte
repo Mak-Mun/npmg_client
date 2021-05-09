@@ -1,5 +1,6 @@
 <script lang="ts">
 	import saved from '../../store/user';
+
 	let user = {
 		fname: 'Munezero',
 		lname: 'Didier',
@@ -152,7 +153,7 @@
 						/>
 					</div>
 				</div>
-				<div class="mt-1 mx-auto flex w-11/12 md:w-9/12 items-center mt-2">
+				<div class="mx-auto flex w-11/12 md:w-9/12 items-center mt-2">
 					<div class="flex flex-col w-full">
 						<button type="submit" class="bg-green py-1 font-semibold rounded focus:outline-none"
 							>Save Changes</button
@@ -190,13 +191,13 @@
 		width: 120px;
 		height: 120px;
 	}
-	@media only screen and (max-height: 340px) {
+	@media screen and (max-height: 340px) {
 		.longer {
 			height: fit-content;
 			width: 100%;
 		}
 	}
-	@media only screen and (max-width: 700px) {
+	@media screen and (max-width: 700px) {
 		.longer {
 			height: fit-content;
 			width: 100%;
