@@ -1,7 +1,5 @@
-<div>
-	<span>On it</span>
-	<!-- <div class=" text-gray-600">
-		//TODO: fix these log stuffs
+<div class="flex justify-between bg-white w-full h-16 py-4 px-8 shadow-sm">
+	<div class="relative text-gray-600">
 		<input
 			type="search"
 			name="search"
@@ -36,5 +34,5 @@
 			src={'https://6.viki.io/image/d7dcd68efa8d4abc93a7355b3f5089e9.jpeg?s=900x600&e=t'}
 			class="h-6 w-6 rounded-full cursor-pointer "
 		/>
-	</div> -->
+	</div>
 </div>
