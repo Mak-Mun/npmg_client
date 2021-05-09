@@ -192,17 +192,17 @@
     picomatch "^2.2.2"
 
 "@sveltejs/adapter-vercel@next":
-  version "1.0.0-next.15"
-  resolved "https://registry.npmjs.org/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.15.tgz"
+  version "1.0.0-next.16"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.16.tgz#a5cd503f23e5f942fb90a1b23196c2f1acd1650d"
   dependencies:
-    "@sveltejs/kit" "1.0.0-next.91"
+    "@sveltejs/kit" "1.0.0-next.98"
     esbuild "^0.11.12"
 
-"@sveltejs/kit@1.0.0-next.91":
-  version "1.0.0-next.91"
-  resolved "https://registry.npmjs.org/@sveltejs/kit/-/kit-1.0.0-next.91.tgz"
+"@sveltejs/kit@1.0.0-next.98":
+  version "1.0.0-next.98"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.98.tgz#3327d9b32caec1cf75166f305b5af17c128b76d3"
   dependencies:
-    "@sveltejs/vite-plugin-svelte" "^1.0.0-next.7"
+    "@sveltejs/vite-plugin-svelte" "^1.0.0-next.9"
     cheap-watch "^1.0.3"
     sade "^1.7.4"
 
@@ -214,7 +214,7 @@
     cheap-watch "^1.0.3"
     sade "^1.7.4"
 
-"@sveltejs/vite-plugin-svelte@^1.0.0-next.7", "@sveltejs/vite-plugin-svelte@^1.0.0-next.9":
+"@sveltejs/vite-plugin-svelte@^1.0.0-next.9":
   version "1.0.0-next.9"
   resolved "https://registry.npmjs.org/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-1.0.0-next.9.tgz"
   dependencies:
