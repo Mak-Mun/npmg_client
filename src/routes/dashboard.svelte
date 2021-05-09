@@ -1,5 +1,5 @@
 <script type="ts">
-	import Layout from '$lib/Layout.svelte';
+	import Layout from '$lib/layouts/index.svelte';
 
 	let integers = [1, 2, 3, 4, 5, 6];
 	let newReportUrl = 'https://avatars.githubusercontent.com/u/53856673?v=4';

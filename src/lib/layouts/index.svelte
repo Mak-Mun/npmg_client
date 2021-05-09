@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Nav from '$lib/Nav.svelte';
-	import Sidebar from '$lib/Sidebar.svelte';
+	import Nav from '$lib/components/Nav.svelte';
+	import Sidebar from '$lib/components/Sidebar.svelte';
 	import type { List } from '$lib/types/sidebar_items';
 
 	let list: List[] = [
