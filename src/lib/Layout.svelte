@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Nav from '$lib/Nav.svelte';
 	import Sidebar from '$lib/Sidebar.svelte';
 	import type { List } from '$lib/types/sidebar_items';
 
@@ -43,8 +42,8 @@
 	<aside>
 		<Sidebar bind:list />
 	</aside>
-	<div class="flex flex-col w-screen h-screen px-4">
+	<!-- <div class="flex flex-col w-screen h-screen">
 		<Nav />
 		<slot />
-	</div>
+	</div> -->
 </div>
