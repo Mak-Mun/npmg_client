@@ -2302,9 +2302,9 @@ svelte-hmr@^0.14.2:
   version "0.14.3"
   resolved "https://registry.npmjs.org/svelte-hmr/-/svelte-hmr-0.14.3.tgz"
 
-svelte-preprocess@^4.7.1:
-  version "4.7.2"
-  resolved "https://registry.npmjs.org/svelte-preprocess/-/svelte-preprocess-4.7.2.tgz"
+svelte-preprocess@^4.7.3:
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.7.3.tgz#454fa059c2400b15e7a3caeca18993cff9df0e96"
   dependencies:
     "@types/pug" "^2.0.4"
     "@types/sass" "^1.16.0"
