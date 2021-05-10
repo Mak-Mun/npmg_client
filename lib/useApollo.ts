@@ -11,8 +11,7 @@ function createIsomorphLink() {
     // return new SchemaLink({ schema })
   } else {
     return new HttpLink({
-      uri: '/api/graphql',
-      credentials: 'same-origin',
+      uri: 'https://npmg-server.herokuapp.com/graphql',
     })
   }
 }
