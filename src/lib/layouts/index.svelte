@@ -33,6 +33,10 @@
 			url: '/reports'
 		},
 		{
+			name: 'Store',
+			url: '/store'
+		},
+		{
 			name: 'Settings',
 			url: '/settings'
 		}
