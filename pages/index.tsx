@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <main className="bg-landing bg-opacity-0 h-screen bg-cover">
@@ -10,12 +12,11 @@ export default function Home() {
                 Every thing that goes with it.
               </h1>
             </div>
-            <a
-              href="/auth/signin"
-              className="bg-primaryGreen px-8 py-3 text-white rounded"
-            >
-              Join here
-            </a>
+            <Link href="/signin">
+              <a className="bg-primaryGreen px-8 py-3 text-white rounded">
+                Join here
+              </a>
+            </Link>
           </div>
         </div>
         <footer className="w-full text-base fixed bottom-2 font-bold text-white text-center">
