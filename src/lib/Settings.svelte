@@ -16,7 +16,7 @@
 		Object.assign(user, value);
 	});
 	function handleOnSubmit() {
-		console.log("onSubmit")
+		console.log('onSubmit');
 	}
 	let avatar, fileinput;
 	const onFileSelected = (e) => {
