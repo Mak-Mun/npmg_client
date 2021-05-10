@@ -192,17 +192,17 @@
     picomatch "^2.2.2"
 
 "@sveltejs/adapter-vercel@next":
-  version "1.0.0-next.15"
-  resolved "https://registry.npmjs.org/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.15.tgz"
+  version "1.0.0-next.16"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.16.tgz#a5cd503f23e5f942fb90a1b23196c2f1acd1650d"
   dependencies:
-    "@sveltejs/kit" "1.0.0-next.91"
+    "@sveltejs/kit" "1.0.0-next.98"
     esbuild "^0.11.12"
 
-"@sveltejs/kit@1.0.0-next.91":
-  version "1.0.0-next.91"
-  resolved "https://registry.npmjs.org/@sveltejs/kit/-/kit-1.0.0-next.91.tgz"
+"@sveltejs/kit@1.0.0-next.98":
+  version "1.0.0-next.98"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.98.tgz#3327d9b32caec1cf75166f305b5af17c128b76d3"
   dependencies:
-    "@sveltejs/vite-plugin-svelte" "^1.0.0-next.7"
+    "@sveltejs/vite-plugin-svelte" "^1.0.0-next.9"
     cheap-watch "^1.0.3"
     sade "^1.7.4"
 
@@ -214,7 +214,7 @@
     cheap-watch "^1.0.3"
     sade "^1.7.4"
 
-"@sveltejs/vite-plugin-svelte@^1.0.0-next.7", "@sveltejs/vite-plugin-svelte@^1.0.0-next.9":
+"@sveltejs/vite-plugin-svelte@^1.0.0-next.9":
   version "1.0.0-next.9"
   resolved "https://registry.npmjs.org/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-1.0.0-next.9.tgz"
   dependencies:
@@ -285,13 +285,13 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/parser@^4.19.0":
-  version "4.22.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-4.22.0.tgz"
+"@typescript-eslint/parser@^4.22.1":
+  version "4.22.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.22.1.tgz#a95bda0fd01d994a15fc3e99dc984294f25c19cc"
   dependencies:
-    "@typescript-eslint/scope-manager" "4.22.0"
-    "@typescript-eslint/types" "4.22.0"
-    "@typescript-eslint/typescript-estree" "4.22.0"
+    "@typescript-eslint/scope-manager" "4.22.1"
+    "@typescript-eslint/types" "4.22.1"
+    "@typescript-eslint/typescript-estree" "4.22.1"
     debug "^4.1.1"
 
 "@typescript-eslint/scope-manager@4.22.0":
@@ -301,9 +301,20 @@
     "@typescript-eslint/types" "4.22.0"
     "@typescript-eslint/visitor-keys" "4.22.0"
 
+"@typescript-eslint/scope-manager@4.22.1":
+  version "4.22.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-4.22.1.tgz#5bb357f94f9cd8b94e6be43dd637eb73b8f355b4"
+  dependencies:
+    "@typescript-eslint/types" "4.22.1"
+    "@typescript-eslint/visitor-keys" "4.22.1"
+
 "@typescript-eslint/types@4.22.0":
   version "4.22.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-4.22.0.tgz"
+
+"@typescript-eslint/types@4.22.1":
+  version "4.22.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-4.22.1.tgz#bf99c6cec0b4a23d53a61894816927f2adad856a"
 
 "@typescript-eslint/typescript-estree@4.22.0":
   version "4.22.0"
@@ -317,11 +328,30 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
+"@typescript-eslint/typescript-estree@4.22.1":
+  version "4.22.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-4.22.1.tgz#dca379eead8cdfd4edc04805e83af6d148c164f9"
+  dependencies:
+    "@typescript-eslint/types" "4.22.1"
+    "@typescript-eslint/visitor-keys" "4.22.1"
+    debug "^4.1.1"
+    globby "^11.0.1"
+    is-glob "^4.0.1"
+    semver "^7.3.2"
+    tsutils "^3.17.1"
+
 "@typescript-eslint/visitor-keys@4.22.0":
   version "4.22.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-4.22.0.tgz"
   dependencies:
     "@typescript-eslint/types" "4.22.0"
+    eslint-visitor-keys "^2.0.0"
+
+"@typescript-eslint/visitor-keys@4.22.1":
+  version "4.22.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-4.22.1.tgz#6045ae25a11662c671f90b3a403d682dfca0b7a6"
+  dependencies:
+    "@typescript-eslint/types" "4.22.1"
     eslint-visitor-keys "^2.0.0"
 
 "@urql/core@^2.0.0":
@@ -1984,9 +2014,9 @@ postcss@^6.0.9:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.10:
-  version "8.2.13"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.2.13.tgz"
+postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.14:
+  version "8.2.14"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.14.tgz#dcf313eb8247b3ce8078d048c0e8262ca565ad2b"
   dependencies:
     colorette "^1.2.2"
     nanoid "^3.1.22"
@@ -2000,9 +2030,9 @@ prettier-plugin-svelte@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/prettier-plugin-svelte/-/prettier-plugin-svelte-2.2.0.tgz"
 
-prettier@~2.2.1:
-  version "2.2.1"
-  resolved "https://registry.npmjs.org/prettier/-/prettier-2.2.1.tgz"
+prettier@~2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.0.tgz#b6a5bf1284026ae640f17f7ff5658a7567fc0d18"
 
 pretty-hrtime@^1.0.3:
   version "1.0.3"
