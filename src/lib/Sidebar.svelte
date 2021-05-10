@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	let path = '';
-	page.subscribe(value => {
+	page.subscribe((value) => {
 		path = value.path;
-		console.log(path)
+		console.log(path);
 	});
 
 	interface List {
@@ -20,23 +20,23 @@
 	<ul class="flex flex-col py-4">
 		{#each list as item}
 			{#if path == item.url}
-			<li class="bg-green-200}">
-				<a
-					href={item.url}
-					class="px-4 flex flex-row items-center h-12 transform  text-motherGreen"
-				>
-					{item.name}
-				</a>
-			</li>
+				<li>
+					<a
+						href={item.url}
+						class="px-4 flex flex-row items-center h-12 transform  text-motherGreen font-semibold"
+					>
+						{item.name}
+					</a>
+				</li>
 			{:else}
-			<li>
-				<a
-					href={item.url}
-					class="px-4 flex flex-row items-center h-12 transform  text-gray-800 hover:text-motherGreen"
-				>
-					{item.name}
-				</a>
-			</li>
+				<li>
+					<a
+						href={item.url}
+						class="px-4 flex flex-row items-center h-12 transform  text-gray-800 hover:text-motherGreen"
+					>
+						{item.name}
+					</a>
+				</li>
 			{/if}
 		{/each}
 		<li>
