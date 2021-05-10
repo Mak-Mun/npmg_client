@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Layout from '$lib/layouts/Layout.svelte';
+	import Layout from '$lib/layouts/index.svelte';
 </script>
 
 <Layout>
