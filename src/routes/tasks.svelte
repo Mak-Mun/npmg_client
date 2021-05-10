@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Tasks from '$lib/Tasks.svelte';
-	import Layout from '$lib/Layout.svelte';
+	import Tasks from '$lib/components/Tasks.svelte';
+	import Layout from '$lib/layouts/index.svelte';
 </script>
 
 <Layout>

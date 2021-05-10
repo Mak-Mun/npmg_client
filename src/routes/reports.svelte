@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Reports from '$lib/Reports.svelte';
-	import Layout from '$lib/Layout.svelte';
+	import Reports from '$lib/components/Reports.svelte';
+	import Layout from '$lib/layouts/index.svelte';
 </script>
 
 <Layout>

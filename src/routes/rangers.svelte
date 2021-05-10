@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Rangers from '$lib/Rangers.svelte';
-	import Layout from '$lib/Layout.svelte';
+	import Rangers from '$lib/components/Rangers.svelte';
+	import Layout from '$lib/layouts/index.svelte';
 </script>
 
 <Layout>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Doctors from '$lib/Doctors.svelte';
-	import Layout from '$lib/Layout.svelte';
+	import Doctors from '$lib/components/Doctors.svelte';
+	import Layout from '$lib/layouts/index.svelte';
 </script>
 
 <Layout>
