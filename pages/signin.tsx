@@ -60,7 +60,7 @@ export const signin = () => {
 
           <div className="text-center">
             <span>Don't have an account</span>
-            <a href="/auth/signup" className=" text-blue-500">
+            <a href="/signup" className=" text-blue-500">
               {' '}
               Register here?{' '}
             </a>
