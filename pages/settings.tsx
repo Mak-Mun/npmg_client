@@ -1,8 +1,9 @@
 import DashBoardLayout from '../layout/DashBoardLayout'
+import SettingsComponent from '../components/Settings'
 export default function Settings(){
     return(
         <DashBoardLayout>
-        <div>Hello there</div>
+        <SettingsComponent/>
         </DashBoardLayout>
     )
 }
