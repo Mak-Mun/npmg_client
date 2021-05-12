@@ -7,7 +7,7 @@ export default function Sidebar({items}){
 	<div className="flex flex-col py-4">
     {items.map((item) => (
             item.url == router.pathname ?(
-                <div>
+                <div key={item.url}>
 					<a
 						href={item.url}
 						className="px-4 flex flex-row items-center h-12 transform  bg-gray-200 border-r-4 border-green-600 font-semibold"
@@ -16,7 +16,7 @@ export default function Sidebar({items}){
 					</a>
 				</div>
             ):(
-                <div>
+                <div key={item.url}>
 					<a
 						href={item.url}
 						className="px-4 flex flex-row items-center h-12 transform  text-gray-800 hover:text-motherGreen"
