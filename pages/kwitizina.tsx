@@ -1,8 +1,9 @@
 import DashBoardLayout from '../layout/DashBoardLayout'
-export default function Kwitizina(){
+import Ceremonies from '../components/Kwitizina'
+export default function Gorillas(){
     return(
         <DashBoardLayout>
-        <div>Hello there</div>
+        <Ceremonies/>
         </DashBoardLayout>
     )
 }

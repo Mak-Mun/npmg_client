@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function Gorillas(){
     let photoUrl = 'https://avatars.githubusercontent.com/u/784056?s=64&v=4';
 	let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
@@ -12,16 +13,24 @@ export default function Gorillas(){
 				<div className="flex justify-between md:w-7/12">
 					{/* <Search /> */}
 					<span className="px-3 py-1 font-semibold text-successorColor underline"
-						><a href="/admin/families">View all families</a></span
+						>
+							<Link href={"/families"}>
+							<a>View all families</a>
+							</Link>
+							</span
 					>
-					<span className="bg-green px-3 py-1 font-semibold cursor-pointer rounded-sm"
-						><a href="/admin/new_gorilla">Add New</a></span
+					<span className="text-green-600 font-semibold underline"
+						>
+							<Link href={"/new_gorilla"}>
+							<a>new gorilla</a>
+							</Link>
+							</span
 					>
 				</div>
 			</div>
 			<table className="w-full justify-between mt-0">
 				<thead className="w-full">
-					<tr className="justify-between">
+					<tr className="justify-between border-b hover:border-gray-800 cursor-pointer">
 						<th className="p-2 text-center w-1/7" />
 						<th className="p-2 text-center w-1/7">Name</th>
 						<th className="p-2 text-center w-1/7">Dob</th>
@@ -33,7 +42,7 @@ export default function Gorillas(){
 				</thead>
 				<tbody className="limitedTable overflow-y-auto">
                 {integers.map(int => (
-						<tr key={int} className="mt-0 justify-between bg-white border-b cursor-pointer hover:border-green-400">
+						<tr key={int} className="mt-0 justify-between bg-white border-b cursor-pointer hover:border-green-400 transition-all">
 							<td className="text-center p-4 w-1/7">{int}</td>
 							<td className="text-center p-2 w-1/7"
 								><div className="flex items-center">
