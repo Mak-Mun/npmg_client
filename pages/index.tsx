@@ -1,12 +1,13 @@
-import { ApolloProvider } from '@apollo/client'
+import Head from 'next/head'
 import Link from 'next/link'
-import { useApollo } from '../lib/useApollo'
+import { Fragment } from 'react'
 
-export default function Home({ Component, pageProps }) {
-  const client = useApollo(pageProps)
-
+export default function Home() {
   return (
-    <ApolloProvider client={client}>
+    <Fragment>
+      <Head>
+        <title>NPMG </title>
+      </Head>
       <main className="bg-landing bg-opacity-0 h-screen bg-cover">
         <div className="absolute inset-0 bg-gray-900 bg-opacity-50">
           <div className="flex justify-center items-center h-screen gap-5">
@@ -29,6 +30,6 @@ export default function Home({ Component, pageProps }) {
           </footer>
         </div>
       </main>
-    </ApolloProvider>
+    </Fragment>
   )
 }
