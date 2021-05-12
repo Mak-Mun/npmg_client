@@ -41,12 +41,12 @@ export default function DashBoardLayout({children}) {
 		}
 	];
   return (
-    <div className="h-screen bg-gray-100 grid grid-cols-8 gap-0 overflow-y-hidden">
-		<div className="col-span-1">
+    <div className="h-screen bg-gray-100 grid md:grid-cols-8 gap-0 overflow-y-hidden">
+		<div className="hidden md:block md:col-span-1">
 		<SideBar items={list} />
 		</div>
 
-	<div className="col-span-7 flex flex-col h-screen overflow-y-auto">
+	<div className="md:col-span-7 flex flex-col h-screen overflow-y-auto">
 		<Nav />
 		<div className="px-2 py-2">
 		{children}

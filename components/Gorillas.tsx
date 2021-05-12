@@ -22,20 +22,20 @@ export default function Gorillas(){
 			<table className="w-full justify-between mt-0">
 				<thead className="w-full">
 					<tr className="justify-between">
-						<th className="p-4 text-center w-1/7" />
-						<th className="p-4 text-center w-1/7">Name</th>
-						<th className="p-4 text-center w-1/7">Dob</th>
-						<th className="p-4 text-center w-1/7">Mother</th>
-						<th className="p-4 text-center w-1/7">Father</th>
-						<th className="p-4 text-center w-1/7">Namer</th>
-						<th className="p-4 text-center w-1/7">Family</th>
+						<th className="p-2 text-center w-1/7" />
+						<th className="p-2 text-center w-1/7">Name</th>
+						<th className="p-2 text-center w-1/7">Dob</th>
+						<th className="p-2 text-center w-1/7">Mother</th>
+						<th className="p-2 text-center w-1/7">Father</th>
+						<th className="p-2 text-center w-1/7">Namer</th>
+						<th className="p-2 text-center w-1/7">Family</th>
 					</tr>
 				</thead>
 				<tbody className="limitedTable overflow-y-auto">
                 {integers.map(int => (
-						<tr key={int} className="mt-3 justify-between bg-white border-b-2 cursor-pointer">
-							<td className="text-center p-4 py-8 w-1/7">{int}</td>
-							<td className="text-center p-4 w-1/7"
+						<tr key={int} className="mt-0 justify-between bg-white border-b cursor-pointer hover:border-green-400">
+							<td className="text-center p-4 w-1/7">{int}</td>
+							<td className="text-center p-2 w-1/7"
 								><div className="flex items-center">
 									<div className="flex-shrink-0 w-8 h-8">
 										<img className="w-full h-full rounded-full" src={photoUrl} alt="" />
@@ -45,11 +45,11 @@ export default function Gorillas(){
 									</div>
 								</div></td
 							>
-							<td className="text-center p-4 w-1/7"> 12/2018</td>
-							<td className="text-center p-4 w-1/7">Amahoro</td>
-							<td className="text-center p-4 w-1/7">Kagabo</td>
-							<td className="text-center p-4 w-1/7">Kwizigira</td>
-							<td className="text-center p-4 w-1/7">Gahinga</td>
+							<td className="text-center p-2 w-1/7"> 12/2018</td>
+							<td className="text-center p-2 w-1/7">Amahoro</td>
+							<td className="text-center p-2 w-1/7">Kagabo</td>
+							<td className="text-center p-2 w-1/7">Kwizigira</td>
+							<td className="text-center p-2 w-1/7">Gahinga</td>
 						</tr>
 					))}
 				</tbody>
