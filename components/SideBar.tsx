@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Link from 'next/link'
 export default function Sidebar({items}){
     const router = useRouter();
     return(
@@ -8,30 +9,33 @@ export default function Sidebar({items}){
     {items.map((item) => (
             item.url == router.pathname ?(
                 <div key={item.url}>
+					<Link href={item.url}>
 					<a
-						href={item.url}
 						className="px-4 flex flex-row items-center h-12 transform  bg-gray-200 border-r-4 border-green-600 font-semibold"
 					>
 						{item.name}
 					</a>
+					</Link>
 				</div>
             ):(
                 <div key={item.url}>
+					<Link href={item.url}>
 					<a
-						href={item.url}
 						className="px-4 flex flex-row items-center h-12 transform  text-gray-800 hover:text-motherGreen"
 					>
 						{item.name}
 					</a>
+					</Link>
 				</div>
             )
             ))}
 		<div>
+		<Link href="/signin">
 			<a
-				href="/signin"
 				className="text-red-500 font-semibold px-4 py-4 text-center bottom-0 cursor-pointer font-sourceSans"
 				>Logout</a
 			>
+			</Link>
 		</div>
 	</div>
 </div>
