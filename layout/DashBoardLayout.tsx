@@ -1,9 +1,55 @@
 import React from 'react'
-
-export default function DashBoardLayout() {
+import SideBar from '../components/SideBar'
+import Nav from '../components/Nav'
+export default function DashBoardLayout({children}) {
+  let list = [
+		{
+			name: 'Dashboard',
+			url: '/dashboard'
+		},
+		{
+			name: 'Tasks',
+			url: '/tasks'
+		},
+		{
+			name: 'Gorillas',
+			url: '/gorillas'
+		},
+		{
+			name: 'Rangers',
+			url: '/rangers'
+		},
+		{
+			name: 'Doctors',
+			url: '/doctors'
+		},
+		{
+			name: 'Kwitizina',
+			url: '/kwitizina'
+		},
+		{
+			name: 'Reports',
+			url: '/reports'
+		},
+		{
+			name: 'Store',
+			url: '/store'
+		},
+		{
+			name: 'Settings',
+			url: '/settings'
+		}
+	];
   return (
-    <div>
-      <h1>Heee</h1>
-    </div>
+    <div className="min-h-screen grid grid-cols-layout  bg-gray-100">
+	<aside>
+		<SideBar items={list} />
+	</aside>
+
+	<div className="flex flex-col">
+		<Nav />
+		{children}
+	</div>
+</div>
   )
 }
