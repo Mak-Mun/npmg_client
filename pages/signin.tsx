@@ -46,7 +46,7 @@ export const signin = () => {
               Remember me?
             </div>
 
-            <a href="/auth/reset-password" className=" text-blue-500">
+            <a href="/reset-password" className=" text-blue-500">
               {' '}
               Forgot password?{' '}
             </a>
