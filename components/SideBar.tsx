@@ -28,7 +28,7 @@ export default function Sidebar({items}){
             ))}
 		<div>
 			<a
-				href="/auth/signin"
+				href="/signin"
 				className="text-red-500 font-semibold px-4 py-4 text-center bottom-0 cursor-pointer font-sourceSans"
 				>Logout</a
 			>

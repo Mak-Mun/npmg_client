@@ -41,12 +41,10 @@ export default function DashBoardLayout({children}) {
 		}
 	];
   return (
-    <div className="min-h-screen grid grid-cols-layout  bg-gray-100">
-	<aside>
+    <div className="h-screen bg-gray-100 grid grid-cols-6 gap-1">
 		<SideBar items={list} />
-	</aside>
 
-	<div className="flex flex-col">
+	<div className="col-span-3 flex flex-col">
 		<Nav />
 		{children}
 	</div>
