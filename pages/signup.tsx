@@ -1,20 +1,57 @@
+import { useMutation } from '@apollo/client'
+import gql from 'graphql-tag'
 import Head from 'next/head'
 import React, { Fragment } from 'react'
 import AuthLayout from '../layout/AuthLayout'
+import useForm from '../lib/useForm'
+
+const SIGNUP_MUTATION = gql`
+  mutation ($data: SingUpUserInput!) {
+    signup(data: $data) {
+      id
+    }
+  }
+`
 
 export default function signup() {
+  const { inputs, handleChange } = useForm({
+    firstName: '',
+    lastName: '',
+    password: '',
+    phone: '',
+    role: '',
+  })
+
+  const [signup, { error, loading }] = useMutation(SIGNUP_MUTATION, {
+    variables: { data: inputs },
+  })
+
   return (
     <Fragment>
       <Head>
         <title>signup here</title>
       </Head>
       <AuthLayout>
-        <form className="grid grid-cols-1 gap-6">
+        <p className="text-red-500">{error.message}</p>
+        <form
+          className="grid grid-cols-1 gap-6"
+          onSubmit={async (e) => {
+            try {
+              const { data } = await signup()
+              console.log(data)
+            } catch (error) {
+              console.log(error)
+            }
+          }}
+        >
           <label htmlFor="First name" className="block">
             <span className="text-gray-700">Full name</span>
             <input
               type="text"
               id="First name"
+              name="firstName"
+              value={inputs.firstName}
+              onChange={handleChange}
               placeholder="Boston Rockstack"
               className="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
               required
@@ -29,6 +66,9 @@ export default function signup() {
               placeholder="Boston Rockstack"
               className="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
               required
+              name="lastName"
+              value={inputs.lastName}
+              onChange={handleChange}
             />
           </label>
 
@@ -40,6 +80,9 @@ export default function signup() {
               placeholder="2507147115"
               className="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
               required
+              name="phone"
+              value={inputs.phone}
+              onChange={handleChange}
             />
           </label>
 
@@ -51,6 +94,9 @@ export default function signup() {
               placeholder="test@gmail.com"
               className="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
               required
+              name="email"
+              value={inputs.email}
+              onChange={handleChange}
             />
           </label>
 
@@ -61,6 +107,9 @@ export default function signup() {
               id="password"
               className="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
               required
+              name="password"
+              value={inputs.password}
+              onChange={handleChange}
             />
           </label>
 
@@ -70,6 +119,9 @@ export default function signup() {
               id="role"
               className="block bg-transparent focus:outline-none border-transparent focus:ring focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
               required
+              name="role"
+              value={inputs.role}
+              onChange={handleChange}
             >
               <option value="USER">USER</option>
               <option value="RANGER">RANGER</option>

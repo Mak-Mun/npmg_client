@@ -14,7 +14,7 @@ const SIGNIN_MUTATION = gql`
 `
 
 export const Signin = () => {
-  const { inputs, handleChange } = useForm({
+  const { inputs, handleChange, resetForm } = useForm({
     email: '',
     password: '',
   })
@@ -38,8 +38,11 @@ export const Signin = () => {
             e.preventDefault()
             try {
               const { data } = await sign()
-
               console.log(data)
+
+              resetForm()
+
+              router.push('/dashboard')
             } catch (error) {
               console.log(error)
             }
