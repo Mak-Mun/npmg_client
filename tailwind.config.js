@@ -15,11 +15,7 @@ module.exports = {
       sans: ['Nunito', 'Nunito Sans', 'sans-serif'],
       sourceSans: ['Lato', 'Source Sans Pro', 'sans-serif'],
       serif: ['ui-serif', 'Georgia'],
-<<<<<<< HEAD
-      mono: ['ui-monospace', 'SFMono-Regular'],
-=======
       mono: ['Noto Sans JP', 'SFMono-Regular'],
->>>>>>> ee509e8eed526644b6cae0a938a345e1706fc207
       display: ['Oswald'],
       body: ['Open Sans'],
     },
