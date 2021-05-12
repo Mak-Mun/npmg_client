@@ -1,6 +1,7 @@
 import { useMutation } from '@apollo/client'
 import gql from 'graphql-tag'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import React, { Fragment } from 'react'
 import AuthLayout from '../layout/AuthLayout'
 import useForm from '../lib/useForm'
@@ -20,7 +21,10 @@ export default function signup() {
     password: '',
     phone: '',
     role: '',
+    email: '',
   })
+
+  const router = useRouter()
 
   const [signup, { error, loading }] = useMutation(SIGNUP_MUTATION, {
     variables: { data: inputs },
@@ -29,16 +33,19 @@ export default function signup() {
   return (
     <Fragment>
       <Head>
-        <title>signup here</title>
+        <title>signup</title>
       </Head>
       <AuthLayout>
-        <p className="text-red-500">{error.message}</p>
+        {error && <p className="text-red-500">{error.message}</p>}{' '}
         <form
           className="grid grid-cols-1 gap-6"
           onSubmit={async (e) => {
+            e.preventDefault()
             try {
-              const { data } = await signup()
+              const { data, errors } = await signup()
               console.log(data)
+              console.log(errors)
+              router.push('/signin')
             } catch (error) {
               console.log(error)
             }
