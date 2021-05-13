@@ -1,21 +1,63 @@
+import { gql, useMutation } from '@apollo/client'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { Fragment } from 'react'
 import AuthLayout from '../layout/AuthLayout'
+import useForm from '../lib/useForm'
 
-export const signin = () => {
+const SIGNIN_MUTATION = gql`
+  mutation ($data: LoginUserInput!) {
+    login(data: $data) {
+      token
+    }
+  }
+`
+
+export const Signin = () => {
+  const { inputs, handleChange, resetForm } = useForm({
+    email: '',
+    password: '',
+  })
+
+  const [sign, { error, loading }] = useMutation(SIGNIN_MUTATION, {
+    variables: { data: inputs },
+    fetchPolicy: 'no-cache',
+  })
+
+  const router = useRouter()
+
   return (
     <Fragment>
       <Head>
         <title>signin</title>
       </Head>
       <AuthLayout>
-        <form className="grid grid-cols-1 gap-6">
+        {error && <p className="text-red-500 font-bold">{error.message}</p>}
+        <form
+          onSubmit={async (e) => {
+            e.preventDefault()
+            try {
+              const { data } = await sign()
+              console.log(data)
+
+              resetForm()
+
+              router.push('/dashboard')
+            } catch (error) {
+              console.log(error)
+            }
+          }}
+          className="grid grid-cols-1 gap-6"
+        >
           <label htmlFor="email" className="block">
             <span className="text-gray-700">Email</span>
             <input
               type="email"
               id="email"
               required
+              name="email"
+              value={inputs.email}
+              onChange={handleChange}
               className="block bg-transparent  focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
             />
           </label>
@@ -25,6 +67,9 @@ export const signin = () => {
             <input
               type="password"
               id="password"
+              name="password"
+              value={inputs.password}
+              onChange={handleChange}
               className="block bg-transparent focus:outline-none border-transparent  focus:border-green-500 w-full px-0.5 border-0 border-b-2  border-gray-300"
               required
             />
@@ -55,6 +100,7 @@ export const signin = () => {
           <input
             type="submit"
             value="Login here"
+            disabled={loading}
             className="bg-primaryGreen font-sourceSans rounded-md cursor-pointer text-white px-40 py-3 "
           />
 
@@ -70,4 +116,4 @@ export const signin = () => {
     </Fragment>
   )
 }
-export default signin
+export default Signin
