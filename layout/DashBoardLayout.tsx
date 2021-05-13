@@ -41,7 +41,7 @@ export default function DashBoardLayout({children}) {
 		}
 	];
   return (
-    <div className="h-screen bg-gray-100 grid md:grid-cols-8 gap-0 overflow-y-hidden">
+    <div className="h-screen bg-gray-100 md:grid md:grid-cols-8 md:gap-0 overflow-y-hidden">
 		<div className="hidden md:block md:col-span-1">
 		<SideBar items={list} />
 		</div>
