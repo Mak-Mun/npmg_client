@@ -3,7 +3,7 @@ import gql from 'graphql-tag'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { Fragment } from 'react'
-import AuthLayout from '../layout/AuthLayout'
+import AuthLayout from '../layout/AuthPageLayout'
 import useForm from '../lib/useForm'
 
 const SIGNUP_MUTATION = gql`
