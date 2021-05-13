@@ -38,7 +38,8 @@ export const Signin = () => {
             e.preventDefault()
             try {
               const { data } = await sign()
-              console.log(data)
+
+              localStorage.setItem('auth_token', data.login.token)
 
               resetForm()
 
