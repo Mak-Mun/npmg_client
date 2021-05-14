@@ -14,8 +14,8 @@ export default function Home() {
             <div className="w-1/2 sm:w-11/12 md:w-1/2">
               <div className="text-white mb-12 font-bold text-4xl outline-none capitalize">
                 <h1>
-                  Instant report managment Platform for Gorilla Mountains, and
-                  Every thing that goes with it.
+                  Instant report management Platform for Mountain Gorillas, and
+                  Every data that relates with National Park.
                 </h1>
               </div>
               <Link href="/signin">
