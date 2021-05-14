@@ -1,18 +1,42 @@
 import { ApolloClient, InMemoryCache } from '@apollo/client'
-import { HttpLink } from '@apollo/client/link/http'
+import { setContext } from '@apollo/client/link/context'
+import { onError } from '@apollo/client/link/error'
+import { createHttpLink } from '@apollo/client/link/http'
 import merge from 'deepmerge'
 import { useMemo } from 'react'
 
 let apolloClient
 
+const httpLink = createHttpLink({
+  uri: 'https://npmg-server.herokuapp.com/graphql',
+})
+
+const ErrorLink = onError(({ graphQLErrors, networkError }) => {
+  if (graphQLErrors)
+    graphQLErrors.map(({ message, locations, path }) =>
+      console.log(
+        `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`
+      )
+    )
+
+  if (networkError) console.log(`[Network error]: ${networkError}`)
+})
+
+const authLink = setContext((operation, { headers }) => {
+  const token = localStorage.getItem('auth_token')
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? token : '',
+    },
+  }
+})
+
 function createIsomorphLink() {
   if (typeof window === 'undefined') {
-    // const { schema } = require('./schema')
-    // return new SchemaLink({ schema })
+    return ErrorLink.concat(httpLink)
   } else {
-    return new HttpLink({
-      uri: 'https://npmg-server.herokuapp.com/graphql',
-    })
+    return ErrorLink.concat(authLink.concat(httpLink))
   }
 }
 
