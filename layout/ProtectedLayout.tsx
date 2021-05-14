@@ -3,7 +3,7 @@ import React from 'react'
 import { useUser } from '../lib/useUser'
 
 function Protectedayout({ children }) {
-  const { data, loading, error } = useUser()
+  const { data, loading } = useUser()
 
   const router = useRouter()
 
@@ -11,12 +11,9 @@ function Protectedayout({ children }) {
     return <p>Loading...</p>
   }
 
-  if (error) {
-    return <p>{JSON.stringify(error)}</p>
-  }
-
   if (!data && !loading) {
     router.push('/signin')
+    return null
   }
 
   return <div>{children}</div>
