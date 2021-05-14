@@ -14,14 +14,14 @@ export default function Gorillas(){
 					{/* <Search /> */}
 					<span className="px-3 py-1 font-semibold text-successorColor underline"
 						>
-							<Link href={"/families"}>
+							<Link href={"/gorillas/families"}>
 							<a>View all families</a>
 							</Link>
 							</span
 					>
 					<span className="text-green-600 font-semibold underline"
 						>
-							<Link href={"/new_gorilla"}>
+							<Link href={"/gorillas/new_gorilla"}>
 							<a>new gorilla</a>
 							</Link>
 							</span

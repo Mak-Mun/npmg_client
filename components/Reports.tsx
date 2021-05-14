@@ -11,7 +11,7 @@ export default function Reports(){
 		<h1 className="text-xl font-semibold text-center md:text-left">REPORT VIEWS</h1>
 		<p
 			className="bg-primaryGreen px-4 rounded text-white text-xl font-bold cursor-pointer"
-            onClick={()=>{router.push('/new_report');}}
+            onClick={()=>{router.push('/reports/new_report');}}
 		>
 			+
 		</p>

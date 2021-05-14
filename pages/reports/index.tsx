@@ -1,5 +1,5 @@
-import DashBoardLayout from '../layout/DashBoardLayout'
-import ReportsC from '../components/Reports'
+import DashBoardLayout from '../../layout/DashBoardLayout'
+import ReportsC from '../../components/Reports'
 export default function Reports(){
     return(
         <DashBoardLayout>

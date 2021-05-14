@@ -1,5 +1,5 @@
-import DashBoardLayout from '../layout/DashBoardLayout'
-import GorillasC from '../components/Gorillas'
+import DashBoardLayout from '../../layout/DashBoardLayout'
+import GorillasC from '../../components/Gorillas'
 export default function Gorillas(){
     return(
         <DashBoardLayout>
