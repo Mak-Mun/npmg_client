@@ -1,4 +1,6 @@
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
+import { Fragment } from 'react'
 import DashBoardLayout from '../layout/DashBoardLayout'
 
 const ProtectedLayout = dynamic(() => import('../layout/ProtectedLayout'), {
@@ -7,10 +9,15 @@ const ProtectedLayout = dynamic(() => import('../layout/ProtectedLayout'), {
 
 export default function DashBoard() {
   return (
-    <ProtectedLayout>
-      <DashBoardLayout>
-        <div>Hello there</div>
-      </DashBoardLayout>
-    </ProtectedLayout>
+    <Fragment>
+      <Head>
+        <title>Dashboard</title>
+      </Head>
+      <ProtectedLayout>
+        <DashBoardLayout>
+          <div>Hello there</div>
+        </DashBoardLayout>
+      </ProtectedLayout>
+    </Fragment>
   )
 }
