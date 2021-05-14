@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>NPMG </title>
       </Head>
-      <main className="bg-landing bg-opacity-0 h-screen bg-cover">
+      <main className="bg-landing font-sans bg-opacity-0 h-screen bg-cover">
         <div className="absolute inset-0 bg-gray-900 bg-opacity-50">
           <div className="flex justify-center items-center h-screen gap-5">
             <div className="w-1/2 sm:w-11/12 md:w-1/2">
