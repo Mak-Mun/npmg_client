@@ -3,11 +3,11 @@ import gql from 'graphql-tag'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { Fragment } from 'react'
-import AuthLayout from '../layout/AuthLayout'
+import AuthLayout from '../layout/AuthPageLayout'
 import useForm from '../lib/useForm'
 
 const SIGNUP_MUTATION = gql`
-  mutation ($data: SingUpUserInput!) {
+  mutation ($data: SignUpUserInput!) {
     signup(data: $data) {
       id
     }
@@ -19,10 +19,10 @@ export default function signup() {
     firstName: '',
     lastName: '',
     password: '',
-    phone: '',
-    role: '',
+    role: 'USER',
     email: '',
   })
+  // phone: '',
 
   const router = useRouter()
 
@@ -79,7 +79,7 @@ export default function signup() {
             />
           </label>
 
-          <label htmlFor="phone" className="block">
+          {/* <label htmlFor="phone" className="block">
             <span className="text-gray-700">Phone</span>
             <input
               type="text"
@@ -92,7 +92,7 @@ export default function signup() {
               onChange={handleChange}
             />
           </label>
-
+ */}
           <label htmlFor="email" className="block">
             <span className="text-gray-700">Email</span>
             <input

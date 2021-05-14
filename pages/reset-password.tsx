@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import AuthLayout from '../layout/AuthLayout'
+import AuthLayout from '../layout/AuthPageLayout'
 
 export default function resetPassword() {
   return (

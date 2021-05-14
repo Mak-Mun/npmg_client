@@ -2,7 +2,7 @@ import { gql, useMutation } from '@apollo/client'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { Fragment } from 'react'
-import AuthLayout from '../layout/AuthLayout'
+import AuthLayout from '../layout/AuthPageLayout'
 import useForm from '../lib/useForm'
 
 const SIGNIN_MUTATION = gql`
@@ -38,7 +38,8 @@ export const Signin = () => {
             e.preventDefault()
             try {
               const { data } = await sign()
-              console.log(data)
+
+              localStorage.setItem('auth_token', data.login.token)
 
               resetForm()
 
