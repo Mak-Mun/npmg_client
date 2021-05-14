@@ -7,7 +7,7 @@ function NotFound() {
       <p>
         {' '}
         <Link href="/">
-          <a className="block text-blue-600 font-bold">Back to home</a>
+          <a className="block text-green-600 font-bold">Back to home</a>
         </Link>
       </p>
     </div>
