@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Link from 'next/link'
 import AuthLayout from '../layout/AuthPageLayout'
 
 export default function resetPassword() {

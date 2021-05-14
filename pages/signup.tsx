@@ -1,6 +1,7 @@
 import { useMutation } from '@apollo/client'
 import gql from 'graphql-tag'
 import Head from 'next/head'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { Fragment } from 'react'
 import AuthLayout from '../layout/AuthPageLayout'
