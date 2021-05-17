@@ -1,7 +1,12 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
-function NotFound() {
+function InternalServerError() {
   return (
+    <>
+    <Head>
+    <title>Internal Server Error</title>
+  </Head>
     <div className="flex flex-col justify-center items-center h-screen w-screen">
       <h1 className="text-5xl font-semibold">500 | Internal server error</h1>
       <p className="flex">
@@ -11,7 +16,8 @@ function NotFound() {
       </Link>
       </p>
     </div>
+    </>
   )
 }
 
-export default NotFound
+export default InternalServerError

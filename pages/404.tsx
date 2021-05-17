@@ -1,7 +1,12 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
 function NotFound() {
   return (
+    <>
+    <Head>
+        <title>Not Found</title>
+      </Head>
     <div className="flex flex-col justify-center items-center h-screen w-screen">
       <h1 className="text-5xl font-semibold">404 | Not found</h1>
       <p className="flex">
@@ -12,6 +17,7 @@ function NotFound() {
         </Link>
       </p>
     </div>
+    </>
   )
 }
 

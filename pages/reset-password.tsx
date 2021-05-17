@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React, { Fragment } from 'react'
 import Link from 'next/link'
 import AuthLayout from '../layout/AuthPageLayout'
@@ -6,6 +7,9 @@ export default function resetPassword() {
   return (
     <Fragment>
       <AuthLayout>
+      <Head>
+    <title>Password Reset</title>
+  </Head>
         <form className="grid grid-cols-1 gap-6">
           <label htmlFor="email" className="block mb-6">
             <span className="text-gray-700 mb-8">Email</span>
