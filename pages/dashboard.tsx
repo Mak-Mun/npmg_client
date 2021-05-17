@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import Link from 'next/link'
 import { Fragment } from 'react'
 import DashBoardLayout from '../layout/DashBoardLayout'
 
@@ -27,7 +28,9 @@ export default function DashBoard() {
 		<div className="md:w-8/12 px-5 mt-10">
 			<div className="flex w-full justify-between mb-4">
 				<h2 className="font-semibold text-xl mx-6">Daily Report</h2>
-				<a href="/admin/reports"><h3 className="font-semibold full md:mr-10">View full</h3></a>
+				<Link href="/reports">
+				<a><h3 className="font-semibold full md:mr-10">View full</h3></a>
+				</Link>
 			</div>
 			<div className="w-full flex flex-wrap justify-between">
 				<div
@@ -57,7 +60,9 @@ export default function DashBoard() {
 			<div className="bg-white flex flex-col pt-3 px-3 rounded-lg w-11/12">
 				<div className="flex justify-between mb-1">
 					<h3 className="font-semibold text-xl mx-4">Gorillas List</h3>
-					<a href="/admin/gorillas"><h3 className="font-semibold text-sm full mx-4">View all</h3></a>
+					<Link href="/gorillas">
+					<a><h3 className="font-semibold text-sm full mx-4">View all</h3></a>
+					</Link>
 				</div>
 				<div className="">
 					{integers.map(int=>{

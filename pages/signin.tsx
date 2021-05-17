@@ -92,11 +92,12 @@ export const Signin = () => {
               </label>
               Remember me?
             </div>
-
-            <a href="/reset-password" className=" text-blue-500">
+            <Link href="/reset-password">
+            <a className=" text-blue-500">
               {' '}
               Forgot password?{' '}
             </a>
+            </Link>
           </div>
 
           <input
@@ -108,10 +109,12 @@ export const Signin = () => {
 
           <div className="text-center">
             <span>Don't have an account</span>
-            <a href="/signup" className=" text-blue-500">
+            <Link href="/signup">
+            <a className=" text-blue-500">
               {' '}
               Register here?{' '}
             </a>
+            </Link>
           </div>
         </form>{' '}
       </AuthLayout>

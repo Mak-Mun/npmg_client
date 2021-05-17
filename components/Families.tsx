@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function FamiliesComponent(){
     let integers = [1, 2, 3, 4, 5, 6, 7, 8]
     return(
@@ -11,7 +12,7 @@ export default function FamiliesComponent(){
         </div>
           <div className="flex justify-between md:w-7/12">
           <span className="px-3 py-1 font-semibold text-successorColor underline"
-            ><a href="/gorillas">View all gorillas</a></span
+            ><Link href="/gorillas"><a>View all gorillas</a></Link></span
           >
           <div className="bg-green-600 rounded p-2 cursor-pointer"><h3 className="text-white">New Family</h3></div>
         </div>

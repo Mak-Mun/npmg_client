@@ -146,10 +146,12 @@ export default function signup() {
 
           <div className="text-center">
             <span>Have an account</span>
-            <a href="/signin" className=" text-blue-500">
+            <Link href="/signin">
+            <a  className=" text-blue-500">
               {' '}
               Login here?{' '}
             </a>
+            </Link>
           </div>
         </form>
       </AuthLayout>
