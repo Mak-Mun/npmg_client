@@ -31,5 +31,5 @@
 2. makuzaverite@gmail.com
 
 #### Team
-1. (Didier)[https://github.com/didiermunezero]
-2. (Verite)[https://github.com/makuzaverite]
+1. [Didier](https://github.com/didiermunezero)
+2. [Verite](https://github.com/makuzaverite)
