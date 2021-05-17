@@ -28,7 +28,7 @@
 ### WANT TO HELP?
 #### CONTACTS
 1. didiermunezer38@gmail.com
-2. makuzaverite@gmail.com
+2. mugaboverite@gmail.com
 
 #### Team
 1. [Didier](https://github.com/didiermunezero)
