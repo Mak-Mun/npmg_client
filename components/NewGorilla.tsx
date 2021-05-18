@@ -83,8 +83,11 @@ export default function NewGorilla(){
       <div className="border-b-2 focus-within:border-green-500 flex">
         <label className="px-2">Name:</label>
         <input
+        required
+        name="name"
+        value={inputs.name}
+        onChange={handleChange}
           type="text"
-          name="name"
           placeholder=" "
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         />
@@ -93,6 +96,10 @@ export default function NewGorilla(){
         <label className="px-2">Dob:</label>
         <input
           type="date"
+          required
+        name="date"
+        value={inputs.date}
+        onChange={handleChange}
           placeholder=""
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         />
@@ -100,6 +107,10 @@ export default function NewGorilla(){
       <div className="border-b-2 focus-within:border-green-500 flex">
         <label className="px-2">Mother:</label>
         <select
+        required
+        name="mother"
+        value={inputs.mother}
+        onChange={handleChange}
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         >
           <option value=""></option>
@@ -114,6 +125,10 @@ export default function NewGorilla(){
       <div className="border-b-2 focus-within:border-green-500 flex">
         <label className="px-2">Father:</label>
         <select
+        required
+        name="father"
+        value={inputs.father}
+        onChange={handleChange}
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         >
           <option value=""></option>
@@ -128,6 +143,10 @@ export default function NewGorilla(){
       <div className="border-b-2 focus-within:border-green-500 flex">
         <label className="px-2">Family:</label>
         <select
+        required
+        name="family"
+        value={inputs.family}
+        onChange={handleChange}
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         >
           <option value=""></option>
@@ -142,6 +161,10 @@ export default function NewGorilla(){
       <div className="border-b-2 focus-within:border-green-500 flex">
         <label className="px-2">Gender:</label>
         <select
+        required
+        name="gender"
+        value={inputs.gender}
+        onChange={handleChange}
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         >
           <option value="Male">MALE</option>
@@ -151,8 +174,11 @@ export default function NewGorilla(){
       <div className="border-b-2 focus-within:border-green-500 flex">
         <label className="px-2">Comment:</label>
         <input
+        required
+        name="comment"
+        value={inputs.comment}
+        onChange={handleChange}
           type="text"
-          name="comment"
           placeholder=" "
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         />

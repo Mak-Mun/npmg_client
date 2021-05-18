@@ -48,34 +48,52 @@ export default function NewReport(){
             <div className="flex flex-wrap">
                 <div className="sm:w-full ml-1 md:ml-4 flex md:w-5/12 mt-4">
                     <label  className="px-2">Head:</label>
-                    <select   className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                    <select   required
+        name="head"
+        value={inputs.head}
+        onChange={handleChange} className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     </select>
                 </div> 
             <div className=" sm:w-full md:w-5/12 mt-4 flex md:ml-4">
                 <label className="px-2">Lungs:</label>
-                <select   className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                <select required
+        name="lungs"
+        value={inputs.lungs}
+        onChange={handleChange}  className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                 </select>
             </div>
             <div className=" sm:w-full md:w-5/12 flex mt-4 md:ml-4">
                 <label className="px-2">Heart:</label>
-                <select  className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                <select required
+        name="heart"
+        value={inputs.heart}
+        onChange={handleChange}  className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                 </select>
             </div>
             <div className=" sm:w-full md:w-5/12 mt-4 flex md:ml-4">
                 <label className="px-2">Legs:</label>
-                <select className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                <select required
+        name="legs"
+        value={inputs.legs}
+        onChange={handleChange} className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                      
                 </select>
             </div>
             <div className=" sm:w-full md:w-5/12 flex mt-4 md:ml-4">
                 <label  className="px-2">Eyes:</label>
-                <select   className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                <select required
+        name="eyes"
+        value={inputs.eyes}
+        onChange={handleChange}  className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                     
                 </select>
             </div>
             <div className=" sm:w-full md:w-5/12 mt-4 flex md:ml-4">
                 <label className="px-2">Stomach:</label>
-                <select  className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
+                <select required
+        name="stomach"
+        value={inputs.stomach}
+        onChange={handleChange} className="px-4 block w-full appearance-none focus:outline-none rounded-sm bg-transparent border-b-2 border-black focus:border-green-500 focus:font-semibold">
                 </select>
             </div>
             
