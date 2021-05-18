@@ -1,4 +1,20 @@
+import { gql, useQuery } from '@apollo/client'
+const ALL_REPORTS_QUERY = gql`
+    query {
+		getAllCeremonies {
+			    id
+				ceremony_date
+				created_at
+				venue
+				description
+				babies{
+					id
+				}
+        }
+    }
+`
 export default function Ceremonies(){
+	const { data, loading, error } = useQuery(ALL_REPORTS_QUERY)
     return (
     <div className="flex flex-col w-full unlimited">
 	<div className="w-full">
@@ -19,7 +35,20 @@ export default function Ceremonies(){
 				</tr>
 			</thead>
 			<tbody className="w-full">
-				<tr className="mt-3 justify-between bg-white border-b hover:bg-green-100 transition-all cursor-pointer ">
+			{error && (
+                <pre>
+                    <code>{JSON.stringify(error, null, 4)}</code>
+                </pre>
+            )}
+			 {loading ? (
+                <p>Loading....</p>
+            ) : (
+                data?.getAllCeremonies.length >= 0 && (
+					data?.getAllCeremonies.length == 0?(
+						<p className="text-center">No reports are found</p>
+					):(
+                    data?.getAllCeremonies.map(ceremony => (
+						<tr className="mt-3 justify-between bg-white border-b hover:bg-green-100 transition-all cursor-pointer ">
 					<td className="text-center p-4 w-1/6">2020</td>
 					<td className="text-center p-4 w-1/6">18</td>
 					<td className="text-center p-4 w-1/6 text-sm">27</td>
@@ -27,30 +56,9 @@ export default function Ceremonies(){
 					<td className="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
 					<td className=" text-center p-4 w-1/6">Kinigi</td>
 				</tr>
-				<tr className="mt-3 justify-between bg-white border-b hover:bg-green-100 transition-all cursor-pointer ">
-					<td className="text-center p-4 w-1/6">2019</td>
-					<td className="text-center p-4 w-1/6">18</td>
-					<td className="text-center p-4 w-1/6 text-sm">27</td>
-					<td className="text-center w-1/6 text-sm">27</td>
-					<td className="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
-					<td className=" text-center p-4 w-1/6">Kinigi</td>
-				</tr>
-				<tr className="mt-3 justify-between bg-white border-b hover:bg-green-100 transition-all cursor-pointer ">
-					<td className="text-center p-4 w-1/6">2018</td>
-					<td className="text-center p-4 w-1/6">18</td>
-					<td className="text-center p-4 w-1/6 text-sm">27</td>
-					<td className="text-center w-1/6 text-sm">27</td>
-					<td className="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
-					<td className=" text-center p-4 w-1/6">Kinigi</td>
-				</tr>
-				<tr className="mt-3 justify-between bg-white border-b hover:bg-green-100 transition-all cursor-pointer ">
-					<td className="text-center p-4 w-1/6">2017</td>
-					<td className="text-center p-4 w-1/6">18</td>
-					<td className="text-center p-4 w-1/6 text-sm">27</td>
-					<td className="text-center w-1/6 text-sm">27</td>
-					<td className="text-center p-4 w-1/6">22<sup>nd</sup> September</td>
-					<td className=" text-center p-4 w-1/6">Kinigi</td>
-				</tr>
+					)))
+                )
+            )}
 			</tbody>
 		</table>
 	</div>
