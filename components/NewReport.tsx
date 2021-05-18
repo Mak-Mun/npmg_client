@@ -1,8 +1,44 @@
+import { gql, useMutation } from '@apollo/client'
+import { useRouter } from 'next/router'
+import useForm from '../lib/useForm'
+const NEW_REPORT_MUTATION = gql`
+  mutation ($data: NewReport!) {
+    NewReport(data: $data) {
+      id
+    }
+  }
+`
 export default function NewReport(){
+    const { inputs, handleChange, resetForm } = useForm({
+        gorilla: '',
+        date: '',
+        lungs: '',
+        legs: '',
+        heart: '',
+        eyes: '',
+        stomach: '',
+        reporter: ''
+      })
+    
+      const [sign, { error, loading }] = useMutation(NEW_REPORT_MUTATION, {
+        variables: { data: inputs },
+        fetchPolicy: 'no-cache',
+      })
+    
+      const router = useRouter()
     return(
         <div className="flex flex-col justify-center bg-white p-6">
     <h1 className="font-bold px-4 md:text-2xl mb-6">NEW REPORT</h1>
-    <form className="flex flex-col mt-4">
+    <form className="flex flex-col mt-4" onSubmit={async (e) => {
+            e.preventDefault()
+            try {
+              const { data } = await sign()
+              resetForm()
+              router.push('/reports')
+            } catch (error) {
+              console.log(error)
+            }
+          }}>
         <div className="mx-1 md:mx-5 mb-2">
             <div className="ml-1 md:ml-4 flex md:w-5/12">
                 <label  className="px-2">Gorilla:</label>

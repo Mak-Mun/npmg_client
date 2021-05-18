@@ -1,9 +1,64 @@
+import { gql, useQuery,useMutation } from '@apollo/client'
+import useForm from '../lib/useForm'
+import { useRouter } from 'next/router'
+const ALL_GORILLAS_QUERY = gql`
+    query {
+        getAllNpmg {
+            
+				id
+				name
+        }
+    }
+`
+const ALL_FAMILIES_QUERY = gql`
+    query {
+        getFamilies {
+				id
+				family_name
+        }
+    }
+`
+const NEW_GORILLA_MUTATION = gql`
+  mutation ($data: NewNpmg!) {
+    newNpmg(data: $data) {
+      id
+    }
+  }
+`
 export default function NewGorilla(){
+  const { inputs, handleChange, resetForm } = useForm({
+    name: '',
+    mother: '',
+    father: '',
+    gender: '',
+    dob: '',
+    family: '',
+    isSilverBacked: false,
+    ceremonyId: '',
+  })
+
+  const [sign, { error, loading }] = useMutation(NEW_GORILLA_MUTATION, {
+    variables: { data: inputs },
+    fetchPolicy: 'no-cache',
+  })
+
+  const router = useRouter()
+  const families = useQuery(ALL_FAMILIES_QUERY)
+  const gorillas = useQuery(ALL_GORILLAS_QUERY)
     let photoUrl = "https://avatars.githubusercontent.com/u/53856673?v=4";
     return(
         <div className="flex flex-col justify-center bg-white p-6">
   <h1 className="font-bold px-4 text-2xl mb-10">NEW GORILLA</h1>
-  <form className="md:flex">
+  <form className="md:flex" onSubmit={async (e) => {
+            e.preventDefault()
+            try {
+              const { data } = await sign()
+              resetForm()
+              router.push('/gorillas')
+            } catch (error) {
+              console.log(error)
+            }
+          }}>
     <div>
       <div className="w-full md:w-9/12">
         <img
@@ -47,7 +102,13 @@ export default function NewGorilla(){
         <select
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         >
-          <option value="">--mothers--</option>
+          <option value=""></option>
+          {
+            gorillas.data?.getAllNpmg.length >= 0 && (
+              gorillas.data?.getAllNpmg.map(npmg => (
+                  <option value={npmg.id}>{npmg.name}</option>
+              )))
+          }
         </select>
       </div>
       <div className="border-b-2 focus-within:border-green-500 flex">
@@ -55,7 +116,13 @@ export default function NewGorilla(){
         <select
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         >
-          <option value="">--fathers--</option>
+          <option value=""></option>
+          {
+            gorillas.data?.getAllNpmg.length >= 0 && (
+              gorillas.data?.getAllNpmg.map(npmg => (
+                  <option value={npmg.id}>{npmg.name}</option>
+              )))
+          }
         </select>
       </div>
       <div className="border-b-2 focus-within:border-green-500 flex">
@@ -63,7 +130,13 @@ export default function NewGorilla(){
         <select
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         >
-          <option value="">--genders--</option>
+          <option value=""></option>
+          {
+            families?.data?.getFamilies.length >= 0 && (
+              families?.data?.getFamilies.map(npmg => (
+                  <option value={npmg.id}>{npmg.family_name}</option>
+              )))
+          }
         </select>
       </div>
       <div className="border-b-2 focus-within:border-green-500 flex">
@@ -71,7 +144,8 @@ export default function NewGorilla(){
         <select
           className="px-4 block w-full appearance-none focus:outline-none bg-transparent"
         >
-          <option value="">--gender--</option>
+          <option value="Male">MALE</option>
+          <option value="Female">FEMALE</option>
         </select>
       </div>
       <div className="border-b-2 focus-within:border-green-500 flex">
@@ -87,9 +161,8 @@ export default function NewGorilla(){
         className="my-4 focus-within:border-green-500 items-center justify-center"
       >
         <button
-          className="bg-green text-gray px-2 py-1 rounded w-full text-white  font-bold focus:outline-none"
-          type="submit">ADD NEW</button
-        >
+          className="bg-green-600 text-gray px-2 py-1 rounded w-full text-white  font-bold focus:outline-none"
+          type="submit">ADD NEW</button>
       </div>
     </div>
   </form>
