@@ -1,6 +1,17 @@
 import Link from 'next/link'
+import { gql, useQuery } from '@apollo/client'
+const ALL_FAMILIES_QUERY = gql`
+    query {
+      getFamilies {
+            
+				id
+				family_name
+				leader
+        }
+    }
+`
 export default function FamiliesComponent(){
-    let integers = [1, 2, 3, 4, 5, 6, 7, 8]
+  const { data, loading, error } = useQuery(ALL_FAMILIES_QUERY)
     return(
     <div className="w-full md:flex">
       <div
@@ -32,19 +43,34 @@ export default function FamiliesComponent(){
           <tbody
             className="limitedTable overflow-y-auto"
           >
-            {integers.map(int=>(
-              <tr
-                className="mt-3 justify-between bg-white border-b hover:border-green-400 transition-all cursor-pointer"
-              >
-                <td className="text-center p-4 w-1/7">{int}</td>
-                <td className="text-center p-4 w-1/7"
-                  >Gahinga</td
-                >
-                <td className="text-center p-4 w-1/7"> {Math.round((int*int/(int+1))+5*int)}</td>
-                <td className="text-center p-4 w-1/7">Amahoro</td>
-                <td className="text-center p-4 w-1/7">December 2017</td>
-              </tr>
-            ))}
+            {error && (
+                <pre>
+                    <code>{JSON.stringify(error, null, 4)}</code>
+                </pre>
+            )}
+			 {loading ? (
+                <p>Loading....</p>
+            ) : (
+                data?.getFamilies.length >= 0 && (
+					data?.getFamilies.length == 0?(
+						<p className="text-center">No families are found</p>
+					):(
+                    data?.getFamilies.map(family => (
+                      <tr
+                      className="mt-3 justify-between bg-white border-b hover:border-green-400 transition-all cursor-pointer"
+                    >
+                      <td className="text-center p-4 w-1/7">{family.id}</td>
+                      <td className="text-center p-4 w-1/7"
+                        >Gahinga</td
+                      >
+                      <td className="text-center p-4 w-1/7"> height</td>
+                      <td className="text-center p-4 w-1/7">Amahoro</td>
+                      <td className="text-center p-4 w-1/7">December 2017</td>
+                    </tr>
+					)))
+                )
+            )}
+
           </tbody>
         </table>
       </div>

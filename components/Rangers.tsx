@@ -1,6 +1,20 @@
+import { gql, useQuery } from '@apollo/client'
+const ALL_REPORTS_QUERY = gql`
+    query {
+      getAllRangersGroups {
+			    id
+				leaderId
+				name
+				description
+        leader{ 
+          id
+        }
+        }
+    }
+`
 export default function RangersComponent(){
     let photoUrl = "https://avatars.githubusercontent.com/u/53856673?v=4";
-    let integers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    const { data, loading, error } = useQuery(ALL_REPORTS_QUERY)
     return (
         <div>
     <div className="w-full md:flex">
@@ -32,11 +46,23 @@ export default function RangersComponent(){
           <tbody
           className="limitedTable overflow-y-auto"
         >
-          {integers.map(int=>(
-              <tr
+          {error && (
+                <pre>
+                    <code>{JSON.stringify(error, null, 4)}</code>
+                </pre>
+            )}
+			 {loading ? (
+                <p>Loading....</p>
+            ) : (
+                data?.getFamilies.length >= 0 && (
+					data?.getFamilies.length == 0?(
+						<p className="text-center">No rangers are found</p>
+					):(
+                    data?.getFamilies.map(family => (
+                      <tr
                 className="mt-3 justify-between bg-white border-b hover:border-green-400 cursor-pointer"
               >
-                <td className="text-center p-3 w-1/10">{int}</td>
+                <td className="text-center p-3 w-1/10">{family.id}</td>
                 <td className="p-3 w-1/6"
                   ><div className="flex items-center">
                     <div className="flex-shrink-0 w-8 h-8">
@@ -56,8 +82,10 @@ export default function RangersComponent(){
                 <td className="p-3 w-1/6">Nkindira</td>
                 <td className="p-3 w-1/6">Kwizigira</td>
               </tr>
+					)))
+                )
+            )}
 
-          ))}
         </tbody>
         </table>
       </div>

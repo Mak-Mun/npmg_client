@@ -1,8 +1,19 @@
 import { useRouter } from "next/router";
+import { gql, useQuery } from '@apollo/client'
+const ALL_REPORTS_QUERY = gql`
+    query {
+		getAllReports {
+			    id
+				gorilla
+				reporter
+				date
+        }
+    }
+`
 
 export default function Reports(){
+	const { data, loading, error } = useQuery(ALL_REPORTS_QUERY)
     const router = useRouter();
-    let integers: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
 	let photoUrl =
 		'https://wallup.net/wp-content/uploads/2017/11/10/74767-mountain-ridges-Dolomites_mountains.jpg';
     return (
@@ -33,17 +44,31 @@ export default function Reports(){
 					</tr>
 				</thead>
 				<tbody className="flex flex-col items-center justify-between overflow-y-auto w-full mt-3">
-                {integers.map(int => (
-						<tr key={int}
+				{error && (
+                <pre>
+                    <code>{JSON.stringify(error, null, 4)}</code>
+                </pre>
+            )}
+			 {loading ? (
+                <p>Loading....</p>
+            ) : (
+                data?.getAllReports.length >= 0 && (
+					data?.getAllReports.length == 0?(
+						<p className="text-center">No reports are found</p>
+					):(
+                    data?.getAllReports.map(report => (
+						<tr key={report.id}
 							className="flex w-full mb-2 items-center justify-between cursor-pointer shadow hover:text-motherGreen"
-                            onClick={()=>{router.push(`/reports/report/${int}`);}}
+                            onClick={()=>{router.push(`/reports/report/${report.id}`);}}
 						>
-							<td className="text-center w-1/5 py-3">{int}</td>
+							<td className="text-center w-1/5 py-3">{report.id}</td>
 							<td className="text-center w-2/5">Kwitonda</td>
 							<td className="text-center w-2/5">Mucyo Erneste</td>
 							<td className="text-center w-2/5">3 hours ago</td>
 						</tr>
-					))}
+					)))
+                )
+            )}
 					<p className="cursor-pointer text-successorColor font-semibold">Load More</p>
 				</tbody>
 			</table>
