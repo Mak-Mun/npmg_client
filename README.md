@@ -26,10 +26,9 @@
 
 ## Collaborations
 ### Want To Help?
-#### Contacts
-1. Didiermunezer38@gmail.com
-2. Mugaboverite@gmail.com
 
-#### Team
-1. [Didier](https://github.com/didiermunezero)
-2. [Verite](https://github.com/makuzaverite)
+Fire an issue or open PR or shot an email to either `didiermunezer38@gmail.com` or `mugaboverite@gmail.com`
+
+#### Contributors
+1. [@didiermunezero](https://github.com/didiermunezero)
+2. [@makuzaverite](https://github.com/makuzaverite)
