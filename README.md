@@ -1,34 +1,34 @@
-# NPMG
+# Npmg
 
-## 1. DEFINITION
-* A BIG IDEA TO COLLECT DATA RELATED TO PARK WITH MAIN FOCUS OF GORILLAS.
-* BASING ON THE CURRENT REPORTS, NPMG IS TO REPLACE PAPERS THAT ARE USED WHILE RECORDING NOW DAYS REPORTS.
-* THE REPORTS DONE ARE DAILY, AND THERE ARE PEOPLE ON FIELD( RANGERS), AND DOCTORS WHO RECIEVES THOSE REPORTS
-* TO HAVE CURRENT STATUS OF NATIONAL PARK GORILLAS.
+## 1. Definition
+* A Big Idea To Collect Data Related To Park With Main Focus Of Gorillas.
+* Basing On The Current Reports, Npmg Is To Replace Papers That Are Used While Recording Now Days Reports.
+* The Reports Done Are Daily, And There Are People On Field( Rangers), And Doctors Who Recieves Those Reports
+* To Have Current Status Of National Park Gorillas.
 
 
 
-## 2. PROGRESS
-### DONE
-1. DESIGN
-2. APIS
-3. SIMPLE STATIC DISPLAY PAGES
+## 2. Progress
+### Done
+1. Design
+2. Apis
+3. Simple Static Display Pages
 
-### DOING
-1. CONNECTING WITH GRAPHQL APIS
-2. REAL TIME
-3. GLOBAL ACCESS
+### Doing
+1. Connecting With Graphql Apis
+2. Real Time
+3. Global Access
 
-### TODO
-1. OFFLINE ACCESSIBILY
-2. SECURITY MEASURES 
-3. GEO REFERENCING
+### Todo
+1. Offline Accessibily
+2. Security Measures 
+3. Geo Referencing
 
-## COLLABORATIONS
-### WANT TO HELP?
-#### CONTACTS
-1. didiermunezer38@gmail.com
-2. mugaboverite@gmail.com
+## Collaborations
+### Want To Help?
+#### Contacts
+1. Didiermunezer38@gmail.com
+2. Mugaboverite@gmail.com
 
 #### Team
 1. [Didier](https://github.com/didiermunezero)
