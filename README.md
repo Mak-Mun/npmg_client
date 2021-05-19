@@ -2,8 +2,8 @@
 
 ## 1. Definition
 * A Big Idea To Collect Data Related To Park With Main Focus Of Gorillas.
-* Basing On The Current Reports, Npmg Is To Replace Papers That Are Used While Recording Now Days Reports.
-* The Reports Done Are Daily, And There Are People On Field( Rangers), And Doctors Who Recieves Those Reports
+* Basing On The Current Reports, Npmg Is To Replace Papers That Are Used While Recording Nowadays Reports.
+* The Reports Done Are Daily, And There Are People On Field( Rangers), And Doctors Who Receives Those Reports
 * To Have Current Status Of National Park Gorillas.
 
 
@@ -16,11 +16,11 @@
 
 ### Doing
 1. Connecting With Graphql Apis
-2. Real Time
+2. Real-Time
 3. Global Access
 
 ### Todo
-1. Offline Accessibily
+1. Offline Accessibility
 2. Security Measures 
 3. Geo Referencing
 
