@@ -31,4 +31,4 @@ Fire an issue or open PR or shot an email to either `didiermunezer38@gmail.com` 
 
 #### Contributors
 1. [@didiermunezero](https://github.com/didiermunezero)
-2. [@makuzaverite](https://github.com/makuzaverite)
+2. [@veritem](https://github.com/veritem)
