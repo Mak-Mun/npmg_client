@@ -1,4 +1,13 @@
-import { gql, useQuery } from '@apollo/client'
+import { gql, useMutation, useQuery } from '@apollo/client'
+import useForm from '../lib/useForm'
+const UPDATE_PROFILE = gql`
+  mutation ($data: UpdateUserInput!) {
+    updateUser(data: $data) {
+      id
+    }
+  }
+`
+
 const ME_QUERY = gql`
     query {
         me {
@@ -12,7 +21,18 @@ const ME_QUERY = gql`
     }
 `
 export default function Settings(){
-	const { data, loading, error } = useQuery(ME_QUERY)
+	const { data} = useQuery(ME_QUERY)
+	const { inputs, handleChange } = useForm({
+		firstName: data?.me?.firstName,
+		lastName: data?.me?.lastName,
+		role: data?.me?.role,
+		district: data?.me?.district,
+		province: data?.me?.province,
+		email: data?.me?.email,
+	})
+	const [updateProfile, { error, loading }] = useMutation(UPDATE_PROFILE, {
+		variables: { data: inputs },
+	  })
     const user = {
         photo:'https://avatars.githubusercontent.com/u/51176044?v=4'
     }
@@ -21,8 +41,8 @@ export default function Settings(){
 	<div
 		className="bg-white w-full rounded-sm px-4 pt-3 pb-1 md:px-8 md:py-3 md:mr-3 md:flex md:w-5/6 longer"
 	>
-		<div className="mr-10 mt-2">
-			<ul>
+		<div className="mr-10 mt-4 grid justify-items-center md:justify-items-start">
+			<ul className="text-lg">
 				<li
 					className="text-s-xl font-semibold hover:text-motherGreen cursor-pointer p-1 text-motherGreen"
 				>
@@ -36,6 +56,17 @@ export default function Settings(){
 			</ul>
 		</div>
 		<form
+		onSubmit={async (e) => {
+            e.preventDefault()
+            try {
+              const { data, errors } = await updateProfile()
+              console.log(data)
+              console.log(errors)
+              alert('profile updated');
+            } catch (error) {
+              console.log(error)
+            }
+          }}
 			className="rounded-sm shadow w-full md:w-4/5 h-full md:ml-4 mt-2 flex flex-col"
 		>
 			<h1 className="text-center font-semibold text-xl md:-ml-20 mt-3">User Profile</h1>
@@ -62,7 +93,7 @@ export default function Settings(){
 						className="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full border border-gray-600  rounded-sm focus:outline-none border-green"
 						id="message"
 						placeholder="Ex: Excellent Ranger"
-						value={data?.me?.bio}
+						defaultValue={data?.me?.bio}
 					/>
 				</div>
 				<div className="mt-1 mx-auto md:flex w-11/12 md:w-9/12">
@@ -70,8 +101,10 @@ export default function Settings(){
 						<label className="font-semibold ml-1">First name</label>
 						<input
 							type="text"
-							name="fname"
-							value={data?.me?.firstName}
+							name="firstName"
+                            value={inputs.firstName}
+                            onChange={handleChange}
+							required
 							className="font-sans w-full px-3 py-1.5 text-sm  border border-gray-600  rounded-sm focus:outline-none border-green"
 						/>
 					</div>
@@ -79,8 +112,10 @@ export default function Settings(){
 						<label className="font-semibold ml-1">Last name</label>
 						<input
 							type="text"
-							value={data?.me?.lastName}
-							name="lname"
+							name="lastName"
+                            value={inputs.lastName}
+                            onChange={handleChange}
+							required
 							className="w-full px-3 py-1.5 text-sm  border border-gray-600  rounded-sm focus:outline-none border-green"
 						/>
 					</div>
@@ -90,8 +125,10 @@ export default function Settings(){
 						<label className="font-semibold ml-1">Email</label>
 						<input
 							type="email"
-							value={data?.me?.email}
 							name="email"
+                            value={inputs.email}
+                            onChange={handleChange}
+							required
 							className="w-full px-3 py-1.5 text-sm  border border-gray-600  rounded-sm focus:outline-none border-green"
 						/>
 					</div>
@@ -99,9 +136,11 @@ export default function Settings(){
 						<label className="font-semibold ml-1">Phone number</label>
 						<input
 							type="text"
-							value={data?.me?.phone}
-							placeholder={data?.me?.phone?"":"Please Add Phone number"}
 							name="phone"
+                            value={inputs.phone}
+                            onChange={handleChange}
+							required
+							placeholder="Please enter a phone number"
 							className="w-full px-3 py-1.5 text-sm  border border-gray-600  rounded-sm focus:outline-none border-green"
 						/>
 					</div>
@@ -110,9 +149,11 @@ export default function Settings(){
 					<div className="flex flex-col md:mx-0 md:w-6/12">
 						<label className="font-semibold ml-1">Province</label>
 						<input
-						    value={data?.me?.province}
 							type="text"
-							placeholder={data?.me?.province?"":"Please add province"}
+                            value={inputs.province}
+                            onChange={handleChange}
+							required
+							placeholder="Please add province"
 							name="province"
 							className="w-full px-3 py-1.5 text-sm  border border-gray-600  rounded-sm focus:outline-none border-green"
 						/>
@@ -121,9 +162,11 @@ export default function Settings(){
 						<label className="font-semibold ml-1">District</label>
 						<input
 							type="text"
-							value={data?.me?.district}
-							placeholder={data?.me?.district?"":"Please add District"}
 							name="district"
+                            value={inputs.district}
+                            onChange={handleChange}
+							required
+							placeholder="Please add district"
 							className="w-full px-3 py-1.5 text-sm  border border-gray-600  rounded-sm focus:outline-none border-green"
 						/>
 					</div>
