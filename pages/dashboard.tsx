@@ -32,25 +32,25 @@ export default function DashBoard() {
 				<a><h3 className="font-semibold full md:mr-10">View full</h3></a>
 				</Link>
 			</div>
-			<div className="w-full flex flex-wrap justify-between">
+			<div className="w-full grid grid-cols-6 gap-4">
 				<div
-					className="mt-4 md:mt-0 nw-3/10 flex flex-col items-center bg-white py-2 md:pb-6 md:pt-3 px-4 rounded-xl mx-2 cursor-pointer"
+					className="mt-4 md:mt-0 col-span-2 flex flex-col items-center bg-white py-2 md:pb-6 md:pt-3 px-4 rounded-xl mx-2 cursor-pointer"
 				>
-					<div className="h-32 w-24 rounded-xl bg-green-100" />
+					<div className="h-20 md:h-32 w-5/6 md:w-3/4 rounded-lg bg-green-100" />
 					<p className="text-xs text-gray-600 mt-2">Gorillas Found</p>
 					<h4 className="text-2xl font-semibold mt-2">136</h4>
 				</div>
 				<div
-					className="mt-4 md:mt-0 w-3/10 flex flex-col items-center bg-white py-2 md:pb-6 md:pt-3 px-4 rounded-xl mx-2 cursor-pointer"
+					className="mt-4 md:mt-0 col-span-2 flex flex-col items-center bg-white py-2 md:pb-6 md:pt-3 px-4 rounded-xl mx-2 cursor-pointer"
 				>
-					<div className="h-32 w-24 rounded-xl bg-blue-100" />
+					<div className="h-20 md:h-32 w-5/6 md:w-3/4 rounded-lg bg-blue-100" />
 					<p className="text-xs text-gray-600 mt-2">Gorillas pregnant</p>
 					<h4 className="text-2xl font-semibold mt-2">17</h4>
 				</div>
 				<div
-					className="mt-4 md:mt-0 w-3/10 flex flex-col items-center bg-white py-2 md:pb-6 md:pt-3 px-4 rounded-xl mx-2 cursor-pointer"
+					className="mt-4 md:mt-0 col-span-2 flex flex-col items-center bg-white py-2 md:pb-6 md:pt-3 px-4 rounded-xl mx-2 cursor-pointer"
 				>
-					<div className="h-32 w-24 rounded-xl bg-red-100" />
+					<div className="h-20 md:h-32 w-5/6 md:w-3/4 rounded-lg bg-red-100" />
 					<p className="text-xs text-gray-600 mt-2 ">Gorillas Lost</p>
 					<h4 className="text-2xl font-semibold mt-2">9</h4>
 				</div>
@@ -65,8 +65,8 @@ export default function DashBoard() {
 					</Link>
 				</div>
 				<div className="">
-					{integers.map(int=>{
-						<div className="mb-0 px-3 pb-1 md:px-6 flex cursor-pointer rounded items-center mx-auto">
+					{/* {integers.map(int=>{ */}
+						<div className="mb-1  border-b px-3 pb-1 md:px-6 flex cursor-pointer rounded-sm items-center mx-auto">
 							<img
 								alt="Success Kid"
 								src={newReportUrl}
@@ -77,7 +77,95 @@ export default function DashBoard() {
 								<span className="text-gray-500 text-sm">22 December 2020</span>
 							</div>
 						</div>
-					})}
+						<div className="mb-1  border-b px-3 pb-1 md:px-6 flex cursor-pointer rounded-sm items-center mx-auto">
+							<img
+								alt="Success Kid"
+								src={newReportUrl}
+								className="h-10 w-10 rounded-full cursor-pointer"
+							/>
+							<div className="flex flex-col pl-2">
+								<span className="font-semibold text-sm">Amahoro</span>
+								<span className="text-gray-500 text-sm">22 December 2020</span>
+							</div>
+						</div>
+						<div className="mb-1  border-b px-3 pb-1 md:px-6 flex cursor-pointer rounded-sm items-center mx-auto">
+							<img
+								alt="Success Kid"
+								src={newReportUrl}
+								className="h-10 w-10 rounded-full cursor-pointer"
+							/>
+							<div className="flex flex-col pl-2">
+								<span className="font-semibold text-sm">Amahoro</span>
+								<span className="text-gray-500 text-sm">22 December 2020</span>
+							</div>
+						</div>
+						<div className="mb-1  border-b px-3 pb-1 md:px-6 flex cursor-pointer rounded-sm items-center mx-auto">
+							<img
+								alt="Success Kid"
+								src={newReportUrl}
+								className="h-10 w-10 rounded-full cursor-pointer"
+							/>
+							<div className="flex flex-col pl-2">
+								<span className="font-semibold text-sm">Amahoro</span>
+								<span className="text-gray-500 text-sm">22 December 2020</span>
+							</div>
+						</div>
+						<div className="mb-1  border-b px-3 pb-1 md:px-6 flex cursor-pointer rounded-sm items-center mx-auto">
+							<img
+								alt="Success Kid"
+								src={newReportUrl}
+								className="h-10 w-10 rounded-full cursor-pointer"
+							/>
+							<div className="flex flex-col pl-2">
+								<span className="font-semibold text-sm">Amahoro</span>
+								<span className="text-gray-500 text-sm">22 December 2020</span>
+							</div>
+						</div>
+						<div className="mb-1  border-b px-3 pb-1 md:px-6 flex cursor-pointer rounded-sm items-center mx-auto">
+							<img
+								alt="Success Kid"
+								src={newReportUrl}
+								className="h-10 w-10 rounded-full cursor-pointer"
+							/>
+							<div className="flex flex-col pl-2">
+								<span className="font-semibold text-sm">Amahoro</span>
+								<span className="text-gray-500 text-sm">22 December 2020</span>
+							</div>
+						</div>
+						<div className="mb-1  border-b px-3 pb-1 md:px-6 flex cursor-pointer rounded-sm items-center mx-auto">
+							<img
+								alt="Success Kid"
+								src={newReportUrl}
+								className="h-10 w-10 rounded-full cursor-pointer"
+							/>
+							<div className="flex flex-col pl-2">
+								<span className="font-semibold text-sm">Amahoro</span>
+								<span className="text-gray-500 text-sm">22 December 2020</span>
+							</div>
+						</div>
+						<div className="mb-1  border-b px-3 pb-1 md:px-6 flex cursor-pointer rounded-sm items-center mx-auto">
+							<img
+								alt="Success Kid"
+								src={newReportUrl}
+								className="h-10 w-10 rounded-full cursor-pointer"
+							/>
+							<div className="flex flex-col pl-2">
+								<span className="font-semibold text-sm">Amahoro</span>
+								<span className="text-gray-500 text-sm">22 December 2020</span>
+							</div>
+						</div>
+						<div className="mb-1  border-b px-3 pb-1 md:px-6 flex cursor-pointer rounded-sm items-center mx-auto">
+							<img
+								alt="Success Kid"
+								src={newReportUrl}
+								className="h-10 w-10 rounded-full cursor-pointer"
+							/>
+							<div className="flex flex-col pl-2">
+								<span className="font-semibold text-sm">Amahoro</span>
+								<span className="text-gray-500 text-sm">22 December 2020</span>
+							</div>
+						</div>
+					{/* })} */}
 				</div>
 			</div>
 		</div>
