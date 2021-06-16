@@ -32,10 +32,10 @@ export default function Sidebar({items}){
             ))}
 			</div>
 		</div>
-		<div className="mb-3">
+		<div className="mb-0 bg-successorColor grid justify-items-center">
 		<Link href="/signin">
 			<a
-				className="text-red-500 font-semibold px-4 py-4 text-center bottom-0 cursor-pointer font-sourceSans"
+				className="text-white font-semibold px-4 py-2.5 text-center bottom-0 cursor-pointer font-sourceSans"
 				>Logout</a
 			>
 		</Link>

@@ -35,6 +35,7 @@ module.exports = {
       ...theme('colors'),
       primaryGreen: '#00917C',
       secondary: '#ffed4a',
+      successorColor: '#F0A500',
       danger: '#e3342f',
       greenAccent: '#B7FFC2',
       blueAccent: '#86C5FF',
